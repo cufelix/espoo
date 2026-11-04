@@ -1,0 +1,10 @@
+/usr/local/lib/python3.13/site-packages/numpy/_core/_methods.py:49: RuntimeWarning: overflow encountered in reduce
+  return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+linear S->T key map: R^2 on valid = 1.000
+index 125s
+student alone test ppl 68.68
+student + mem[   gold] via    oracle T-keys | test ppl  63.09 (lam 0.2, tau 30)
+student + mem[teacher] via    oracle T-keys | test ppl  68.68 (lam 0.0, tau 1.0)
+student + mem[   gold] via projected S-keys | test ppl  66.58 (lam 0.1, tau 30)
+student + mem[teacher] via projected S-keys | test ppl  68.68 (lam 0.0, tau 1.0)
+QUEUE2_DONE

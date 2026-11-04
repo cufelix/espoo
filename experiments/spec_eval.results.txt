@@ -1,0 +1,14 @@
+9600 positions
+student/teacher cost ratio c = 0.293
+                               draft | alpha | greedy-match | best g | tokens/round | speed-up
+                             student | 0.725 | 0.732        | 2      | 2.25         | 1.42x  (c=0.29)
+ teacher first 1 layers (self-draft) | 0.527 | 0.572        | 1      | 1.53         | 0.96x  (c=0.59)
+ teacher first 2 layers (self-draft) | 0.626 | 0.656        | 1      | 1.63         | 0.94x  (c=0.72)
+ teacher first 3 layers (self-draft) | 0.804 | 0.789        | 1      | 1.80         | 0.97x  (c=0.86)
+      student+mem[gold] lam0.1 tau10 | 0.719 | 0.733        | 2      | 2.24         | 1.41x  (c=0.29)
+      student+mem[gold] lam0.1 tau30 | 0.723 | 0.737        | 2      | 2.25         | 1.42x  (c=0.29)
+      student+mem[gold] lam0.2 tau10 | 0.704 | 0.704        | 2      | 2.20         | 1.39x  (c=0.29)
+      student+mem[gold] lam0.2 tau30 | 0.713 | 0.738        | 2      | 2.22         | 1.40x  (c=0.29)
+      student+mem[gold] lam0.3 tau10 | 0.683 | 0.665        | 2      | 2.15         | 1.36x  (c=0.29)
+      student+mem[gold] lam0.3 tau30 | 0.698 | 0.734        | 2      | 2.19         | 1.38x  (c=0.29)
+   student+mem[teacher] lam0.3 tau30 | 0.703 | 0.750        | 2      | 2.20         | 1.39x  (c=0.29)

@@ -1,0 +1,12 @@
+    T alone: test ppl 59.93
+    T + mem[   gold] store 100% | test ppl   57.44 (lam 0.1, tau 30, alpha 1.0) [428s]
+    S alone: test ppl 68.68
+    S + mem[   gold] store  10% | test ppl   68.00 (lam 0.05, tau 30, alpha 1.0) [48s]
+    S + mem[teacher] store  10% | test ppl   68.68 (lam 0.0, tau 1.0, alpha 1.0) [87s]
+    S + mem[    mix] store  10% | test ppl   68.22 (lam 0.05, tau 30, alpha 0.7) [167s]
+    S + mem[   gold] store  30% | test ppl   67.11 (lam 0.1, tau 30, alpha 1.0) [82s]
+    S + mem[teacher] store  30% | test ppl   68.68 (lam 0.0, tau 1.0, alpha 1.0) [125s]
+    S + mem[    mix] store  30% | test ppl   67.53 (lam 0.1, tau 30, alpha 0.7) [218s]
+    S + mem[   gold] store 100% | test ppl   65.15 (lam 0.2, tau 30, alpha 1.0) [230s]
+    S + mem[teacher] store 100% | test ppl   68.68 (lam 0.0, tau 1.0, alpha 1.0) [280s]
+    S + mem[    mix] store 100% | test ppl   65.92 (lam 0.2, tau 30, alpha 0.7) [399s]
