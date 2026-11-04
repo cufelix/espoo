@@ -2026,7 +2026,8 @@
 "desc": "DFloat11, a lossless compression framework, reduces Large Language Model sizes by 30% through entropy coding, enabling efficient deployment and significantly higher throughput on resource-constrained hardware.",
 "date": "2025-04-15",
 "topics": [
-"lossless weight compression"
+"lossless weight compression",
+"directly cited / prior-art check"
 ]
 },
 "2610.25425": {
@@ -3710,6 +3711,159 @@
 "date": "2024-09-30",
 "topics": [
 "energy efficiency"
+]
+},
+"2610.02800": {
+"id": "2610.02800",
+"title": "BitNest: Bit-Nested Speculative Decoding for Memory-Efficient LLM Inference Acceleration",
+"desc": "Embeds a low-precision draft into a shared weight representation (bit-nested) for speculative decoding.",
+"date": "2026-10",
+"topics": [
+"directly cited / prior-art check"
+]
+},
+"2610.22877": {
+"id": "2610.22877",
+"title": "BS-Spec: BFP-Based Bit-Sharing for Self-Speculative LLM Decoding",
+"desc": "Draft loads only the most significant bits of block-floating-point weights; no separate draft storage.",
+"date": "2026-10",
+"topics": [
+"directly cited / prior-art check"
+]
+},
+"2410.11305": {
+"id": "2410.11305",
+"title": "QSpec: Speculative Decoding with Complementary Quantization Schemes",
+"desc": "W4A4 draft and W4A16 verify share weights; up to 1.64x.",
+"date": "2024-10",
+"topics": [
+"directly cited / prior-art check"
+]
+},
+"2502.10424": {
+"id": "2502.10424",
+"title": "QuantSpec: Self-Speculative Decoding with Hierarchical Quantized KV Cache",
+"desc": "Hierarchical 4-bit KV cache and weights as self-draft for long context.",
+"date": "2025-02",
+"topics": [
+"directly cited / prior-art check"
+]
+},
+"2607.04244": {
+"id": "2607.04244",
+"title": "Quantize the Target, Quantize the Drafter: Efficient Inference with Qwen3.5-4B",
+"desc": "Quantized target + speculative decoding + QAT distillation.",
+"date": "2026-07",
+"topics": [
+"directly cited / prior-art check"
+]
+},
+"2505.16162": {
+"id": "2505.16162",
+"title": "KNN-SSD: Dynamic Self-Speculative Decoding via Nearest Neighbor Layer Set Optimization",
+"desc": "Layer-skip self-drafts chosen per domain; 1.3-1.6x.",
+"date": "2025-05",
+"topics": [
+"directly cited / prior-art check"
+]
+},
+"2604.12247": {
+"id": "2604.12247",
+"title": "SpecBound: Adaptive Bounded Self-Speculation",
+"desc": "Layer-wise confidence calibration for self-drafts.",
+"date": "2026-04",
+"topics": [
+"directly cited / prior-art check"
+]
+},
+"2603.03251": {
+"id": "2603.03251",
+"title": "Speculative Speculative Decoding",
+"desc": "Parallelises speculation and verification.",
+"date": "2026-03",
+"topics": [
+"directly cited / prior-art check"
+]
+},
+"2601.05724": {
+"id": "2601.05724",
+"title": "Lossless Hierarchical Speculative Decoding",
+"desc": "Lossless verification improving acceptance.",
+"date": "2026-01",
+"topics": [
+"directly cited / prior-art check"
+]
+},
+"2408.08696": {
+"id": "2408.08696",
+"title": "Token Recycling",
+"desc": "Reuses candidate tokens in an adjacency matrix as drafts.",
+"date": "2024-08",
+"topics": [
+"directly cited / prior-art check"
+]
+},
+"2406.06282": {
+"id": "2406.06282",
+"title": "PowerInfer-2: Fast LLM Inference on a Smartphone",
+"desc": "Hot/cold neuron offloading; 47B on phones.",
+"date": "2024-06",
+"topics": [
+"directly cited / prior-art check"
+]
+},
+"2312.11514": {
+"id": "2312.11514",
+"title": "LLM in a flash",
+"desc": "Weights in flash, loaded on demand (windowing, row-column bundling).",
+"date": "2023-12",
+"topics": [
+"directly cited / prior-art check"
+]
+},
+"2502.06786": {
+"id": "2502.06786",
+"title": "Matryoshka Quantization",
+"desc": "Nested int8/int4/int2 via shared MSBs.",
+"date": "2025-02",
+"topics": [
+"directly cited / prior-art check"
+]
+},
+"2112.04426": {
+"id": "2112.04426",
+"title": "RETRO: Improving LMs by Retrieving from Trillions of Tokens",
+"desc": "GPT-3-level Pile perplexity with 25x fewer params.",
+"date": "2021-12",
+"topics": [
+"directly cited / prior-art check"
+]
+},
+"1911.00172": {
+"id": "1911.00172",
+"title": "kNN-LM: Generalization through Memorization",
+"desc": "Interpolate LM with nearest-neighbour distribution over a datastore.",
+"date": "2019-11",
+"topics": [
+"directly cited / prior-art check"
+]
+},
+"2310.17157": {
+"id": "2310.17157",
+"title": "Deja Vu: Contextual Sparsity",
+"desc": "Predict active heads/neurons per token; 2x on OPT-175B.",
+"date": "2023-10",
+"topics": [
+"directly cited / prior-art check"
+]
+},
+"2312.05821": {
+"id": "2312.05821",
+"title": "ASVD: Activation-aware SVD",
+"desc": "Activation-aware low-rank compression of LLMs.",
+"date": "2023-12",
+"topics": [
+"directly cited / prior-art check"
 ]
 }
 }

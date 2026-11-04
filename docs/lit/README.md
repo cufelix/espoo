@@ -1,7 +1,7 @@
 # Literature catalog
 
-411 unique papers collected via Hugging Face Papers search (39 topic queries, Nov 2026).
-Each entry: arXiv id, date, title, one-line summary (HF auto-summary). Full JSON: `catalog.json`.
+428 unique papers: 39 topic queries on Hugging Face Papers plus a prior-art check of the papers cited directly (Nov 2026).
+Each entry: arXiv id, date, title, one-line summary (HF auto-summary or ours). Full JSON: `catalog.json`.
 
 ## KV cache (12)
 
@@ -118,6 +118,26 @@ Each entry: arXiv id, date, title, one-line summary (HF auto-summary). Full JSON
 - [2312.05417](https://arxiv.org/abs/2312.05417) (2023-12) **ESPN: Memory-Efficient Multi-Vector Information Retrieval**: ESPN offloads embedding tables to SSDs to reduce memory requirements in multi-vector IR models, improving scalability and query latency.
 - [2305.11841](https://arxiv.org/abs/2305.11841) (2023-05) **How Does Generative Retrieval Scale to Millions of Passages?**: Generative retrieval scales to large corpora with significant findings on the importance of synthetic queries and the limits of parameter scaling.
 - [2206.02873](https://arxiv.org/abs/2206.02873) (2022-06) **No Parameter Left Behind: How Distillation and Model Size Affect Zero-Shot Retrieval**: In retrieval tasks, model size and reranking significantly impact generalization and zero-shot performance.
+
+## directly cited / prior-art check (17)
+
+- [2610.02800](https://arxiv.org/abs/2610.02800) (2026-10) **BitNest: Bit-Nested Speculative Decoding for Memory-Efficient LLM Inference Acceleration**: Embeds a low-precision draft into a shared weight representation (bit-nested) for speculative decoding.
+- [2610.22877](https://arxiv.org/abs/2610.22877) (2026-10) **BS-Spec: BFP-Based Bit-Sharing for Self-Speculative LLM Decoding**: Draft loads only the most significant bits of block-floating-point weights; no separate draft storage.
+- [2607.04244](https://arxiv.org/abs/2607.04244) (2026-07) **Quantize the Target, Quantize the Drafter: Efficient Inference with Qwen3.5-4B**: Quantized target + speculative decoding + QAT distillation.
+- [2604.12247](https://arxiv.org/abs/2604.12247) (2026-04) **SpecBound: Adaptive Bounded Self-Speculation**: Layer-wise confidence calibration for self-drafts.
+- [2603.03251](https://arxiv.org/abs/2603.03251) (2026-03) **Speculative Speculative Decoding**: Parallelises speculation and verification.
+- [2601.05724](https://arxiv.org/abs/2601.05724) (2026-01) **Lossless Hierarchical Speculative Decoding**: Lossless verification improving acceptance.
+- [2505.16162](https://arxiv.org/abs/2505.16162) (2025-05) **KNN-SSD: Dynamic Self-Speculative Decoding via Nearest Neighbor Layer Set Optimization**: Layer-skip self-drafts chosen per domain; 1.3-1.6x.
+- [2502.10424](https://arxiv.org/abs/2502.10424) (2025-02) **QuantSpec: Self-Speculative Decoding with Hierarchical Quantized KV Cache**: Hierarchical 4-bit KV cache and weights as self-draft for long context.
+- [2502.06786](https://arxiv.org/abs/2502.06786) (2025-02) **Matryoshka Quantization**: Nested int8/int4/int2 via shared MSBs.
+- [2410.11305](https://arxiv.org/abs/2410.11305) (2024-10) **QSpec: Speculative Decoding with Complementary Quantization Schemes**: W4A4 draft and W4A16 verify share weights; up to 1.64x.
+- [2408.08696](https://arxiv.org/abs/2408.08696) (2024-08) **Token Recycling**: Reuses candidate tokens in an adjacency matrix as drafts.
+- [2406.06282](https://arxiv.org/abs/2406.06282) (2024-06) **PowerInfer-2: Fast LLM Inference on a Smartphone**: Hot/cold neuron offloading; 47B on phones.
+- [2312.11514](https://arxiv.org/abs/2312.11514) (2023-12) **LLM in a flash**: Weights in flash, loaded on demand (windowing, row-column bundling).
+- [2312.05821](https://arxiv.org/abs/2312.05821) (2023-12) **ASVD: Activation-aware SVD**: Activation-aware low-rank compression of LLMs.
+- [2310.17157](https://arxiv.org/abs/2310.17157) (2023-10) **Deja Vu: Contextual Sparsity**: Predict active heads/neurons per token; 2x on OPT-175B.
+- [2112.04426](https://arxiv.org/abs/2112.04426) (2021-12) **RETRO: Improving LMs by Retrieving from Trillions of Tokens**: GPT-3-level Pile perplexity with 25x fewer params.
+- [1911.00172](https://arxiv.org/abs/1911.00172) (2019-11) **kNN-LM: Generalization through Memorization**: Interpolate LM with nearest-neighbour distribution over a datastore.
 
 ## distillation (12)
 

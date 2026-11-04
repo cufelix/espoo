@@ -1,0 +1,5 @@
+9600 positions; memory draft: mean extra accepted tokens per teacher pass = 0.165
+tokens per teacher pass (memory draft, cost ~0): 1.16x
+  closest 10% neighbours (d<23): extra tokens 0.317
+  closest 25% neighbours (d<35): extra tokens 0.246
+  closest 50% neighbours (d<50): extra tokens 0.199

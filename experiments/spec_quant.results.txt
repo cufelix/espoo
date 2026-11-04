@@ -1,0 +1,11 @@
+                       draft | alpha | cost c (bytes) | best g | speed-up
+ teacher 16-bit, vocab 10000 | 1.000 | 1.000          | -      | (identical)
+  teacher 16-bit, vocab 1000 | 0.779 | 0.596          |      1 | 1.11x
+  teacher 8-bit, vocab 10000 | 0.996 | 0.500          |     11 | 1.81x
+   teacher 8-bit, vocab 1000 | 0.779 | 0.298          |      3 | 1.51x
+  teacher 4-bit, vocab 10000 | 0.937 | 0.250          |      8 | 2.35x
+   teacher 4-bit, vocab 1000 | 0.768 | 0.149          |      4 | 1.98x
+  teacher 3-bit, vocab 10000 | 0.863 | 0.188          |      5 | 2.21x
+   teacher 3-bit, vocab 1000 | 0.728 | 0.112          |      4 | 2.02x
+  teacher 2-bit, vocab 10000 | 0.694 | 0.125          |      4 | 1.83x
+   teacher 2-bit, vocab 1000 | 0.614 | 0.075          |      4 | 1.82x

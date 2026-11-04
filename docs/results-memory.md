@@ -83,3 +83,35 @@ vocabulary, so the output is still exactly the teacher's.
 
 Restricting the draft head to 10 % of the vocabulary costs only 0.08 in
 acceptance but cuts draft cost 3x. **Lossless speed-up 1.42x → 1.84x.**
+
+## H9: zero-cost drafts copied from memory (cf. REST / prompt lookup): SMALL GAIN
+Draft = the 8 tokens that followed the nearest train position. Conservative
+estimate: **1.16 teacher-quality tokens per teacher pass**, rising to 1.32
+when the neighbour is very close (closest 10 %). Useful as a free add-on, not
+on its own.
+
+## H10: a distilled draft is a better draft (cf. DistillSpec): CONFIRMED
+| draft | α (full vocab) | speed-up (full) | α (1k vocab) | speed-up (1k) |
+|---|---|---|---|---|
+| student | 0.725 | 1.42x | 0.648 | 1.84x |
+| **student distilled from teacher** | **0.758** | 1.47x | 0.669 | **1.92x** |
+
+## H12: self-speculation from the target's own bit-planes: CONFIRMED (prior art exists)
+Target = teacher. Draft = the same weights rounded to fewer bits. Cost =
+bytes read (bandwidth-bound decoding).
+
+| draft | target | α | draft cost | speed-up |
+|---|---|---|---|---|
+| independent 4-bit RTN copy | fp16 | 0.937 | 0.25 | **2.35x** |
+| top 4 of the stored 8-bit codes (nested, no extra memory) | fp16 | 0.937 | 0.25 | 2.34x |
+| top 3 of the stored 8-bit codes | 8-bit stored model | 0.870 | 0.375 | 1.55x |
+
+- Nested MSB prefixes are as good as a separately quantised copy, so the
+  draft can live *inside* the stored weights.
+- The 8-bit stored model itself agrees with fp32 on 99.6 % of greedy tokens
+  (α = 0.996). **Combined: 8-bit storage (2x fewer bytes than fp16) × 1.55x
+  exact self-speculation ≈ 3.1x faster than fp16 decoding**, with output
+  identical to the 8-bit model and 99.6 % greedy-identical to full precision.
+- **Prior art:** BitNest (arXiv 2610.02800, Oct 2026), BS-Spec (2610.22877) and
+  SPEQ already propose bit-nested self-drafts. Our numbers are an independent,
+  small-scale confirmation, not a new method.

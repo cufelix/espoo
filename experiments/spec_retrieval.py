@@ -25,10 +25,11 @@ pT = jax.tree_util.tree_map(jnp.asarray, T["params"]); pS = jax.tree_util.tree_m
 C = 64; G = 8
 fT = jax.jit(lambda x: jax.nn.softmax(hidden(pT, x, 4) @ pT["emb"].T, -1))
 fS = jax.jit(lambda x: hidden(pS, x, 4))
-starts = np.random.default_rng(1).choice(len(te) - C - G - 1, 300, replace=False)
-X = np.stack([te[s:s + C + G] for s in starts])          # windows with G extra tokens
-PT = np.asarray(fT(X[:, :C + G - 1]))                    # (B, C+G-1, V): p_T(next | prefix up to t)
-HS = np.asarray(fS(X[:, :C]))[:, C // 2:]                # student keys at positions 32..63
+LO, HI = 24, C - G                                       # query positions 24..55, drafts stay inside the window
+starts = np.random.default_rng(1).choice(len(te) - C - 2, 300, replace=False)
+X = np.stack([te[s:s + C + 1] for s in starts])          # C model inputs + 1 extra token for the last check
+PT = np.asarray(fT(X[:, :C]))                            # (B, C, V): p_T(next | prefix up to t)
+HS = np.asarray(fS(X[:, :C]))[:, LO:HI]
 Str = np.load(f"{R}/S_train.npz"); idx = build_index(Str["keys"])
 Q = HS.reshape(-1, HS.shape[-1]).astype(np.float32)
 Dk, Ik = idx.search(Q, 1)
@@ -36,11 +37,11 @@ train_pos = Str["pos"][Ik[:, 0]]                         # neighbour's train pos
 B, P = len(X), HS.shape[1]
 E = np.zeros(B * P); dist = Dk[:, 0]
 for q in range(B * P):
-    b, t = divmod(q, P); t += C // 2                      # absolute position in window
+    b, t = divmod(q, P); t += LO                          # absolute position in window
     draft = tr[train_pos[q] + 1: train_pos[q] + 1 + G]
     run, prod = 0.0, 1.0
     for i, d in enumerate(draft):
-        if t + i >= C + G - 1:
+        if t + i >= C:
             break
         prod *= PT[b, t + i, d]; run += prod
         if d != X[b, t + i + 1]:
