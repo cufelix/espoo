@@ -1,0 +1,3715 @@
+{
+"2406.19146": {
+"id": "2406.19146",
+"title": "Resolving Discrepancies in Compute-Optimal Scaling of Language Models",
+"desc": "Discrepancies between scaling laws for optimal model size are attributed to computational cost, warmup duration, and optimizer tuning, leading to alignment with Chinchilla scaling law without learning rate decay as a critical factor.",
+"date": "2024-06-27",
+"topics": [
+"scaling laws"
+]
+},
+"2406.07249": {
+"id": "2406.07249",
+"title": "Are Protein Language Models Compute Optimal?",
+"desc": "Research on scaling laws for protein language models shows sublinear scaling with compute budgets and identifies performance plateaus, suggesting potential for more efficient and larger models.",
+"date": "2024-06-11",
+"topics": [
+"scaling laws"
+]
+},
+"2410.03083": {
+"id": "2410.03083",
+"title": "Scaling Parameter-Constrained Language Models with Quality Data",
+"desc": "Effective training tokens, combining text diversity and syntheticity, are crucial for the performance of parameter-constrained language models, and this is quantified through extended scaling laws.",
+"date": "2024-10-04",
+"topics": [
+"scaling laws"
+]
+},
+"2305.18619": {
+"id": "2305.18619",
+"title": "Likelihood-Based Diffusion Language Models",
+"desc": "Improvements in algorithmic training and scaling laws enable a diffusion-based language model, Plaid 1B, to outperform GPT-2 124M in likelihood on benchmark datasets and generate fluent samples.",
+"date": "2023-05-30",
+"topics": [
+"scaling laws"
+]
+},
+"2608.17286": {
+"id": "2608.17286",
+"title": "Abra: Scaling Diffusion Image Training",
+"desc": "Scaling laws for text-to-image diffusion models reveal predictable compute-optimal training requiring far more data per parameter than language models, with robust overtraining behavior and universal curve shapes.",
+"date": "2026-08-18",
+"topics": [
+"scaling laws"
+]
+},
+"2001.08361": {
+"id": "2001.08361",
+"title": "Scaling Laws for Neural Language Models",
+"desc": "Empirical scaling laws reveal power-law relationships between language model performance, model size, dataset size, and computational resources, enabling optimal compute allocation.",
+"date": "2020-01-23",
+"topics": [
+"scaling laws"
+]
+},
+"2501.12370": {
+"id": "2501.12370",
+"title": "Parameters vs FLOPs: Scaling Laws for Optimal Sparsity for Mixture-of-Experts Language Models",
+"desc": "Research on sparse Mixture-of-Experts (MoEs) shows an optimal level of sparsity improves both training efficiency and model performance, providing insights for designing efficient architectures.",
+"date": "2025-01-21",
+"topics": [
+"scaling laws",
+"mixture of experts"
+]
+},
+"2501.18914": {
+"id": "2501.18914",
+"title": "Scaling Laws for Differentially Private Language Models",
+"desc": "Scaling laws for differentially private large language model training are established to understand compute-privacy-utility tradeoffs and optimal configurations.",
+"date": "2025-01-31",
+"topics": [
+"scaling laws"
+]
+},
+"2507.17702": {
+"id": "2507.17702",
+"title": "Towards Greater Leverage: Scaling Laws for Efficient Mixture-of-Experts Language Models",
+"desc": "Efficiency Leverage (EL) quantifies the computational advantage of Mixture-of-Experts (MoE) models over dense models, revealing scaling laws that predict EL based on expert activation ratio, compute budget, and granularity.",
+"date": "2025-07-23",
+"topics": [
+"scaling laws"
+]
+},
+"2604.24416": {
+"id": "2604.24416",
+"title": "Scaling Properties of Continuous Diffusion Spoken Language Models",
+"desc": "Continuous diffusion speech language models demonstrate scaling properties similar to autoregressive models while offering potential for faster inference, capable of generating multi-speaker, multilingual speech with emotional and prosodic\u2026",
+"date": "2026-04-27",
+"topics": [
+"scaling laws"
+]
+},
+"2401.00448": {
+"id": "2401.00448",
+"title": "Beyond Chinchilla-Optimal: Accounting for Inference in Language Model Scaling Laws",
+"desc": "The modified Chinchilla scaling laws incorporate inference cost, suggesting that models for large inference demand should be smaller and trained longer than originally proposed.",
+"date": "2023-12-31",
+"topics": [
+"scaling laws"
+]
+},
+"2404.19484": {
+"id": "2404.19484",
+"title": "More Compute Is What You Need",
+"desc": "A new scaling law for transformer-based models hypothesizes that performance depends on total compute rather than specific allocations to model size or dataset size, influencing training strategies.",
+"date": "2024-04-30",
+"topics": [
+"scaling laws"
+]
+},
+"2305.16264": {
+"id": "2305.16264",
+"title": "Scaling Data-Constrained Language Models",
+"desc": "Experiments in data-constrained environments show that beyond a certain point, additional data repetition and compute resources contribute negligibly to loss reduction in language models.",
+"date": "2023-05-25",
+"topics": [
+"data constraints"
+]
+},
+"2506.04689": {
+"id": "2506.04689",
+"title": "Recycling the Web: A Method to Enhance Pre-training Data Quality and Quantity for Language Models",
+"desc": "Mixing high-quality and rewritten low-quality web data improves the performance of large language models in various tasks, surpassing models trained on twice the amount of filtered web data.",
+"date": "2025-06-05",
+"topics": [
+"data constraints"
+]
+},
+"2606.01155": {
+"id": "2606.01155",
+"title": "When Data Is Scarce: Scaling Sparse Language Models with Repeated Training",
+"desc": "Sparse training in data-constrained regimes shows that sparsity can improve scaling trade-offs by delaying data saturation and optimizing resource allocation, with moderate sparsity (~50%) being optimal for loss and higher sparsity for com\u2026",
+"date": "2026-05-31",
+"topics": [
+"data constraints"
+]
+},
+"2509.25300": {
+"id": "2509.25300",
+"title": "Scaling Behaviors of LLM Reinforcement Learning Post-Training: An Empirical Study in Mathematical Reasoning",
+"desc": "Research investigates scaling behaviors of large language models under reinforcement learning, showing larger models are more efficient but may saturate in learning efficiency, with data reuse being key in data-constrained settings.",
+"date": "2025-09-29",
+"topics": [
+"data constraints"
+]
+},
+"2608.23392": {
+"id": "2608.23392",
+"title": "Towards a Densing Law for User Representation Learning at Billion-Scale Capacity",
+"desc": "The study proposes a scaling law linking data size to tokenization capacity for user behavior modeling and introduces an adaptive tokenization method to improve efficiency.",
+"date": "2026-08-24",
+"topics": [
+"data constraints"
+]
+},
+"2605.01640": {
+"id": "2605.01640",
+"title": "Prescriptive Scaling Laws for Data Constrained Training",
+"desc": "A modified scaling law accounts for data repetition effects and provides compute-optimal training strategies for data-constrained scenarios.",
+"date": "2026-05-02",
+"topics": [
+"data constraints"
+]
+},
+"2312.13427": {
+"id": "2312.13427",
+"title": "R2D2: Reducing Redundancy and Duplication in Data Lakes",
+"desc": "A hierarchical pipeline, R2D2, is proposed to efficiently identify and reduce redundancy in enterprise data lakes by focusing on dataset containment, achieving high accuracy and fast processing times.",
+"date": "2023-12-20",
+"topics": [
+"data constraints"
+]
+},
+"2407.12854": {
+"id": "2407.12854",
+"title": "Scaling Retrieval-Based Language Models with a Trillion-Token Datastore",
+"desc": "Increasing the size of the datastore for retrieval-based language models improves performance without obvious saturation, suggesting datastore size is a key factor in model efficiency and performance.",
+"date": "2024-07-09",
+"topics": [
+"data constraints",
+"datastore scaling"
+]
+},
+"2605.11111": {
+"id": "2605.11111",
+"title": "ShardTensor: Domain Parallelism for Scientific Machine Learning",
+"desc": "ShardTensor enables scalable scientific machine learning by decoupling spatial data dimensions from hardware constraints through domain parallelism, improving training and inference efficiency on extreme-resolution datasets.",
+"date": "2026-05-11",
+"topics": [
+"data constraints"
+]
+},
+"2307.02460": {
+"id": "2307.02460",
+"title": "Performance Scaling via Optimal Transport: Enabling Data Selection from Partially Revealed Sources",
+"desc": "A framework named Projektor uses Optimal Transport distance and parameter-free mapping to predict model performance and select data sources efficiently based on partial samples.",
+"date": "2023-07-05",
+"topics": [
+"data constraints"
+]
+},
+"2404.07177": {
+"id": "2404.07177",
+"title": "Scaling Laws for Data Filtering -- Data Curation cannot be Compute Agnostic",
+"desc": "Neural scaling laws optimize data curation for vision-language models by accounting for quality, quantity, and computational constraints, enabling top performance across compute budgets.",
+"date": "2024-04-10",
+"topics": [
+"data constraints"
+]
+},
+"2607.25271": {
+"id": "2607.25271",
+"title": "Bridging Compute- and Data-Optimal Pretraining",
+"desc": "Compute-Data scaling laws unify compute-optimal and data-optimal scaling by modeling token effectiveness of derived data, revealing diminishing returns and suboptimal classical allocations across practical regimes.",
+"date": "2026-07-28",
+"topics": [
+"data constraints"
+]
+},
+"2311.12289": {
+"id": "2311.12289",
+"title": "ATLANTIC: Structure-Aware Retrieval-Augmented Language Model for Interdisciplinary Science",
+"desc": "A structure-aware retrieval augmented language model improves the coherence and faithfulness of retrieved passages by incorporating document structure during retrieval and pretraining.",
+"date": "2023-11-21",
+"topics": [
+"retrieval-augmented pretraining"
+]
+},
+"2604.00715": {
+"id": "2604.00715",
+"title": "To Memorize or to Retrieve: Scaling Laws for RAG-Considerate Pretraining",
+"desc": "Research investigates the balance between pretraining and retrieval in language models, establishing a scaling framework that optimizes performance based on model size, pretraining tokens, and retrieval corpus size.",
+"date": "2026-04-01",
+"topics": [
+"retrieval-augmented pretraining",
+"datastore scaling"
+]
+},
+"2309.02591": {
+"id": "2309.02591",
+"title": "Scaling Autoregressive Multi-Modal Models: Pretraining and Instruction Tuning",
+"desc": "CM3Leon, a multi-modal language model, achieves state-of-the-art text-to-image generation with efficient training and advanced control over image generation tasks.",
+"date": "2023-09-05",
+"topics": [
+"retrieval-augmented pretraining"
+]
+},
+"2308.07922": {
+"id": "2308.07922",
+"title": "RAVEN: In-Context Learning with Retrieval Augmented Encoder-Decoder Language Models",
+"desc": "RAVEN enhances in-context learning in retrieval-augmented encoder-decoder models by combining masked and prefix language modeling, achieving superior performance with fewer parameters.",
+"date": "2023-08-15",
+"topics": [
+"retrieval-augmented pretraining"
+]
+},
+"2309.08051": {
+"id": "2309.08051",
+"title": "Retrieval-Augmented Text-to-Audio Generation",
+"desc": "A retrieval-augmented approach enhances text-to-audio generation by addressing class imbalance and improving generation performance for rare audio classes.",
+"date": "2023-09-14",
+"topics": [
+"retrieval-augmented pretraining"
+]
+},
+"2002.08909": {
+"id": "2002.08909",
+"title": "REALM: Retrieval-Augmented Language Model Pre-Training",
+"desc": "A latent knowledge retriever is integrated into language model pre-training to enhance question answering by storing and retrieving knowledge from a large corpus, outperforming models with implicit knowledge storage.",
+"date": "2020-02-10",
+"topics": [
+"retrieval-augmented pretraining"
+]
+},
+"2212.05221": {
+"id": "2212.05221",
+"title": "REVEAL: Retrieval-Augmented Visual-Language Pre-Training with Multi-Source Multimodal Knowledge Memory",
+"desc": "An end-to-end Retrieval-Augmented Visual Language Model (REVEAL) encodes multimodal world knowledge, retrieves relevant information, and generates answers to knowledge-intensive queries, achieving state-of-the-art results in visual questio\u2026",
+"date": "2022-12-10",
+"topics": [
+"retrieval-augmented pretraining"
+]
+},
+"2501.04858": {
+"id": "2501.04858",
+"title": "Advancing Retrieval-Augmented Generation for Persian: Development of Language Models, Comprehensive Benchmarks, and Best Practices for Optimization",
+"desc": "Customized embeddings and retrieval-generation settings improve Retrieval-Augmented Generation (RAG) systems for low-resource languages like Persian, enhancing contextual relevance and retrieval accuracy.",
+"date": "2025-01-08",
+"topics": [
+"retrieval-augmented pretraining"
+]
+},
+"2310.07713": {
+"id": "2310.07713",
+"title": "InstructRetro: Instruction Tuning post Retrieval-Augmented Pretraining",
+"desc": "Expanding the size of a retrieval-augmented LLM significantly improves performance on zero-shot question answering tasks through better perplexity and context integration.",
+"date": "2023-10-11",
+"topics": [
+"retrieval-augmented pretraining"
+]
+},
+"2507.12425": {
+"id": "2507.12425",
+"title": "Advancing Retrieval-Augmented Generation for Structured Enterprise and Internal Data",
+"desc": "An advanced Retrieval-Augmented Generation framework using hybrid retrieval strategies, metadata-aware filtering, and semantic chunking improves accuracy and relevance in enterprise data processing.",
+"date": "2025-07-16",
+"topics": [
+"retrieval-augmented pretraining"
+]
+},
+"2401.12425": {
+"id": "2401.12425",
+"title": "The Neglected Tails of Vision-Language Models",
+"desc": "REtrieval-Augmented Learning (REAL) improves zero-shot performance of vision-language models by using synonyms and a linear classifier on retrieved pretraining data, outperforming existing methods with significantly reduced resource usage.",
+"date": "2024-01-23",
+"topics": [
+"retrieval-augmented pretraining"
+]
+},
+"2409.08788": {
+"id": "2409.08788",
+"title": "Electrocardiogram Report Generation and Question Answering via Retrieval-Augmented Self-Supervised Modeling",
+"desc": "ECG_ReGen uses a self-supervised encoder and LLMs to generate comprehensive ECG reports and answer queries efficiently, improving clinical decision-making.",
+"date": "2024-09-13",
+"topics": [
+"retrieval-augmented pretraining"
+]
+},
+"2301.02828": {
+"id": "2301.02828",
+"title": "Why do Nearest Neighbor Language Models Work?",
+"desc": "k-nearest neighbor language models (kNN-LMs) improve performance over standard LMs through different input representations, approximate kNN search, and appropriate softmax temperature settings.",
+"date": "2023-01-07",
+"topics": [
+"kNN-LM",
+"adaptive retrieval"
+]
+},
+"2311.09615": {
+"id": "2311.09615",
+"title": "On Retrieval Augmentation and the Limitations of Language Model Training",
+"desc": "Incorporating kNN retrieval into language models improves performance by addressing limitations in memorization and generalization, particularly in the final MLP layer.",
+"date": "2023-11-16",
+"topics": [
+"kNN-LM"
+]
+},
+"2310.14644": {
+"id": "2310.14644",
+"title": "Multilingual k-Nearest-Neighbor Machine Translation",
+"desc": "Multilingual datastores enhance translation quality and speed by leveraging linguistic similarities across languages.",
+"date": "2023-10-23",
+"topics": [
+"kNN-LM",
+"datastore efficiency"
+]
+},
+"2305.13648": {
+"id": "2305.13648",
+"title": "Non-parametric, Nearest-neighbor-assisted Fine-tuning for Neural Machine Translation",
+"desc": "Integrating non-parametric k-nearest-neighbor statistics enhances machine translation models during fine-tuning, improving BLEU scores and fluency.",
+"date": "2023-05-23",
+"topics": [
+"kNN-LM"
+]
+},
+"2302.12188": {
+"id": "2302.12188",
+"title": "Simple and Scalable Nearest Neighbor Machine Translation",
+"desc": "A scalable nearest neighbor machine translation framework enhances decoding and storage efficiency of kNN-based models without sacrificing translation performance.",
+"date": "2023-02-23",
+"topics": [
+"kNN-LM"
+]
+},
+"2405.19325": {
+"id": "2405.19325",
+"title": "Nearest Neighbor Speculative Decoding for LLM Generation and Attribution",
+"desc": "Nearest Neighbor Speculative Decoding enhances language model generation quality, attribution, and speed through token-level retrieval and speculative decoding.",
+"date": "2024-05-29",
+"topics": [
+"kNN-LM"
+]
+},
+"2510.22317": {
+"id": "2510.22317",
+"title": "Memory-based Language Models: An Efficient, Explainable, and Eco-friendly Approach to Large Language Modeling",
+"desc": "Memory-based language modeling provides an efficient, eco-friendly alternative to deep neural networks, offering scalable performance and strong memorization with low ecological impact.",
+"date": "2025-10-25",
+"topics": [
+"kNN-LM"
+]
+},
+"1412.1454": {
+"id": "1412.1454",
+"title": "Skip-gram Language Modeling Using Sparse Non-negative Matrix Probability Estimation",
+"desc": "Sparse Non-negative Matrix (SNM) estimation for language models achieves competitive performance with RNNs and Kneser-Ney models while maintaining computational efficiency and scalability.",
+"date": "2014-12-03",
+"topics": [
+"kNN-LM"
+]
+},
+"2412.15252": {
+"id": "2412.15252",
+"title": "NER- RoBERTa: Fine-Tuning RoBERTa for Named Entity Recognition (NER) within low-resource languages",
+"desc": "A fine-tuned RoBERTa model with SentencePiece tokenization improves Kurdish Named Entity Recognition performance by 12.8% compared to traditional models.",
+"date": "2024-12-15",
+"topics": [
+"kNN-LM"
+]
+},
+"2305.12517": {
+"id": "2305.12517",
+"title": "Retrieving Texts based on Abstract Descriptions",
+"desc": "Proposed model improves sentence retrieval based on abstract descriptions by enhancing embedding similarity using pairs generated from LLMs.",
+"date": "2023-05-21",
+"topics": [
+"kNN-LM",
+"retrieval knowledge transfer"
+]
+},
+"2610.29520": {
+"id": "2610.29520",
+"title": "Beyond the Vote: When Do LLMs Add Value to Retrieval-Based Tabular Classification?",
+"desc": "Retrieval-based in-context learning (ICL) enables large language models (LLMs) to predict tabular labels from similar examples, but it remains unclear whether LLM inference improves on direct voting over those same examples. We address thi\u2026",
+"date": "2026-10-21",
+"topics": [
+"kNN-LM"
+]
+},
+"2305.18466": {
+"id": "2305.18466",
+"title": "Test-Time Training on Nearest Neighbors for Large Language Models",
+"desc": "Test-time training with nearest neighbors improves language model performance, significantly narrowing the gap between smaller and larger models.",
+"date": "2023-05-29",
+"topics": [
+"kNN-LM"
+]
+},
+"2606.28344": {
+"id": "2606.28344",
+"title": "PIXELRAG: Web Screenshots Beat Text for Retrieval-Augmented Generation",
+"desc": "PixelRAG enables web retrieval-augmented generation by operating directly on website screenshots in pixel space, outperforming text-based methods while reducing token costs through image compression.",
+"date": "2026-06-01",
+"topics": [
+"datastore scaling"
+]
+},
+"2411.15766": {
+"id": "2411.15766",
+"title": "ScalingNote: Scaling up Retrievers with Large Language Models for Real-World Dense Retrieval",
+"desc": "ScalingNote enhances dense retrieval by leveraging LLMs through a two-stage method that reduces online query latency while improving relevance.",
+"date": "2024-11-24",
+"topics": [
+"datastore scaling"
+]
+},
+"2312.05417": {
+"id": "2312.05417",
+"title": "ESPN: Memory-Efficient Multi-Vector Information Retrieval",
+"desc": "ESPN offloads embedding tables to SSDs to reduce memory requirements in multi-vector IR models, improving scalability and query latency.",
+"date": "2023-12-09",
+"topics": [
+"datastore scaling"
+]
+},
+"2305.11841": {
+"id": "2305.11841",
+"title": "How Does Generative Retrieval Scale to Millions of Passages?",
+"desc": "Generative retrieval scales to large corpora with significant findings on the importance of synthetic queries and the limits of parameter scaling.",
+"date": "2023-05-19",
+"topics": [
+"datastore scaling"
+]
+},
+"2206.02873": {
+"id": "2206.02873",
+"title": "No Parameter Left Behind: How Distillation and Model Size Affect Zero-Shot Retrieval",
+"desc": "In retrieval tasks, model size and reranking significantly impact generalization and zero-shot performance.",
+"date": "2022-06-06",
+"topics": [
+"datastore scaling"
+]
+},
+"2603.04816": {
+"id": "2603.04816",
+"title": "Scaling Laws for Cross-Encoder Reranking",
+"desc": "Scaling laws for cross-encoder rerankers show predictable power law relationships across different objectives and model sizes, enabling accurate forecasting of larger models and providing compute allocation guidelines.",
+"date": "2026-04-18",
+"topics": [
+"datastore scaling"
+]
+},
+"2507.01297": {
+"id": "2507.01297",
+"title": "Frustratingly Simple Retrieval Improves Challenging, Reasoning-Intensive Benchmarks",
+"desc": "A compact, high-quality web-scale datastore improves retrieval-augmented generation across various reasoning-intensive benchmarks, achieving significant accuracy gains compared to existing systems.",
+"date": "2025-07-02",
+"topics": [
+"datastore scaling"
+]
+},
+"2509.07253": {
+"id": "2509.07253",
+"title": "Benchmarking Information Retrieval Models on Complex Retrieval Tasks",
+"desc": "A benchmark of complex retrieval tasks reveals that even state-of-the-art models struggle with high-quality retrieval, and LLM-based query expansion does not consistently improve performance.",
+"date": "2025-09-08",
+"topics": [
+"datastore scaling"
+]
+},
+"2510.02657": {
+"id": "2510.02657",
+"title": "Less LLM, More Documents: Searching for Improved RAG",
+"desc": "Expanding the retriever's corpus in Retrieval-Augmented Generation (RAG) can improve performance and reduce reliance on large language models.",
+"date": "2025-10-03",
+"topics": [
+"datastore scaling"
+]
+},
+"2606.22778": {
+"id": "2606.22778",
+"title": "HAKARI-Bench: A Lightweight Benchmark for Comparing Retrieval Architectures and Efficiency Settings under Unified Conditions",
+"desc": "HAKARI-Bench provides a lightweight benchmark for comparing retrieval methods across multiple configurations and languages, enabling efficient model selection and performance analysis.",
+"date": "2026-06-22",
+"topics": [
+"datastore scaling"
+]
+},
+"2411.12992": {
+"id": "2411.12992",
+"title": "MemoryFormer: Minimize Transformer Computation by Removing Fully-Connected Layers",
+"desc": "MemoryFormer reduces computational complexity in transformer models by using in-memory lookup tables and hash algorithms instead of linear projections.",
+"date": "2024-11-20",
+"topics": [
+"memory layers"
+]
+},
+"2412.09764": {
+"id": "2412.09764",
+"title": "Memory Layers at Scale",
+"desc": "Memory layers enhance language models with trainable key-value storage, outperforming dense models and mixture-of-experts in factual tasks, even at larger scale.",
+"date": "2024-12-12",
+"topics": [
+"memory layers",
+"fact storage in FFN"
+]
+},
+"2502.06049": {
+"id": "2502.06049",
+"title": "LM2: Large Memory Models",
+"desc": "The Large Memory Model (LM2), a decoder-only Transformer with an auxiliary memory module, improves multi-step reasoning, relational argumentation, and large-context processing while preserving Transformer capabilities.",
+"date": "2025-02-09",
+"topics": [
+"memory layers"
+]
+},
+"2604.22782": {
+"id": "2604.22782",
+"title": "Stochastic KV Routing: Enabling Adaptive Depth-Wise Cache Sharing",
+"desc": "Transformer language models can reduce KV cache memory requirements through random cross-layer attention during training, enabling efficient depth-wise cache sharing without performance loss.",
+"date": "2026-04-03",
+"topics": [
+"memory layers"
+]
+},
+"1907.05242": {
+"id": "1907.05242",
+"title": "Large Memory Layers with Product Keys",
+"desc": "A structured memory with product keys is integrated into neural networks to enhance capacity and efficiency for large-scale language modeling tasks.",
+"date": "2019-07-10",
+"topics": [
+"memory layers"
+]
+},
+"2405.10637": {
+"id": "2405.10637",
+"title": "Layer-Condensed KV Cache for Efficient Inference of Large Language Models",
+"desc": "A method reducing key-value cache memory in transformer architectures improves inference throughput without sacrificing performance in language modeling tasks.",
+"date": "2024-05-17",
+"topics": [
+"memory layers"
+]
+},
+"2604.21215": {
+"id": "2604.21215",
+"title": "The Recurrent Transformer: Greater Effective Depth and Efficient Decoding",
+"desc": "Recurrent Transformers combine parallel processing advantages of Transformers with unbounded temporal depth of recurrent models through modified attention mechanisms, achieving improved training efficiency and reduced memory requirements.",
+"date": "2026-04-23",
+"topics": [
+"memory layers"
+]
+},
+"2406.09297": {
+"id": "2406.09297",
+"title": "MLKV: Multi-Layer Key-Value Heads for Memory Efficient Transformer Decoding",
+"desc": "Multi-Layer Key-Value sharing in transformers reduces memory usage without significantly affecting performance, making large-scale deployment feasible.",
+"date": "2024-06-13",
+"topics": [
+"memory layers"
+]
+},
+"2505.23735": {
+"id": "2505.23735",
+"title": "ATLAS: Learning to Optimally Memorize the Context at Test Time",
+"desc": "A new long-term memory module called ATLAS addresses limitations of Transformers in handling long contexts by optimizing memory based on current and past inputs, leading to improved performance in long-context understanding tasks.",
+"date": "2025-05-29",
+"topics": [
+"memory layers"
+]
+},
+"2207.06881": {
+"id": "2207.06881",
+"title": "Recurrent Memory Transformer",
+"desc": "A Recurrent Memory Transformer improves on Transformer-XL by adding memory tokens to store and process local and global information, enhancing performance in tasks requiring long-term dependencies.",
+"date": "2022-07-14",
+"topics": [
+"memory layers"
+]
+},
+"2403.09054": {
+"id": "2403.09054",
+"title": "Keyformer: KV Cache Reduction through Key Tokens Selection for Efficient Generative Inference",
+"desc": "Keyformer, a novel inference-time approach, optimizes memory usage and improves performance by focusing on key tokens in the KV cache for large language models.",
+"date": "2024-03-14",
+"topics": [
+"memory layers"
+]
+},
+"2302.06461": {
+"id": "2302.06461",
+"title": "A Study on ReLU and Softmax in Transformer",
+"desc": "The paper demonstrates that ReLU activation outperforms Softmax in Transformer architecture, especially in long sequence tasks, and proposes a ReLU-based Transformer (ReLUFormer) that enhances performance by utilizing ReLU activation in se\u2026",
+"date": "2023-02-13",
+"topics": [
+"memory layers"
+]
+},
+"2610.18857": {
+"id": "2610.18857",
+"title": "PixelMoE: Scaling Pixel-Space Diffusion with LLM-Style Mixture-of-Experts",
+"desc": "PixelMoE applies sparse mixture-of-experts scaling and hierarchical flow matching to pixel-space diffusion, achieving state-of-the-art image generation with reduced active computation.",
+"date": "2026-10-13",
+"topics": [
+"mixture of experts"
+]
+},
+"2510.14853": {
+"id": "2510.14853",
+"title": "Rewiring Experts on the Fly:Continuous Rerouting for Better Online Adaptation in Mixture-of-Expert models",
+"desc": "A data-free, online test-time framework optimizes MoE routing decisions during text generation using self-supervision, improving performance and robustness without external data.",
+"date": "2025-10-16",
+"topics": [
+"mixture of experts"
+]
+},
+"2202.08906": {
+"id": "2202.08906",
+"title": "ST-MoE: Designing Stable and Transferable Sparse Expert Models",
+"desc": "A sparse transformer model, ST-MoE-32B, achieves state-of-the-art performance across various natural language tasks with computational efficiency.",
+"date": "2022-02-17",
+"topics": [
+"mixture of experts"
+]
+},
+"2106.05974": {
+"id": "2106.05974",
+"title": "Scaling Vision with Sparse Mixture of Experts",
+"desc": "Vision MoE, a sparse version of Vision Transformer, achieves competitive performance with compute efficiency and scalable vision models up to 15B parameters.",
+"date": "2021-06-10",
+"topics": [
+"mixture of experts"
+]
+},
+"2412.07067": {
+"id": "2412.07067",
+"title": "MoE-CAP: Benchmarking Cost, Accuracy and Performance of Sparse Mixture-of-Experts Systems",
+"desc": "MoE-CAP benchmark addresses the cost, accuracy, and performance trade-offs in sparse Mixture-of-Experts architectures for scaling Large Language Models.",
+"date": "2024-12-10",
+"topics": [
+"mixture of experts"
+]
+},
+"2303.07226": {
+"id": "2303.07226",
+"title": "Scaling Vision-Language Models with Sparse Mixture of Experts",
+"desc": "Mixture-of-experts techniques improve vision-language model scaling by boosting benchmark performance and training stability at comparable compute cost.",
+"date": "2023-03-13",
+"topics": [
+"mixture of experts"
+]
+},
+"2309.04354": {
+"id": "2309.04354",
+"title": "Mobile V-MoEs: Scaling Down Vision Transformers via Sparse Mixture-of-Experts",
+"desc": "Sparse Mobile Vision MoEs are applied to reduce resource requirements in Vision Transformers, achieving improved performance and efficiency compared to dense models.",
+"date": "2023-09-08",
+"topics": [
+"mixture of experts"
+]
+},
+"2511.04805": {
+"id": "2511.04805",
+"title": "PuzzleMoE: Efficient Compression of Large Mixture-of-Experts Models via Sparse Expert Merging and Bit-packed inference",
+"desc": "PuzzleMoE is a training-free method that compresses Mixture-of-Experts models by merging redundant expert weights and using bit-packed encoding, maintaining accuracy at up to 50% compression with faster inference.",
+"date": "2026-07-06",
+"topics": [
+"mixture of experts"
+]
+},
+"2502.00965": {
+"id": "2502.00965",
+"title": "CLIP-UP: A Simple and Efficient Mixture-of-Experts CLIP Training Recipe with Sparse Upcycling",
+"desc": "CLIP-Upcycling converts a pre-trained dense CLIP model into a sparse MoE architecture, significantly reducing training complexity and cost while improving performance.",
+"date": "2025-02-03",
+"topics": [
+"mixture of experts"
+]
+},
+"2605.12476": {
+"id": "2605.12476",
+"title": "Routers Learn the Geometry of Their Experts: Geometric Coupling in Sparse Mixture-of-Experts",
+"desc": "Sparse Mixture-of-Experts models exhibit geometric coupling between routers and experts, where matching directions accumulate similar routed token histories, and auxiliary load-balancing losses disrupt this structure, while a parameter-fre\u2026",
+"date": "2026-05-12",
+"topics": [
+"mixture of experts"
+]
+},
+"2411.19402": {
+"id": "2411.19402",
+"title": "On the effectiveness of discrete representations in sparse mixture of experts",
+"desc": "Vector-Quantized Mixture of Experts (VQMoE) improves robustness in sparse mixture of experts models by using vector quantization for expert assignment, addressing routing inconsistencies and representation collapse.",
+"date": "2024-11-28",
+"topics": [
+"mixture of experts"
+]
+},
+"2211.17192": {
+"id": "2211.17192",
+"title": "Fast Inference from Transformers via Speculative Decoding",
+"desc": "Speculative decoding accelerates autoregressive model inference by parallelizing token generation without altering outputs or requiring retraining.",
+"date": "2022-11-30",
+"topics": [
+"speculative decoding"
+]
+},
+"2310.08461": {
+"id": "2310.08461",
+"title": "DistillSpec: Improving Speculative Decoding via Knowledge Distillation",
+"desc": "DistillSpec enhances speculative decoding by using knowledge distillation to align a smaller draft model with a larger target model, achieving significant speedups in text generation with minimal performance loss.",
+"date": "2023-10-12",
+"topics": [
+"speculative decoding"
+]
+},
+"2311.08981": {
+"id": "2311.08981",
+"title": "Speculative Contrastive Decoding",
+"desc": "Speculative Contrastive Decoding enhances the quality of large language model inference while\u52a0\u5febing processing and reducing computational resources by leveraging the contrast between expert and amateur models.",
+"date": "2023-11-15",
+"topics": [
+"speculative decoding"
+]
+},
+"2310.07177": {
+"id": "2310.07177",
+"title": "Online Speculative Decoding",
+"desc": "Online speculative decoding continuously retrains draft models on user query data to improve predictive accuracy and reduce latency in large language model inference.",
+"date": "2023-10-11",
+"topics": [
+"speculative decoding"
+]
+},
+"2401.07851": {
+"id": "2401.07851",
+"title": "Unlocking Efficiency in Large Language Model Inference: A Comprehensive Survey of Speculative Decoding",
+"desc": "Speculative Decoding accelerates Large Language Model inference by drafting and verifying multiple tokens in parallel, differing from autoregressive decoding.",
+"date": "2024-01-15",
+"topics": [
+"speculative decoding"
+]
+},
+"2402.14160": {
+"id": "2402.14160",
+"title": "Recursive Speculative Decoding: Accelerating LLM Inference via Sampling Without Replacement",
+"desc": "Recursive Speculative Decoding improves upon tree-based speculative decoding by sampling draft tokens without replacement, enhancing diversity and efficiency in draft-token generation while maintaining performance under fixed computational\u2026",
+"date": "2024-02-21",
+"topics": [
+"speculative decoding"
+]
+},
+"2402.02082": {
+"id": "2402.02082",
+"title": "GliDe with a CaPE: A Low-Hassle Method to Accelerate Speculative Decoding",
+"desc": "GliDe and CaPE modifications to speculative decoding improve the decoding speed of frozen LLMs by reusing cached keys/values and expanding proposals based on confidence scores.",
+"date": "2024-02-03",
+"topics": [
+"speculative decoding"
+]
+},
+"2404.08856": {
+"id": "2404.08856",
+"title": "On Speculative Decoding for Multimodal Large Language Models",
+"desc": "Speculative decoding enhances the inference efficiency of Multimodal Large Language Models (MLLMs), specifically LLaVA 7B, by using a language-only draft model and a compact LLaVA model with an image adapter.",
+"date": "2024-04-13",
+"topics": [
+"speculative decoding",
+"memory bandwidth"
+]
+},
+"2404.18911": {
+"id": "2404.18911",
+"title": "Kangaroo: Lossless Self-Speculative Decoding via Double Early Exiting",
+"desc": "Kangaroo, a self-speculative decoding framework using a shallow sub-network as a self-draft model, accelerates large language model inference with improved token acceptance and reduced additional parameters.",
+"date": "2024-04-29",
+"topics": [
+"speculative decoding"
+]
+},
+"2302.07863": {
+"id": "2302.07863",
+"title": "Speculative Decoding with Big Little Decoder",
+"desc": "A framework called Big Little Decoder uses a small and large model to improve inference efficiency in text generation without significant quality loss.",
+"date": "2023-02-15",
+"topics": [
+"speculative decoding"
+]
+},
+"2405.04304": {
+"id": "2405.04304",
+"title": "Accelerating Speculative Decoding using Dynamic Speculation Length",
+"desc": "DISCO optimizes speculation length dynamically in speculative decoding, reducing inference latency while maintaining decoding quality.",
+"date": "2024-05-07",
+"topics": [
+"speculative decoding"
+]
+},
+"2405.20314": {
+"id": "2405.20314",
+"title": "S3D: A Simple and Cost-Effective Self-Speculative Decoding Scheme for Low-Memory GPUs",
+"desc": "S3D, a speculative decoding method using simultaneous multi-token decoding and mid-layer skipping, achieves top performance-memory ratios with minimal architecture changes and operates efficiently on quantized models.",
+"date": "2024-05-30",
+"topics": [
+"speculative decoding"
+]
+},
+"2508.16745": {
+"id": "2508.16745",
+"title": "Beyond Memorization: Extending Reasoning Depth with Recurrence, Memory and Test-Time Compute Scaling",
+"desc": "Models trained on random Boolean functions in a cellular automata framework show that increasing depth, recurrence, memory, and test-time compute scaling enhances multi-step reasoning capabilities.",
+"date": "2025-08-22",
+"topics": [
+"test-time compute"
+]
+},
+"2601.05593": {
+"id": "2601.05593",
+"title": "PaCoRe: Learning to Scale Test-Time Compute with Parallel Coordinated Reasoning",
+"desc": "Parallel Coordinated Reasoning enables large-scale test-time compute scaling beyond sequential reasoning limitations through parallel exploration and message-passing architecture.",
+"date": "2026-01-09",
+"topics": [
+"test-time compute"
+]
+},
+"2504.02890": {
+"id": "2504.02890",
+"title": "Scaling Test-time Compute for Low-resource Languages: Multilingual Reasoning in LLMs",
+"desc": "English-Pivoted CoT Training improves multilingual reasoning performance in low-resource languages by generating chain-of-thought in English and final responses in the target language.",
+"date": "2025-04-02",
+"topics": [
+"test-time compute"
+]
+},
+"2602.07845": {
+"id": "2602.07845",
+"title": "Recurrent-Depth VLA: Implicit Test-Time Compute Scaling of Vision-Language-Action Models via Latent Iterative Reasoning",
+"desc": "RD-VLA introduces a recurrent architecture for vision-language-action models that adapts computational depth through latent iterative refinement, achieving constant memory usage and improved task success rates.",
+"date": "2026-02-08",
+"topics": [
+"test-time compute"
+]
+},
+"2606.04678": {
+"id": "2606.04678",
+"title": "Test-Time Compute Scaling for ASR with Depth-Conditioned Looped Transformers",
+"desc": "LARM enables adaptive test-time computation in speech recognition by structuring recurrent Transformer blocks with checkpointing and depth conditioning for improved recognition accuracy.",
+"date": "2026-06-03",
+"topics": [
+"test-time compute"
+]
+},
+"2503.23803": {
+"id": "2503.23803",
+"title": "Thinking Longer, Not Larger: Enhancing Software Engineering Agents via Scaling Test-Time Compute",
+"desc": "A unified test-time compute scaling framework enhances code reasoning performance of open-source LLMs using internal and external strategies, surpassing larger models on issue resolution tasks.",
+"date": "2025-03-31",
+"topics": [
+"test-time compute"
+]
+},
+"2507.14417": {
+"id": "2507.14417",
+"title": "Inverse Scaling in Test-Time Compute",
+"desc": "Evaluation of Large Reasoning Models across different reasoning lengths reveals that increased test-time compute can lead to performance degradation and amplify problematic reasoning patterns.",
+"date": "2025-07-19",
+"topics": [
+"test-time compute"
+]
+},
+"2512.00466": {
+"id": "2512.00466",
+"title": "SCALE: Selective Resource Allocation for Overcoming Performance Bottlenecks in Mathematical Test-time Scaling",
+"desc": "SCALE selectively allocates computational resources for large language models based on sub-problem difficulty, improving performance and resource utilization.",
+"date": "2025-11-29",
+"topics": [
+"test-time compute"
+]
+},
+"2604.25098": {
+"id": "2604.25098",
+"title": "Doing More With Less: Revisiting the Effectiveness of LLM Pruning for Test-Time Scaling",
+"desc": "Unstructured pruning can enhance reasoning performance in large language models compared to structured pruning and full-weight models, challenging conventional assumptions about pruning's impact on test-time compute scaling.",
+"date": "2026-04-28",
+"topics": [
+"test-time compute"
+]
+},
+"2509.04475": {
+"id": "2509.04475",
+"title": "ParaThinker: Native Parallel Thinking as a New Paradigm to Scale LLM Test-time Compute",
+"desc": "ParaThinker, a framework for parallel thought generation, improves LLM reasoning accuracy by exploring multiple paths simultaneously, overcoming the limitations of sequential scaling.",
+"date": "2025-08-30",
+"topics": [
+"test-time compute"
+]
+},
+"2505.11140": {
+"id": "2505.11140",
+"title": "Scaling Reasoning can Improve Factuality in Large Language Models",
+"desc": "Enhancing factual accuracy in open-domain QA through reasoning trace distillation, knowledge graph integration, and test-time scaling improves smaller models' performance across various datasets.",
+"date": "2025-05-16",
+"topics": [
+"test-time compute"
+]
+},
+"2608.08020": {
+"id": "2608.08020",
+"title": "Thought-Level Beam Search for Reasoning",
+"desc": "Gambit improves reasoning model efficiency by using thought-level beam search to dynamically allocate compute to promising reasoning traces under fixed hardware budgets.",
+"date": "2026-08-11",
+"topics": [
+"test-time compute"
+]
+},
+"2306.08543": {
+"id": "2306.08543",
+"title": "Knowledge Distillation of Large Language Models",
+"desc": "MiniLLM distills knowledge from large generative language models to smaller models using reverse KLD for better precision, quality, and performance.",
+"date": "2023-06-14",
+"topics": [
+"distillation"
+]
+},
+"2402.13116": {
+"id": "2402.13116",
+"title": "A Survey on Knowledge Distillation of Large Language Models",
+"desc": "Knowledge distillation techniques enhance open-source Large Language Models by transferring capabilities from proprietary models, using data augmentation to improve performance and achieve deeper semantic insights.",
+"date": "2024-02-20",
+"topics": [
+"distillation"
+]
+},
+"2504.14772": {
+"id": "2504.14772",
+"title": "Knowledge Distillation and Dataset Distillation of Large Language Models: Emerging Trends, Challenges, and Future Directions",
+"desc": "The survey evaluates Knowledge Distillation and Dataset Distillation as methods to compress Large Language Models while maintaining their reasoning capabilities and linguistic diversity, offering insights into their integration for more ef\u2026",
+"date": "2025-04-20",
+"topics": [
+"distillation"
+]
+},
+"2509.14526": {
+"id": "2509.14526",
+"title": "Delta Knowledge Distillation for Large Language Models",
+"desc": "Delta Knowledge Distillation improves student model performance by preserving the distributional shift introduced during the teacher's supervised fine-tuning.",
+"date": "2025-09-18",
+"topics": [
+"distillation"
+]
+},
+"2407.01885": {
+"id": "2407.01885",
+"title": "Survey on Knowledge Distillation for Large Language Models: Methods, Evaluation, and Application",
+"desc": "A survey of knowledge distillation techniques for compressing large language models, distinguishing between white-box and black-box methods, evaluating their performance and applications.",
+"date": "2024-07-02",
+"topics": [
+"distillation"
+]
+},
+"2411.08028": {
+"id": "2411.08028",
+"title": "Learning with Less: Knowledge Distillation from Large Language Models via Unlabeled Data",
+"desc": "LLKD, an adaptive sample selection method, enhances knowledge distillation from large language models to smaller models by focusing on high-confidence and challenging samples, improving performance and data efficiency.",
+"date": "2024-11-12",
+"topics": [
+"distillation"
+]
+},
+"2505.06267": {
+"id": "2505.06267",
+"title": "AKD : Adversarial Knowledge Distillation For Large Language Models Alignment on Coding tasks",
+"desc": "Adversarial Knowledge Distillation enhances the robustness and efficiency of Code-LLMs by using synthetic datasets to distill larger models into smaller, more reliable ones.",
+"date": "2025-05-05",
+"topics": [
+"distillation"
+]
+},
+"2403.13250": {
+"id": "2403.13250",
+"title": "Facilitating Pornographic Text Detection for Open-Domain Dialogue Systems via Knowledge Distillation of Large Language Models",
+"desc": "A dialogue monitoring dataset named CensorChat uses knowledge distillation from large language models to detect pornographic content in human-machine interactions.",
+"date": "2024-03-20",
+"topics": [
+"distillation"
+]
+},
+"2406.19774": {
+"id": "2406.19774",
+"title": "Direct Preference Knowledge Distillation for Large Language Models",
+"desc": "Direct Preference Knowledge Distillation (DPKD) improves the knowledge transfer from large language model teachers to students by incorporating an implicit reward function and distribution divergence.",
+"date": "2024-06-28",
+"topics": [
+"distillation"
+]
+},
+"2411.06839": {
+"id": "2411.06839",
+"title": "LLM-Neo: Parameter Efficient Knowledge Distillation for Large Language Models",
+"desc": "LLM-Neo framework combines knowledge distillation and low-rank adaptation to efficiently transfer knowledge from large language models to compact students, surpassing various baselines in model compression.",
+"date": "2024-11-11",
+"topics": [
+"distillation"
+]
+},
+"2510.06101": {
+"id": "2510.06101",
+"title": "The Valley of Code Reasoning: Scaling Knowledge Distillation of Large Language Models",
+"desc": "Research on distilling coding skills from large language models to smaller ones reveals a \"valley of code reasoning\" where performance initially decreases with more data before improving sharply, and that small models benefit more from eas\u2026",
+"date": "2025-10-07",
+"topics": [
+"distillation"
+]
+},
+"2605.01870": {
+"id": "2605.01870",
+"title": "Maistros: A Greek Large Language Model Adapted Through Knowledge Distillation From Large Reasoning Models",
+"desc": "Large language models have advanced natural language processing but face limitations in reasoning and multilingual support, particularly for under-resourced languages like Greek, where a new dataset and model are introduced to address thes\u2026",
+"date": "2026-05-03",
+"topics": [
+"distillation"
+]
+},
+"2504.13932": {
+"id": "2504.13932",
+"title": "Enhancing Ultra-Low-Bit Quantization of Large Language Models Through Saliency-Aware Partial Retraining",
+"desc": "A novel ultra-low-bit quantization method for large language models improves accuracy without full retraining by using saliency-aware regularization.",
+"date": "2025-04-14",
+"topics": [
+"quantization"
+]
+},
+"2309.02784": {
+"id": "2309.02784",
+"title": "Norm Tweaking: High-performance Low-bit Quantization of Large Language Models",
+"desc": "Norm tweaking enhances quantization methods for large language models, improving accuracy and efficiency even at lower bit quantization.",
+"date": "2023-09-06",
+"topics": [
+"quantization"
+]
+},
+"2409.17066": {
+"id": "2409.17066",
+"title": "VPTQ: Extreme Low-bit Vector Post-Training Quantization for Large Language Models",
+"desc": "Vector Post-Training Quantization (VPTQ) uses Second-Order Optimization to achieve extremely low-bit quantization of Large Language Models (LLMs), improving accuracy and inference throughput.",
+"date": "2024-09-25",
+"topics": [
+"quantization"
+]
+},
+"2309.15531": {
+"id": "2309.15531",
+"title": "Rethinking Channel Dimensions to Isolate Outliers for Low-bit Weight Quantization of Large Language Models",
+"desc": "Per-IC quantization and the AdaDim framework improve the efficiency and performance of Large Language Models (LLMs) through adaptive weight quantization methods, addressing challenges posed by activation outliers and weight sensitivity.",
+"date": "2023-09-27",
+"topics": [
+"quantization"
+]
+},
+"2411.00850": {
+"id": "2411.00850",
+"title": "GWQ: Gradient-Aware Weight Quantization for Large Language Models",
+"desc": "Gradient-aware weight quantization enables efficient low-bit quantization of large language models with minimal performance loss, improving zero-shot accuracy and inference speed.",
+"date": "2024-10-30",
+"topics": [
+"quantization"
+]
+},
+"2312.07950": {
+"id": "2312.07950",
+"title": "CBQ: Cross-Block Quantization for Large Language Models",
+"desc": "Cross-block reconstruction-based post-training quantization (CBQ) reduces error accumulation and reconstruction difficulty in LLMs, enabling low-bit quantization with superior performance.",
+"date": "2023-12-13",
+"topics": [
+"quantization"
+]
+},
+"2602.00165": {
+"id": "2602.00165",
+"title": "Benford's Law as a Distributional Prior for Post-Training Quantization of Large Language Models",
+"desc": "BenQ improves low-bit post-training quantization by applying log-spaced codebooks selectively to scale-broad linear weights while preserving higher precision for stability-critical normalization parameters.",
+"date": "2026-09-10",
+"topics": [
+"quantization"
+]
+},
+"2604.13806": {
+"id": "2604.13806",
+"title": "Robust Ultra Low-Bit Post-Training Quantization via Stable Diagonal Curvature Estimate",
+"desc": "DASH-Q improves low-bit quantization of large language models by using diagonal Hessian approximation and iterative weighted least squares to reduce noise and preserve key features.",
+"date": "2026-04-15",
+"topics": [
+"quantization"
+]
+},
+"2510.25602": {
+"id": "2510.25602",
+"title": "INT v.s. FP: A Comprehensive Study of Fine-Grained Low-bit Quantization Formats",
+"desc": "A comprehensive comparison of low-precision floating-point and integer quantization in large language models reveals that fine-grained integer formats, especially MXINT8, offer superior accuracy and efficiency over floating-point formats i\u2026",
+"date": "2025-10-29",
+"topics": [
+"quantization"
+]
+},
+"2404.14047": {
+"id": "2404.14047",
+"title": "How Good Are Low-bit Quantized LLaMA3 Models? An Empirical Study",
+"desc": "LLaMA3 performance degrades significantly when quantized to low bit-width, highlighting challenges in low-bit quantization for large language models.",
+"date": "2024-04-22",
+"topics": [
+"quantization"
+]
+},
+"2603.08185": {
+"id": "2603.08185",
+"title": "SERQ: Saliency-Aware Low-Rank Error Reconstruction for LLM Quantization",
+"desc": "SERQ improves low-bit quantization of large language models by using a single low-rank compensation matrix to correct errors from both weights and activations, achieving high accuracy with minimal inference overhead.",
+"date": "2026-03-09",
+"topics": [
+"quantization"
+]
+},
+"2406.07177": {
+"id": "2406.07177",
+"title": "TernaryLLM: Ternarized Large Language Model",
+"desc": "TernaryLLM, employing Dual Learnable Ternarization and Outlier-Friendly Feature Knowledge Distillation, achieves superior performance in low-bit quantization for large language models across various benchmarks.",
+"date": "2024-06-11",
+"topics": [
+"quantization"
+]
+},
+"2412.11494": {
+"id": "2412.11494",
+"title": "FTP: A Fine-grained Token-wise Pruner for Large Language Models via Token Routing",
+"desc": "A fine-grained token-wise pruning approach with a learnable router and sparsity scheduler improves LLM inference efficiency while maintaining high accuracy.",
+"date": "2024-12-16",
+"topics": [
+"pruning",
+"pruning"
+]
+},
+"2409.17481": {
+"id": "2409.17481",
+"title": "MaskLLM: Learnable Semi-Structured Sparsity for Large Language Models",
+"desc": "MaskLLM introduces a learnable pruning method using Gumbel Softmax sampling to achieve N:M sparsity in LLMs, improving inference efficiency and transferability across tasks.",
+"date": "2024-09-26",
+"topics": [
+"pruning",
+"pruning"
+]
+},
+"2406.16635": {
+"id": "2406.16635",
+"title": "ShadowLLM: Predictor-based Contextual Sparsity for Large Language Models",
+"desc": "A novel predictor named ShadowLLM improves the sparsity patterns in large language models, enhancing accuracy and speed without increasing latency.",
+"date": "2024-06-24",
+"topics": [
+"pruning",
+"pruning"
+]
+},
+"2311.04902": {
+"id": "2311.04902",
+"title": "Beyond Size: How Gradients Shape Pruning Decisions in Large Language Models",
+"desc": "A novel pruning method, GBLM-Pruner, for large language models uses normalized gradients to achieve superior pruning performance without retraining.",
+"date": "2023-11-08",
+"topics": [
+"pruning",
+"pruning"
+]
+},
+"2005.07683": {
+"id": "2005.07683",
+"title": "Movement Pruning: Adaptive Sparsity by Fine-Tuning",
+"desc": "Movement pruning, a deterministic first-order weight pruning technique, enhances the effectiveness of pruning large pretrained language models in transfer learning, achieving high sparsity with minimal accuracy loss.",
+"date": "2020-05-15",
+"topics": [
+"pruning",
+"pruning"
+]
+},
+"2610.32878": {
+"id": "2610.32878",
+"title": "Advancing SVD-based LLM Compression via Layer-Wise Error Model Search",
+"desc": "Layer-wise error modeling and token-wise Fisher statistics improve low-rank SVD compression of large language models by refining rank allocation and decomposition quality.",
+"date": "2026-10-23",
+"topics": [
+"low-rank"
+]
+},
+"2606.07098": {
+"id": "2606.07098",
+"title": "SigmaScale: LLM Compression with SVD-based Low-Rank Decomposition and Learned Scaling Matrices",
+"desc": "SigmaScale learns auxiliary scaling matrices to improve truncated SVD-based LLM compression by adapting to individual weight structures through activation-aware transformations.",
+"date": "2026-06-05",
+"topics": [
+"low-rank"
+]
+},
+"2604.01609": {
+"id": "2604.01609",
+"title": "Swift-SVD: Theoretical Optimality Meets Practical Efficiency in Low-Rank LLM Compression",
+"desc": "Swift-SVD is a compression framework that achieves optimal low-rank approximations for large language models through efficient covariance aggregation and eigenvalue decomposition, enabling faster and more accurate model compression.",
+"date": "2026-04-02",
+"topics": [
+"low-rank"
+]
+},
+"2608.26389": {
+"id": "2608.26389",
+"title": "LowRankArena: A Standardized Evaluation Platform for SVD-Based LLM Compression",
+"desc": "LowRankArena standardizes evaluation of SVD-based LLM compression, revealing that prior performance claims are highly sensitive to protocol choices and workload conditions.",
+"date": "2026-08-26",
+"topics": [
+"low-rank"
+]
+},
+"2602.03051": {
+"id": "2602.03051",
+"title": "SAES-SVD: Self-Adaptive Suppression of Accumulated and Local Errors for SVD-based LLM Compression",
+"desc": "A new low-rank compression framework for large language models that jointly optimizes layer-wise reconstruction and inter-layer error compensation to reduce cumulative approximation errors.",
+"date": "2026-02-03",
+"topics": [
+"low-rank"
+]
+},
+"2512.03383": {
+"id": "2512.03383",
+"title": "UniQL: Unified Quantization and Low-rank Compression for Adaptive Edge LLMs",
+"desc": "UniQL, a unified post-training quantization and low-rank compression framework, enhances the deployment of large language models on mobile devices by reducing memory usage and improving token throughput while maintaining accuracy.",
+"date": "2025-12-03",
+"topics": [
+"low-rank"
+]
+},
+"2512.13733": {
+"id": "2512.13733",
+"title": "Low-Rank Compression of Language Models via Differentiable Rank Selection",
+"desc": "LLRC learns mask weights to select singular values for low-rank compression without fine-tuning, improving accuracy over heuristic and gradient-based rank selection methods.",
+"date": "2025-12-14",
+"topics": [
+"low-rank"
+]
+},
+"2508.01506": {
+"id": "2508.01506",
+"title": "FlashSVD: Memory-Efficient Inference with Streaming for Low-Rank Models",
+"desc": "FlashSVD is an end-to-end rank-aware streaming inference framework that reduces peak activation memory for SVD-compressed large language models without accuracy loss.",
+"date": "2025-08-02",
+"topics": [
+"low-rank"
+]
+},
+"2403.07378": {
+"id": "2403.07378",
+"title": "SVD-LLM: Truncation-aware Singular Value Decomposition for Large Language Model Compression",
+"desc": "SVD-LLM addresses the limitations of current SVD-based LLM compression by incorporating truncation-aware data whitening and layer-wise parameter updates, leading to superior performance across various LLM families and scales.",
+"date": "2024-03-12",
+"topics": [
+"low-rank"
+]
+},
+"2503.12340": {
+"id": "2503.12340",
+"title": "SVD-LLM V2: Optimizing Singular Value Truncation for Large Language Model Compression",
+"desc": "SVD-LLM V2 optimizes LLM compression by assigning unique compression ratios and minimizing truncation loss, outperforming existing SVD-based methods.",
+"date": "2025-03-16",
+"topics": [
+"low-rank"
+]
+},
+"2505.20112": {
+"id": "2505.20112",
+"title": "ERC-SVD: Error-Controlled SVD for Large Language Model Compression",
+"desc": "ERC-SVD is a post-training compression method for large language models that uses error-controlled singular value decomposition to reduce truncation loss and mitigate error propagation through selective layer compression.",
+"date": "2026-03-16",
+"topics": [
+"low-rank"
+]
+},
+"2509.25622": {
+"id": "2509.25622",
+"title": "Layer-wise dynamic rank for compressing large language models",
+"desc": "A novel layer-wise dynamic rank allocation framework for large language model compression that adaptively assigns computational resources based on information density across different layers.",
+"date": "2025-10-04",
+"topics": [
+"low-rank"
+]
+},
+"2008.05441": {
+"id": "2008.05441",
+"title": "Stable Low-rank Tensor Decomposition for Compression of Convolutional Neural Network",
+"desc": "A novel method stabilizes low-rank approximations of convolutional kernels using tensor decomposition, reducing computational cost while maintaining high-quality performance.",
+"date": "2020-08-12",
+"topics": [
+"tensor networks"
+]
+},
+"2008.05437": {
+"id": "2008.05437",
+"title": "Adaptive Learning of Tensor Network Structures",
+"desc": "An adaptive algorithm using tensor networks jointly learns the structure and parameters, outperforming existing methods in tasks like tensor decomposition and neural network compression.",
+"date": "2020-08-12",
+"topics": [
+"tensor networks"
+]
+},
+"2105.04983": {
+"id": "2105.04983",
+"title": "Tensor-Train Recurrent Neural Networks for Interpretable Multi-Way Financial Forecasting",
+"desc": "Tensor-Train Recurrent Networks demonstrate enhanced financial forecasting performance and interpretability compared to traditional RNNs through parameter compression and tensor decomposition regularization.",
+"date": "2021-05-11",
+"topics": [
+"tensor networks"
+]
+},
+"2304.04964": {
+"id": "2304.04964",
+"title": "A priori compression of convolutional neural networks for wave simulators",
+"desc": "The proposed method compresses convolutional neural networks before training to reduce parameters, improving performance and memory usage on physical data simulations.",
+"date": "2023-04-11",
+"topics": [
+"tensor networks"
+]
+},
+"2111.10633": {
+"id": "2111.10633",
+"title": "Sparse Tensor-based Multiscale Representation for Point Cloud Geometry Compression",
+"desc": "A sparse convolution-based neural network approach compresses point cloud geometry by estimating occupancy probabilities and leveraging multiscale correlations for improved efficiency and performance.",
+"date": "2022-10-21",
+"topics": [
+"tensor networks"
+]
+},
+"2207.11048": {
+"id": "2207.11048",
+"title": "Quantized Sparse Weight Decomposition for Neural Network Compression",
+"desc": "A compression technique represents neural weights as sparse, quantized matrix factors reconstructed during inference via projected gradient descent, unifying SVD, vector quantization, and sparse PCA.",
+"date": "2022-07-22",
+"topics": [
+"tensor networks"
+]
+},
+"2303.13635": {
+"id": "2303.13635",
+"title": "Low Rank Optimization for Efficient Deep Learning: Making A Balance between Compact Architecture and Fast Training",
+"desc": "Low-rank optimization techniques reduce computational complexity and storage costs in deep learning by compressing network parameters in both spatial and temporal domains using methods such as sparse pruning, quantization, and entropy codi\u2026",
+"date": "2023-03-22",
+"topics": [
+"tensor networks"
+]
+},
+"1605.05775": {
+"id": "1605.05775",
+"title": "Supervised Learning with Quantum-Inspired Tensor Networks",
+"desc": "Tensor networks, specifically matrix product states, are adapted for supervised learning to classify images with high accuracy, offering structured models with potential generative applications.",
+"date": "2016-05-18",
+"topics": [
+"tensor networks"
+]
+},
+"2411.05239": {
+"id": "2411.05239",
+"title": "ZipNN: Lossless Compression for AI Models",
+"desc": "ZipNN, a lossless compression tailored for neural networks, reduces model size by over 50% and improves compression speed, saving substantial network traffic.",
+"date": "2024-11-07",
+"topics": [
+"tensor networks",
+"lossless weight compression"
+]
+},
+"1910.02747": {
+"id": "1910.02747",
+"title": "Deep Neural Network Compression for Image Classification and Object Detection",
+"desc": "A novel dynamical clustering approach is used to compress deep neural networks, significantly reducing parameters and memory usage while maintaining accuracy.",
+"date": "2019-10-07",
+"topics": [
+"tensor networks"
+]
+},
+"2609.00870": {
+"id": "2609.00870",
+"title": "Stochastic Optimization of Tree Tensor Networks",
+"desc": "Stochastic Riemannian optimizers for tree tensor networks enable stable training and compression in hybrid CNN-TTN architectures with comparable predictive performance.",
+"date": "2026-09-01",
+"topics": [
+"tensor networks"
+]
+},
+"2511.11716": {
+"id": "2511.11716",
+"title": "CompressNAS : A Fast and Efficient Technique for Model Compression using Decomposition",
+"desc": "CompressNAS enables global rank selection for low-rank tensor decomposition in CNNs, achieving significant model compression with minimal accuracy loss on ImageNet and COCO datasets.",
+"date": "2025-11-12",
+"topics": [
+"tensor networks"
+]
+},
+"2407.01527": {
+"id": "2407.01527",
+"title": "KV Cache Compression, But What Must We Give in Return? A Comprehensive Benchmark of Long Context Capable Approaches",
+"desc": "A comprehensive benchmark evaluates various methods to enhance long context capability in large language models, revealing new insights for future development.",
+"date": "2024-07-01",
+"topics": [
+"KV cache"
+]
+},
+"2503.11816": {
+"id": "2503.11816",
+"title": "Key, Value, Compress: A Systematic Exploration of KV Cache Compression Techniques",
+"desc": "KV cache compression strategies are analyzed for their impact on performance and inference latency in large language models, identifying trade-offs and improving efficiency for long-context scenarios.",
+"date": "2025-03-14",
+"topics": [
+"KV cache"
+]
+},
+"2510.00231": {
+"id": "2510.00231",
+"title": "The Pitfalls of KV Cache Compression",
+"desc": "Compression of KV caches in LLMs can lead to performance degradation in multi-instruction tasks, particularly affecting system prompt leakage, but improved eviction policies can mitigate these issues.",
+"date": "2025-09-30",
+"topics": [
+"KV cache"
+]
+},
+"2604.15356": {
+"id": "2604.15356",
+"title": "Sequential KV Cache Compression via Probabilistic Language Tries: Beyond the Per-Vector Shannon Limit",
+"desc": "Sequential KV compression exploits the structured nature of transformer key-value caches by combining probabilistic prefix deduplication and predictive delta coding to achieve dramatically higher compression ratios than existing methods.",
+"date": "2026-04-10",
+"topics": [
+"KV cache"
+]
+},
+"2310.01801": {
+"id": "2310.01801",
+"title": "Model Tells You What to Discard: Adaptive KV Cache Compression for LLMs",
+"desc": "Adaptive KV cache compression reduces memory usage in generative inference for large language models by profiling attention modules and selectively storing key-value pairs.",
+"date": "2023-10-03",
+"topics": [
+"KV cache"
+]
+},
+"2405.14366": {
+"id": "2405.14366",
+"title": "MiniCache: KV Cache Compression in Depth Dimension for Large Language Models",
+"desc": "MiniCache compresses the key-value cache of large language models by merging similar states across layers while preserving distinct pairs, significantly reducing memory usage and enhancing performance.",
+"date": "2024-05-23",
+"topics": [
+"KV cache"
+]
+},
+"2412.14838": {
+"id": "2412.14838",
+"title": "DynamicKV: Task-Aware Adaptive KV Cache Compression for Long Context LLMs",
+"desc": "DynamicKV dynamically adjusts token retention across layers to optimize KV cache management for LLMs, achieving high performance with minimal cache size.",
+"date": "2024-12-19",
+"topics": [
+"KV cache"
+]
+},
+"2412.09036": {
+"id": "2412.09036",
+"title": "ZigZagkv: Dynamic KV Cache Compression for Long-context Modeling based on Layer Uncertainty",
+"desc": "A KV cache compression method using layer uncertainty reduces memory usage in LLM inference without significant performance loss.",
+"date": "2024-12-12",
+"topics": [
+"KV cache"
+]
+},
+"2410.15252": {
+"id": "2410.15252",
+"title": "Lossless KV Cache Compression to 2%",
+"desc": "A novel architecture, Cross-Layer Latent Attention (CLLA), compresses the key-value cache to under 2% its original size with minimal performance loss across tasks.",
+"date": "2024-10-20",
+"topics": [
+"KV cache"
+]
+},
+"2503.01586": {
+"id": "2503.01586",
+"title": "EliteKV: Scalable KV Cache Compression via RoPE Frequency Selection and Joint Low-Rank Projection",
+"desc": "EliteKV optimizes key-value cache compression in RoPE-based models by selectively restoring linearity and enabling partial cache sharing, resulting in significantly reduced cache size with minimal performance impact.",
+"date": "2025-03-03",
+"topics": [
+"KV cache"
+]
+},
+"2504.09261": {
+"id": "2504.09261",
+"title": "Head-Aware KV Cache Compression for Efficient Visual Autoregressive Modeling",
+"desc": "HACK, a training-free compression method, addresses memory bottlenecks in Visual Autoregressive (VAR) models by allocating asymmetric cache budgets and using pattern-specific strategies for different attention head categories.",
+"date": "2025-04-12",
+"topics": [
+"KV cache"
+]
+},
+"2509.05165": {
+"id": "2509.05165",
+"title": "KVCompose: Efficient Structured KV Cache Compression with Composite Tokens",
+"desc": "A KV cache compression framework for LLMs uses attention-guided, layer-adaptive composite tokens to reduce memory usage without sacrificing accuracy, maintaining compatibility with existing inference pipelines.",
+"date": "2025-09-05",
+"topics": [
+"KV cache"
+]
+},
+"2402.16880": {
+"id": "2402.16880",
+"title": "BESA: Pruning Large Language Models with Blockwise Parameter-Efficient Sparsity Allocation",
+"desc": "A novel blockwise pruning technique, BESA, efficiently reduces the computational footprint of large language models while minimizing performance degradation.",
+"date": "2024-02-18",
+"topics": [
+"pruning"
+]
+},
+"2503.04992": {
+"id": "2503.04992",
+"title": "Wanda++: Pruning Large Language Models via Regional Gradients",
+"desc": "Wanda++ enhances LLM pruning by using regional gradients to minimize accuracy loss and improve perplexity, achieving significant performance gains without full-model fine-tuning.",
+"date": "2025-03-06",
+"topics": [
+"pruning"
+]
+},
+"2609.02496": {
+"id": "2609.02496",
+"title": "Debias-SparseGPT: Bias-Aware Pruning for Large Language Models",
+"desc": "Debias-SparseGPT reduces pruning-induced demographic bias in compressed large language models by incorporating representational debiasing during post-training sparsification.",
+"date": "2026-09-02",
+"topics": [
+"pruning"
+]
+},
+"2405.16057": {
+"id": "2405.16057",
+"title": "SPP: Sparsity-Preserved Parameter-Efficient Fine-Tuning for Large Language Models",
+"desc": "SPP optimizes sparse weights in LLMs using lightweight matrices to maintain performance and sparsity during fine-tuning.",
+"date": "2024-05-25",
+"topics": [
+"pruning"
+]
+},
+"2505.23807": {
+"id": "2505.23807",
+"title": "DLP: Dynamic Layerwise Pruning in Large Language Models",
+"desc": "A dynamic layerwise pruning method adaptively determines layer importance by combining model weights and activation information to maintain performance in large language models at high sparsity.",
+"date": "2025-05-27",
+"topics": [
+"pruning"
+]
+},
+"2605.17289": {
+"id": "2605.17289",
+"title": "LEAP: Learnable End-to-End Adaptive Pruning of Large Language Models",
+"desc": "LEAP enables efficient end-to-end unstructured pruning of large language models by replacing complex parameterizations with a Bernoulli-via-Gumbel-sigmoid relaxation, achieving better zero-shot accuracy than traditional layer-wise methods.",
+"date": "2026-06-07",
+"topics": [
+"pruning"
+]
+},
+"2405.01943": {
+"id": "2405.01943",
+"title": "Dependency-Aware Semi-Structured Sparsity of GLU Variants in Large Language Models",
+"desc": "A novel pruning method, Dependency-aware Semi-structured Sparsity (DaSS), improves hardware efficiency in large language models by balancing unstructured and structured pruning techniques.",
+"date": "2024-05-03",
+"topics": [
+"pruning"
+]
+},
+"2602.11761": {
+"id": "2602.11761",
+"title": "MiniCPM-SALA: Hybridizing Sparse and Linear Attention for Efficient Long-Context Modeling",
+"desc": "MiniCPM-SALA combines sparse and linear attention mechanisms in a hybrid architecture to enable efficient processing of ultra-long contexts while maintaining model performance and reducing training costs.",
+"date": "2026-02-12",
+"topics": [
+"linear attention"
+]
+},
+"2610.05842": {
+"id": "2610.05842",
+"title": "HLA: Expressive Hybrid Linear Attention via Chunk-Wise Dynamic Mixing",
+"desc": "Hybrid Linear Attention improves long-context modeling by using query-dependent routing over chunk-level affine states in Gated DeltaNet, boosting performance across extended contexts.",
+"date": "2026-10-05",
+"topics": [
+"linear attention"
+]
+},
+"2608.02032": {
+"id": "2608.02032",
+"title": "DART: Decoded Attention over Recurrent States for Efficient Long-Context Sequence Modeling",
+"desc": "DART integrates recurrent state memories with attention-style retrieval by decoding keys and values from Mamba-2 chunk states, reducing inference cache while improving associative recall.",
+"date": "2026-08-03",
+"topics": [
+"linear attention"
+]
+},
+"2404.07143": {
+"id": "2404.07143",
+"title": "Leave No Context Behind: Efficient Infinite Context Transformers with Infini-attention",
+"desc": "A novel Infini-attention mechanism allows Transformer-based LLMs to handle infinitely long inputs with limited memory and compute, enabling efficient long-context modeling and fast inference.",
+"date": "2024-04-10",
+"topics": [
+"linear attention"
+]
+},
+"2604.22575": {
+"id": "2604.22575",
+"title": "SpikingBrain2.0: Brain-Inspired Foundation Models for Efficient Long-Context and Cross-Platform Inference",
+"desc": "SpikingBrain2.0 introduces a 5B model with dual-space sparse attention and hybrid quantization to enable efficient long-context processing and cross-platform deployment.",
+"date": "2026-04-24",
+"topics": [
+"linear attention"
+]
+},
+"2503.14376": {
+"id": "2503.14376",
+"title": "Tiled Flash Linear Attention: More Efficient Linear RNN and xLSTM Kernels",
+"desc": "Tiled Flash Linear Attention (TFLA) enhances linear RNNs by enabling large chunk sizes and high arithmetic intensity, outperforming Flash Attention and other kernels in long-context language modeling.",
+"date": "2025-03-18",
+"topics": [
+"linear attention"
+]
+},
+"2605.15178": {
+"id": "2605.15178",
+"title": "SANA-WM: Efficient Minute-Scale World Modeling with Hybrid Linear Diffusion Transformer",
+"desc": "SANA-WM is an efficient 2.6B-parameter world model that generates high-fidelity 720p videos with precise camera control, achieving industrial-level quality while significantly reducing computational requirements through hybrid attention, d\u2026",
+"date": "2026-05-14",
+"topics": [
+"linear attention"
+]
+},
+"2605.21325": {
+"id": "2605.21325",
+"title": "Fast and Stable Triangular Inversion for Delta-Rule Linear Transformers",
+"desc": "Linear attention models face performance bottlenecks due to triangular matrix inversion, which this work addresses through systematic analysis and optimization of direct and iterative algorithms for improved hardware efficiency and accurac\u2026",
+"date": "2026-05-20",
+"topics": [
+"linear attention"
+]
+},
+"2609.07816": {
+"id": "2609.07816",
+"title": "Kalman Delta Networks: Uncertainty-aware Associative Memory",
+"desc": "Kalman Delta Networks reformulate linear attention as a linear-Gaussian state-space model with Kalman-filter updates to track memory uncertainty, yielding efficient scan-compatible approximations that improve language modeling performance.",
+"date": "2026-09-07",
+"topics": [
+"linear attention"
+]
+},
+"2509.18467": {
+"id": "2509.18467",
+"title": "LAWCAT: Efficient Distillation from Quadratic to Linear Attention with Convolution across Tokens for Long Context Modeling",
+"desc": "LAWCAT, a linearization framework, efficiently transfers pre-trained transformer capabilities to linear attention models, enhancing performance and context length with reduced training resources.",
+"date": "2025-09-22",
+"topics": [
+"linear attention"
+]
+},
+"2510.19338": {
+"id": "2510.19338",
+"title": "Every Attention Matters: An Efficient Hybrid Architecture for Long-Context Reasoning",
+"desc": "The Ring-linear model series, including Ring-mini-linear-2.0 and Ring-flash-linear-2.0, uses a hybrid architecture combining linear and softmax attention to reduce inference costs and improve training efficiency.",
+"date": "2025-10-22",
+"topics": [
+"linear attention"
+]
+},
+"2601.22156": {
+"id": "2601.22156",
+"title": "Hybrid Linear Attention Done Right: Efficient Distillation and Effective Architectures for Extremely Long Contexts",
+"desc": "HALO enables efficient conversion of Transformer models to RNN-attention hybrid architectures with improved long-context performance using minimal training data.",
+"date": "2026-01-29",
+"topics": [
+"linear attention"
+]
+},
+"2602.13958": {
+"id": "2602.13958",
+"title": "Chemical Language Models for Natural Products: A State-Space Model Approach",
+"desc": "State-space models (Mamba and Mamba-2) outperform transformers (GPT) in generating valid and unique molecules while maintaining competitive property prediction performance on natural products, demonstrating effective domain-specific pre-tr\u2026",
+"date": "2026-02-15",
+"topics": [
+"state space models"
+]
+},
+"2507.15212": {
+"id": "2507.15212",
+"title": "MeshMamba: State Space Models for Articulated 3D Mesh Generation and Reconstruction",
+"desc": "MeshMamba, a neural network using Mamba State Space Models, enables efficient generation and reconstruction of detailed 3D articulated meshes, including clothing and hands, through serialization techniques and specialized models like Mamba\u2026",
+"date": "2025-07-21",
+"topics": [
+"state space models"
+]
+},
+"2512.07010": {
+"id": "2512.07010",
+"title": "Always Keep Your Promises: DynamicLRP, A Model-Agnostic Solution To Layer-Wise Relevance Propagation",
+"desc": "DynamicLRP is a model-agnostic framework for Layer-wise Relevance Propagation that operates at the tensor operation level, providing accurate and efficient attribution across diverse deep learning architectures.",
+"date": "2025-12-07",
+"topics": [
+"state space models"
+]
+},
+"2412.06148": {
+"id": "2412.06148",
+"title": "The Computational Limits of State-Space Models and Mamba via the Lens of Circuit Complexity",
+"desc": "State-space models and Mamba architectures are theoretically limited to the TC\u2070 complexity class, matching Transformer capabilities and unable to solve certain computational problems.",
+"date": "2024-12-09",
+"topics": [
+"state space models"
+]
+},
+"2406.00209": {
+"id": "2406.00209",
+"title": "Mamba State-Space Models Are Lyapunov-Stable Learners",
+"desc": "Mamba state-space models demonstrate superior stability to mixed-precision fine-tuning and improve instruction tuning efficiency for in-context learning compared to Transformer-based models.",
+"date": "2024-05-31",
+"topics": [
+"state space models"
+]
+},
+"2411.11843": {
+"id": "2411.11843",
+"title": "Bi-Mamba: Towards Accurate 1-Bit State Space Models",
+"desc": "Bi-Mamba is a 1-bit Mamba architecture that enables efficient large language models with reduced memory usage and computational costs while maintaining performance comparable to full-precision models.",
+"date": "2024-11-18",
+"topics": [
+"state space models"
+]
+},
+"2403.18257": {
+"id": "2403.18257",
+"title": "Dual-path Mamba: Short and Long-term Bidirectional Selective Structured State Space Models for Speech Separation",
+"desc": "The dual-path Mamba model outperforms state-of-the-art RNN, CNN, and transformer architectures for speech separation with reduced complexity.",
+"date": "2024-03-27",
+"topics": [
+"state space models"
+]
+},
+"2501.17088": {
+"id": "2501.17088",
+"title": "Mamba-Shedder: Post-Transformer Compression for Efficient Selective Structured State Space Models",
+"desc": "Mamba-Shedder improves the efficiency of SSM-based models like Mamba by reducing redundant components without significantly affecting performance.",
+"date": "2025-01-28",
+"topics": [
+"state space models"
+]
+},
+"2406.03430": {
+"id": "2406.03430",
+"title": "Computation-Efficient Era: A Comprehensive Survey of State Space Models in Medical Image Analysis",
+"desc": "Mamba models, a State Space Model with selection mechanisms and hardware-aware architecture, offer efficient sequence modeling with infinite context lengths, challenging the dominance of transformers in medical imaging and other domains.",
+"date": "2024-06-05",
+"topics": [
+"state space models"
+]
+},
+"2410.03292": {
+"id": "2410.03292",
+"title": "Demystifying the Token Dynamics of Deep Selective State Space Models",
+"desc": "Investigation of dynamical properties of tokens in pre-trained Mamba models leads to criteria for improving performance by excluding convergent scenarios and reordering tokens.",
+"date": "2024-10-04",
+"topics": [
+"state space models"
+]
+},
+"2404.19394": {
+"id": "2404.19394",
+"title": "CLIP-Mamba: CLIP Pretrained Mamba Models with OOD and Hessian Evaluation",
+"desc": "A Mamba model with 67 million parameters trained using contrastive language-image pretraining matches the performance of a 307 million-parameter Vision Transformer in zero-shot classification and performs well in out-of-distribution tasks,\u2026",
+"date": "2024-04-30",
+"topics": [
+"state space models"
+]
+},
+"2502.15612": {
+"id": "2502.15612",
+"title": "LaTIM: Measuring Latent Token-to-Token Interactions in Mamba Models",
+"desc": "LaTIM provides token-level interpretability for Mamba SSMs, revealing their processing mechanisms across layers and enhancing understanding of sequence modeling.",
+"date": "2025-02-21",
+"topics": [
+"state space models"
+]
+},
+"2404.03865": {
+"id": "2404.03865",
+"title": "FFN-SkipLLM: A Hidden Gem for Autoregressive Decoding with Adaptive Feed Forward Skipping",
+"desc": "A novel feed-forward skipping strategy, FFN-SkipLLM, enables faster autoregressive decoding in large language models with minimal impact on performance by avoiding unnecessary computations.",
+"date": "2024-04-05",
+"topics": [
+"early exit"
+]
+},
+"2402.03779": {
+"id": "2402.03779",
+"title": "EERO: Early Exit with Reject Option for Efficient Classification with limited budget",
+"desc": "EERO, a method using multiple classifiers with reject options and exponential weight aggregation, manages computational budget and enhances accuracy by adaptively selecting exit points for data instances in complex models.",
+"date": "2024-02-06",
+"topics": [
+"early exit"
+]
+},
+"2410.12513": {
+"id": "2410.12513",
+"title": "FiRST: Finetuning Router-Selective Transformers for Input-Adaptive Latency Reduction",
+"desc": "FiRST, an adaptive layer selection algorithm, reduces inference latency in auto-regressive LLMs while maintaining or improving quality, making it suitable for low-resource environments.",
+"date": "2024-10-16",
+"topics": [
+"early exit"
+]
+},
+"2604.18396": {
+"id": "2604.18396",
+"title": "River-LLM: Large Language Model Seamless Exit Based on KV Share",
+"desc": "River-LLM enables efficient token-level early exit in decoder-only LLMs through KV-sharing mechanisms that preserve historical states without latency overhead.",
+"date": "2026-04-20",
+"topics": [
+"early exit"
+]
+},
+"2204.03276": {
+"id": "2204.03276",
+"title": "PALBERT: Teaching ALBERT to Ponder",
+"desc": "The paper proposes an improved PonderNet with a deterministic exit criterion and revised architecture, demonstrating better performance than PABEE on GLUE tasks and providing insights into Lambda layers.",
+"date": "2022-04-07",
+"topics": [
+"early exit"
+]
+},
+"2506.18035": {
+"id": "2506.18035",
+"title": "Splitformer: An improved early-exit architecture for automatic speech recognition on edge devices",
+"desc": "Introducing parallel downsampled layers in early-exit neural architectures enhances speech recognition performance with minimal parameter increase and unchanged inference time.",
+"date": "2025-06-22",
+"topics": [
+"early exit"
+]
+},
+"2510.14211": {
+"id": "2510.14211",
+"title": "LiteStage: Latency-aware Layer Skipping for Multi-stage Reasoning",
+"desc": "LiteStage, a latency-aware layer skipping framework, enhances multi-stage reasoning by optimizing layer budgets and suppressing redundant output tokens, achieving significant speedup with minimal accuracy loss.",
+"date": "2025-10-16",
+"topics": [
+"early exit"
+]
+},
+"2309.09546": {
+"id": "2309.09546",
+"title": "Training dynamic models using early exits for automatic speech recognition on resource-constrained devices",
+"desc": "Early-exit architectures improve large-vocabulary speech recognition by dynamically adjusting computational load and achieving higher accuracy compared to traditional methods.",
+"date": "2023-09-18",
+"topics": [
+"early exit"
+]
+},
+"2211.11152": {
+"id": "2211.11152",
+"title": "You Need Multiple Exiting: Dynamic Early Exiting for Accelerating Unified Vision Language Model",
+"desc": "A novel early exiting strategy called MuE for unified visual language models reduces inference time by up to 50% on SNLI-VE and 40% on MS COCO while maintaining high performance.",
+"date": "2022-11-21",
+"topics": [
+"early exit"
+]
+},
+"2404.06954": {
+"id": "2404.06954",
+"title": "Accelerating Inference in Large Language Models with a Unified Layer Skipping Strategy",
+"desc": "A Unified Layer Skipping strategy enhances inference performance and throughput in Large Language Models by dynamically and evenly skipping layers based on a target speedup ratio.",
+"date": "2024-04-10",
+"topics": [
+"early exit"
+]
+},
+"2603.23701": {
+"id": "2603.23701",
+"title": "The Diminishing Returns of Early-Exit Decoding in Modern LLMs",
+"desc": "Layer-wise early-exit effectiveness decreases in newer large language models due to reduced layer redundancy, with dense transformers showing greater potential than MoE and SSM architectures.",
+"date": "2026-03-24",
+"topics": [
+"early exit"
+]
+},
+"2103.04505": {
+"id": "2103.04505",
+"title": "Split Computing and Early Exiting for Deep Learning Applications: Survey and Research Challenges",
+"desc": "A survey of split computing and early exiting strategies for deep neural network execution on mobile devices highlights their benefits in reducing energy consumption and latency.",
+"date": "2021-03-08",
+"topics": [
+"early exit"
+]
+},
+"2604.03298": {
+"id": "2604.03298",
+"title": "ENEC: A Lossless AI Model Compression Method Enabling Fast Inference on Ascend NPUs",
+"desc": "ENE, a novel lossless compression method for AI model weights, optimizes performance on Ascend NPUs through block-based encoding and NPU-specific optimizations, achieving superior throughput and compression ratios compared to existing solu\u2026",
+"date": "2026-04-07",
+"topics": [
+"lossless weight compression"
+]
+},
+"2607.12550": {
+"id": "2607.12550",
+"title": "A JoLT for the KV cache: Near-lossless KV cache compression via joint Lagrangian allocation of Tucker ranks and a rotated residual for llms",
+"desc": "JoLT compresses transformer key-value caches via partial Tucker decomposition and rotated low-bit residuals, achieving near-lossless 2-3x reduction with preserved perplexity and retrieval accuracy.",
+"date": "2026-07-14",
+"topics": [
+"lossless weight compression"
+]
+},
+"2605.02904": {
+"id": "2605.02904",
+"title": "StateSMix: Online Lossless Compression via Mamba State Space Models and Sparse N-gram Context Mixing",
+"desc": "StateSMix combines a self-trained Mamba-style State Space Model with sparse n-gram context mixing and arithmetic coding to achieve lossless compression without external dependencies or pre-trained weights.",
+"date": "2026-04-05",
+"topics": [
+"lossless weight compression"
+]
+},
+"2511.10660": {
+"id": "2511.10660",
+"title": "Test-Time Steering for Lossless Text Compression via Weighted Product of Experts",
+"desc": "A novel framework combines universal and neural compression models at test time to improve text compression performance without fine-tuning across diverse data distributions.",
+"date": "2025-11-04",
+"topics": [
+"lossless weight compression"
+]
+},
+"2306.03078": {
+"id": "2306.03078",
+"title": "SpQR: A Sparse-Quantized Representation for Near-Lossless LLM Weight Compression",
+"desc": "Sparse-Quantized Representation (SpQR) enables near-lossless compression of large language models, achieving high accuracy on consumer hardware with significant speedups.",
+"date": "2023-06-05",
+"topics": [
+"lossless weight compression"
+]
+},
+"2308.04269": {
+"id": "2308.04269",
+"title": "Lossy and Lossless (L^2) Post-training Model Size Compression",
+"desc": "A unified post-training method combines lossy and lossless compression for deep neural networks, achieving high compression ratios with little accuracy loss.",
+"date": "2023-08-08",
+"topics": [
+"lossless weight compression"
+]
+},
+"2603.29078": {
+"id": "2603.29078",
+"title": "PolarQuant: Optimal Gaussian Weight Quantization via Hadamard Rotation for LLM Compression",
+"desc": "PolarQuant is a post-training quantization method for LLMs that uses block-wise normalization, Walsh-Hadamard rotation, and Gaussian-matched quantization to achieve near-lossless compression without calibration data.",
+"date": "2026-03-30",
+"topics": [
+"lossless weight compression"
+]
+},
+"2605.02404": {
+"id": "2605.02404",
+"title": "Statistically-Lossless Quantization of Large Language Models",
+"desc": "Statistically-lossless quantization achieves high fidelity and faster inference by using asymmetric, layer-wise non-uniform compression with metrics like expected acceptance rate.",
+"date": "2026-08-09",
+"topics": [
+"lossless weight compression"
+]
+},
+"2111.11632": {
+"id": "2111.11632",
+"title": "Lossless Compression with Probabilistic Circuits",
+"desc": "Probabilistic Circuits enable efficient tractable lossless compression with faster encoding and decoding compared to neural compression algorithms, achieving state-of-the-art performance on image datasets.",
+"date": "2021-11-23",
+"topics": [
+"lossless weight compression"
+]
+},
+"2603.17435": {
+"id": "2603.17435",
+"title": "ZipServ: Fast and Memory-Efficient LLM Inference with Hardware-Aware Lossless Compression",
+"desc": "ZipServ presents a lossless compression framework for LLM inference that uses fixed-length encoding and fused kernels to reduce model size and accelerate GPU-based language model serving.",
+"date": "2026-03-18",
+"topics": [
+"lossless weight compression"
+]
+},
+"2504.11651": {
+"id": "2504.11651",
+"title": "70% Size, 100% Accuracy: Lossless LLM Compression for Efficient GPU Inference via Dynamic-Length Float",
+"desc": "DFloat11, a lossless compression framework, reduces Large Language Model sizes by 30% through entropy coding, enabling efficient deployment and significantly higher throughput on resource-constrained hardware.",
+"date": "2025-04-15",
+"topics": [
+"lossless weight compression"
+]
+},
+"2610.25425": {
+"id": "2610.25425",
+"title": "Mixture-of-Memories: Low-Overhead Language Modeling with Modular Knowledge Injection",
+"desc": "Mixture-of-Memories integrates frozen language models with routed neural and writable factual memory experts to improve accuracy, updateability, and inference efficiency.",
+"date": "2026-10-18",
+"topics": [
+"fact storage in FFN"
+]
+},
+"2609.40222": {
+"id": "2609.40222",
+"title": "LOCI: Spatial Linear Memory for Streaming World Models",
+"desc": "LOCI combines key-value caches and recurrent linear-attention memory guided by camera geometry to reproduce past observations in video world models with lower memory use.",
+"date": "2026-09-30",
+"topics": [
+"fact storage in FFN"
+]
+},
+"2607.10034": {
+"id": "2607.10034",
+"title": "MLPs are Hebbians: Constructing Efficient Fact-Storing MLPs for Transformers",
+"desc": "A theoretical MLP construction for Transformers achieves information-theoretically optimal fact storage scaling across arbitrary embedding geometries and enables efficient modular fact editing.",
+"date": "2026-07-10",
+"topics": [
+"fact storage in FFN"
+]
+},
+"2001.10913": {
+"id": "2001.10913",
+"title": "MEMO: A Deep Network for Flexible Combination of Episodic Memories",
+"desc": "MEMO, a memory-augmented neural network, reasons over long-distance associations and matches state-of-the-art performance on bAbI by separating facts in external memory and using adaptive retrieval.",
+"date": "2020-01-29",
+"topics": [
+"fact storage in FFN"
+]
+},
+"2012.14913": {
+"id": "2012.14913",
+"title": "Transformer Feed-Forward Layers Are Key-Value Memories",
+"desc": "Feed-forward layers in transformer-based language models function as key-value memories, capturing textual patterns and inducing output distributions that refine the final prediction.",
+"date": "2020-12-29",
+"topics": [
+"fact storage in FFN"
+]
+},
+"2602.14080": {
+"id": "2602.14080",
+"title": "Empty Shelves or Lost Keys? Recall Is the Bottleneck for Parametric Factuality",
+"desc": "LLMs demonstrate near-complete factual encoding but struggle with retrieval accessibility, where errors stem from access limitations rather than knowledge gaps, with reasoning improving recall of encoded information.",
+"date": "2026-02-15",
+"topics": [
+"fact storage in FFN"
+]
+},
+"2607.11020": {
+"id": "2607.11020",
+"title": "Can a Language Model Learn Facts Continually in Its Weights?",
+"desc": "Experiments writing invented facts into Qwen3 weights show that broad training data yields more durable knowledge than bare statements, yet sequential updates cause behavioral forgetting and interference, leaving in-context prompting as th\u2026",
+"date": "2026-07-14",
+"topics": [
+"fact storage in FFN"
+]
+},
+"2410.20922": {
+"id": "2410.20922",
+"title": "FACTS: A Factored State-Space Framework For World Modelling",
+"desc": "The FACTS model introduces a graph-structured recurrent framework with selective state-space propagation for efficient spatial-temporal world modeling across diverse sequence tasks.",
+"date": "2025-02-28",
+"topics": [
+"fact storage in FFN"
+]
+},
+"2607.08057": {
+"id": "2607.08057",
+"title": "Towards Efficient Large Language Model Serving: A Survey on System-Aware KV Cache Optimization",
+"desc": "The survey organizes system-aware key-value cache infrastructure for large language model serving across temporal, spatial, and structural dimensions to guide future co-design.",
+"date": "2026-07-09",
+"topics": [
+"fact storage in FFN"
+]
+},
+"2602.13967": {
+"id": "2602.13967",
+"title": "Neuromem: A Granular Decomposition of the Streaming Lifecycle in External Memory for LLMs",
+"desc": "Neuromem presents a scalable benchmark for external memory modules in dynamic streaming settings, evaluating memory lifecycle dimensions and revealing performance degradation with growing memory size.",
+"date": "2026-02-15",
+"topics": [
+"fact storage in FFN"
+]
+},
+"2603.11564": {
+"id": "2603.11564",
+"title": "Where Matters More Than What: Decoding-aligned KV Cache Compression via Position-aware Pseudo Queries",
+"desc": "Deep learning models for language processing face challenges with memory efficiency during inference due to key-value cache expansion, which this work addresses through a novel position-aware pseudo query approach for cache compression.",
+"date": "2026-03-12",
+"topics": [
+"fact storage in FFN"
+]
+},
+"2401.14021": {
+"id": "2401.14021",
+"title": "Accelerating Retrieval-Augmented Language Model Serving with Speculation",
+"desc": "RaLMSpec enhances the efficiency of iterative Retrieval-augmented Language Models (RaLM) by employing speculative retrieval, batched verification, prefetching, and asynchronous verification, significantly improving speed-up ratios across d\u2026",
+"date": "2024-01-25",
+"topics": [
+"parametric vs non-parametric"
+]
+},
+"2512.09487": {
+"id": "2512.09487",
+"title": "RouteRAG: Efficient Retrieval-Augmented Generation from Text and Graph via Reinforcement Learning",
+"desc": "An RL-based framework enables LLMs to perform adaptive graph-text hybrid retrieval-augmented generation with improved multi-turn reasoning and retrieval efficiency.",
+"date": "2025-12-10",
+"topics": [
+"parametric vs non-parametric"
+]
+},
+"2410.05162": {
+"id": "2410.05162",
+"title": "Deciphering the Interplay of Parametric and Non-parametric Memory in Retrieval-augmented Language Models",
+"desc": "Research on the Atlas RAG model reveals that it prioritizes retrieved context over built-in parametric knowledge and employs multiple mechanisms to integrate and utilize this context.",
+"date": "2024-10-07",
+"topics": [
+"parametric vs non-parametric"
+]
+},
+"2410.00857": {
+"id": "2410.00857",
+"title": "Quantifying reliance on external information over parametric knowledge during Retrieval Augmented Generation (RAG) using mechanistic analysis",
+"desc": "Research examines RAG's reliance on retrieved context over model priors, revealing a pronounced \"shortcut\" effect across different Language Models using causal mediation and attention analysis.",
+"date": "2024-10-01",
+"topics": [
+"parametric vs non-parametric"
+]
+},
+"2408.03297": {
+"id": "2408.03297",
+"title": "KnowPO: Knowledge-aware Preference Optimization for Controllable Knowledge Selection in Retrieval-Augmented Language Models",
+"desc": "KnowPO optimizes knowledge selection in large language models by addressing conflicts and preference imbalances through a dataset paradigm and rewriting strategies.",
+"date": "2024-08-06",
+"topics": [
+"parametric vs non-parametric"
+]
+},
+"2405.14768": {
+"id": "2405.14768",
+"title": "WISE: Rethinking the Knowledge Memory for Lifelong Model Editing of Large Language Models",
+"desc": "WISE addresses the limitations of updating long-term and working memory in large language models by proposing a dual memory system and knowledge-sharding mechanism, enhancing reliability, generalization, and locality in lifelong model edit\u2026",
+"date": "2024-05-23",
+"topics": [
+"parametric vs non-parametric"
+]
+},
+"2402.04401": {
+"id": "2402.04401",
+"title": "Democratizing Large Language Models via Personalized Parameter-Efficient Fine-tuning",
+"desc": "One PEFT Per User introduces personalized parameter-efficient fine-tuning modules that embed user-specific behavior patterns into LLMs, enabling private ownership and improved adaptation to dynamic preferences.",
+"date": "2025-02-08",
+"topics": [
+"parametric vs non-parametric"
+]
+},
+"2310.05149": {
+"id": "2310.05149",
+"title": "Retrieval-Generation Synergy Augmented Large Language Models",
+"desc": "The proposed iterative retrieval-generation framework enhances large language models' reasoning capabilities by combining parametric and non-parametric knowledge, demonstrating superior performance on both single-hop and multi-hop question\u2026",
+"date": "2023-10-08",
+"topics": [
+"parametric vs non-parametric"
+]
+},
+"2403.14403": {
+"id": "2403.14403",
+"title": "Adaptive-RAG: Learning to Adapt Retrieval-Augmented Large Language Models through Question Complexity",
+"desc": "An adaptive framework for retrieval-augmented large language models dynamically selects the most suitable strategy for handling query complexities, improving the efficiency and accuracy of QA systems.",
+"date": "2024-03-21",
+"topics": [
+"parametric vs non-parametric"
+]
+},
+"2305.15294": {
+"id": "2305.15294",
+"title": "Enhancing Retrieval-Augmented Large Language Models with Iterative Retrieval-Generation Synergy",
+"desc": "An iterative retrieval-generation approach, Iter-RetGen, enhances large language model performance by synergizing retrieval and generation to capture relevance and flexibility in complex tasks.",
+"date": "2023-05-24",
+"topics": [
+"parametric vs non-parametric"
+]
+},
+"2501.13726": {
+"id": "2501.13726",
+"title": "RPO: Retrieval Preference Optimization for Robust Retrieval-Augmented Generation",
+"desc": "Retrieval Preference Optimization (RPO) enhances Retrieval-Augmented Generation (RAG) by aligning multi-source knowledge based on retrieval relevance, improving accuracy without additional components.",
+"date": "2025-01-23",
+"topics": [
+"parametric vs non-parametric"
+]
+},
+"2409.12468": {
+"id": "2409.12468",
+"title": "Familiarity-Aware Evidence Compression for Retrieval-Augmented Generation",
+"desc": "FaviComp enhances retrieval-augmented generation by making retrieved evidence more familiar to the target model, improving accuracy and compression rates in open-domain QA tasks.",
+"date": "2024-09-19",
+"topics": [
+"parametric vs non-parametric"
+]
+},
+"2405.20347": {
+"id": "2405.20347",
+"title": "Small Language Models for Application Interactions: A Case Study",
+"desc": "Small Language Models outperform larger models in accuracy and running time for internal cloud supply chain applications, especially when fine-tuned on small datasets.",
+"date": "2024-05-23",
+"topics": [
+"small vs large models"
+]
+},
+"2601.16312": {
+"id": "2601.16312",
+"title": "Teaching and Evaluating LLMs to Reason About Polymer Design Related Tasks",
+"desc": "Researchers developed PolyBench, a large-scale benchmark dataset with 125K polymer design tasks and 13M+ data points, along with a knowledge-augmented reasoning distillation method that enables small language models to outperform larger mo\u2026",
+"date": "2026-01-22",
+"topics": [
+"small vs large models"
+]
+},
+"2501.08598": {
+"id": "2501.08598",
+"title": "LlamaRestTest: Effective REST API Testing with Small Language Models",
+"desc": "LlamaRestTest uses fine-tuned and quantized small language models to generate realistic REST API test inputs and detect parameter dependencies, outperforming larger models and existing testing tools.",
+"date": "2025-04-03",
+"topics": [
+"small vs large models"
+]
+},
+"2508.11281": {
+"id": "2508.11281",
+"title": "ToxiFrench: Benchmarking and Enhancing Language Models via CoT Fine-Tuning for French Toxicity Detection",
+"desc": "Detecting toxic content using language models is crucial yet challenging. While substantial progress has been made in English, toxicity detection in French remains underdeveloped, primarily due to the lack of culturally relevant, large-sca\u2026",
+"date": "2025-08-15",
+"topics": [
+"small vs large models"
+]
+},
+"2602.06337": {
+"id": "2602.06337",
+"title": "Can Post-Training Transform LLMs into Causal Reasoners?",
+"desc": "Post-training enhances small language models' causal inference capabilities, enabling them to outperform larger models on benchmark tasks while demonstrating robustness to real-world data conditions.",
+"date": "2026-02-06",
+"topics": [
+"small vs large models"
+]
+},
+"2409.11547": {
+"id": "2409.11547",
+"title": "Small Language Models can Outperform Humans in Short Creative Writing: A Study Comparing SLMs with Humans and LLMs",
+"desc": "A fine-tuned small language model, BART Large, demonstrated superior creative writing abilities compared to human writers and larger models, GPT-3.5 and GPT-4o, particularly in creativity and fluency while maintaining reasonable coherence.",
+"date": "2024-09-17",
+"topics": [
+"small vs large models"
+]
+},
+"2401.07576": {
+"id": "2401.07576",
+"title": "TDD Without Tears: Towards Test Case Generation from Requirements through Deep Reinforcement Learning",
+"desc": "PyTester uses a Deep RL approach to generate test cases from natural language requirements, outperforming larger models on the APPS benchmark.",
+"date": "2024-01-15",
+"topics": [
+"small vs large models"
+]
+},
+"2412.08619": {
+"id": "2412.08619",
+"title": "Synthetic Vision: Training Vision-Language Models to Understand Physics",
+"desc": "VLMs enhance physical reasoning through fine-tuning with simulated QA pairs and Physics Context Builders, improving performance and robustness across benchmarks and real-world scenarios.",
+"date": "2024-12-11",
+"topics": [
+"small vs large models"
+]
+},
+"2410.10877": {
+"id": "2410.10877",
+"title": "Improving Data Efficiency via Curating LLM-Driven Rating Systems",
+"desc": "DS2, a diversity-aware score curation method, enhances data selection for LLMs by correcting errors and promoting diversity, leading to performance improvements with smaller, curated datasets.",
+"date": "2024-10-09",
+"topics": [
+"small vs large models"
+]
+},
+"2310.00500": {
+"id": "2310.00500",
+"title": "Small Visual Language Models can also be Open-Ended Few-Shot Learners",
+"desc": "Self-Context Adaptation (SeCAt) enhances few-shot learning capabilities of small visual language models through self-supervised clustering and pseudo-captioning.",
+"date": "2023-09-30",
+"topics": [
+"small vs large models"
+]
+},
+"2502.10140": {
+"id": "2502.10140",
+"title": "Small Models, Big Impact: Efficient Corpus and Graph-Based Adaptation of Small Multilingual Language Models for Low-Resource Languages",
+"desc": "Adapter-based methods improve multilingual models' performance on low-resource languages using minimal adaptation data, outperforming full fine-tuning with fewer parameters.",
+"date": "2025-02-14",
+"topics": [
+"small vs large models"
+]
+},
+"2301.13779": {
+"id": "2301.13779",
+"title": "FLAME: A small language model for spreadsheet formulas",
+"desc": "FLAME, a transformer-based model optimized for Excel formulas, achieves competitive performance in formula repair, completion, and retrieval tasks using a significantly smaller dataset and model size.",
+"date": "2023-01-31",
+"topics": [
+"small vs large models"
+]
+},
+"2608.23841": {
+"id": "2608.23841",
+"title": "Pipeline-Native Transformers: Co-Designing Model Architecture and CPU Inference for Bandwidth-Efficient Autoregressive Decode",
+"desc": "A CPU-first streaming engine co-designed with pipeline-native transformer architectures reduces memory-bandwidth bottlenecks for single-token autoregressive decoding via tiled weight storage, selective expert loading, and asynchronous I/O\u2026",
+"date": "2026-08-24",
+"topics": [
+"memory bandwidth"
+]
+},
+"2604.05546": {
+"id": "2604.05546",
+"title": "Efficient Inference for Large Vision-Language Models: Bottlenecks, Techniques, and Prospects",
+"desc": "Large Vision-Language Models face efficiency challenges due to visual token dominance, requiring systematic analysis of encoding, prefilling, and decoding stages to balance visual fidelity and computational resources.",
+"date": "2026-04-14",
+"topics": [
+"memory bandwidth"
+]
+},
+"2407.11798": {
+"id": "2407.11798",
+"title": "PipeInfer: Accelerating LLM Inference using Asynchronous Pipelined Speculation",
+"desc": "PipeInfer improves inference speed and latency for large language models using continuous asynchronous speculation and early cancellation in a pipelined design.",
+"date": "2024-07-16",
+"topics": [
+"memory bandwidth"
+]
+},
+"2607.16339": {
+"id": "2607.16339",
+"title": "LaCache: Exact Caching and Precision-Adaptive Inference for Diffusion Large Language Models",
+"desc": "LaCache accelerates diffusion-based language models by caching invariant intermediate states and applying FP8 quantization to eliminate redundant computation during semi-autoregressive decoding.",
+"date": "2026-07-22",
+"topics": [
+"memory bandwidth"
+]
+},
+"2309.10285": {
+"id": "2309.10285",
+"title": "Flash-LLM: Enabling Cost-Effective and Highly-Efficient Large Generative Model Inference with Unstructured Sparsity",
+"desc": "Flash-LLM enhances large generative model inference by efficiently handling unstructured sparsity on Tensor Cores, significantly improving computation speed and memory usage.",
+"date": "2023-09-19",
+"topics": [
+"memory bandwidth"
+]
+},
+"2603.10031": {
+"id": "2603.10031",
+"title": "Architecture-Aware LLM Inference Optimization on AMD Instinct GPUs: A Comprehensive Benchmark and Deployment Study",
+"desc": "Production-level large language model inference on AMD GPUs shows architecture-specific optimization needs and performance variations across different model types and workloads.",
+"date": "2026-02-27",
+"topics": [
+"memory bandwidth"
+]
+},
+"2601.22001": {
+"id": "2601.22001",
+"title": "Heterogeneous Computing: The Key to Powering the Future of AI Agent Inference",
+"desc": "AI agent inference creates new performance bottlenecks beyond compute, requiring novel system architectures that address memory capacity, bandwidth, and interconnect limitations through disaggregated serving and heterogeneous accelerators.",
+"date": "2026-01-29",
+"topics": [
+"memory bandwidth"
+]
+},
+"2603.20397": {
+"id": "2603.20397",
+"title": "KV Cache Optimization Strategies for Scalable and Efficient LLM Inference",
+"desc": "Transformer-based large language models rely on key-value cache optimization techniques to manage memory constraints and improve inference efficiency across diverse deployment scenarios.",
+"date": "2026-03-20",
+"topics": [
+"memory bandwidth"
+]
+},
+"2604.25183": {
+"id": "2604.25183",
+"title": "Hardware Generation and Exploration of Lookup Table-Based Accelerators for 1.58-bit LLM Inference",
+"desc": "Ternary weight quantization for LLM inference benefits from optimized LUT-based hardware architectures that outperform traditional multiplier designs through systematic design space exploration and analysis.",
+"date": "2026-04-28",
+"topics": [
+"memory bandwidth"
+]
+},
+"2306.07629": {
+"id": "2306.07629",
+"title": "SqueezeLLM: Dense-and-Sparse Quantization",
+"desc": "SqueezeLLM, a post-training quantization framework for Generative Large Language Models, achieves ultra-low precision quantization with minimal performance loss and significant speedup.",
+"date": "2023-06-13",
+"topics": [
+"memory bandwidth"
+]
+},
+"2308.09723": {
+"id": "2308.09723",
+"title": "FineQuant: Unlocking Efficiency with Fine-Grained Weight-Only Quantization for LLMs",
+"desc": "The paper introduces a weight-only quantization method to reduce memory consumption and accelerate inference for Large Language Models, demonstrating minimal accuracy loss and significant throughput improvements.",
+"date": "2023-08-16",
+"topics": [
+"memory bandwidth"
+]
+},
+"2411.18271": {
+"id": "2411.18271",
+"title": "Efficient Nonlinear Function Approximation in Analog Resistive Crossbars for Recurrent Neural Networks",
+"desc": "Analog in-memory computing integrates a ramp ADC at the memory periphery to efficiently implement nonlinear activations in RNNs, enhancing area-efficiency, energy-efficiency, and throughput for tasks like keyword spotting and language mode\u2026",
+"date": "2024-11-27",
+"topics": [
+"analog in-memory compute"
+]
+},
+"2605.09416": {
+"id": "2605.09416",
+"title": "A Controlled Diagnostic Study of Hardware-Induced Distortions in Hardware-Aware Training",
+"desc": "Hardware-aware training diagnostic framework analyzes hardware non-idealities as structured perturbations to determine optimizability and guide hardware-software co-design decisions.",
+"date": "2026-05-10",
+"topics": [
+"analog in-memory compute"
+]
+},
+"2406.08871": {
+"id": "2406.08871",
+"title": "Superconductor bistable vortex memory for data storage and in-memory computing",
+"desc": "Superconductor electronics (SCE) is a promising complementary and beyond CMOS technology. However, despite its practical benefits, the realization of SCE logic faces a significant challenge due to the absence of dense and scalable nonvolat\u2026",
+"date": "2024-06-13",
+"topics": [
+"analog in-memory compute"
+]
+},
+"2003.01551": {
+"id": "2003.01551",
+"title": "A New MRAM-based Process In-Memory Accelerator for Efficient Neural Network Training with Floating Point Precision",
+"desc": "A SOT-MRAM based digital PIM accelerator supports floating point precision, leading to improved energy, latency, and area efficiency in DNN training compared to existing solutions.",
+"date": "2020-03-02",
+"topics": [
+"analog in-memory compute"
+]
+},
+"2607.29076": {
+"id": "2607.29076",
+"title": "Selective KV Cache Protection for Noise-Resilient LLM Inference on Analog Compute-In-Memory Systems",
+"desc": "Analog compute-in-memory arrays for LLM attention are protected by a hierarchical token strategy that routes vulnerable sink and recent tokens through digital paths, reducing noise-induced perplexity near clean baselines.",
+"date": "2026-08-19",
+"topics": [
+"analog in-memory compute"
+]
+},
+"2307.00771": {
+"id": "2307.00771",
+"title": "Resistive memory-based zero-shot liquid state machine for multimodal event data learning",
+"desc": "A co-design of fixed and random liquid state machine (LSM) SNNs with trainable ANN projections addresses hardware and software challenges in neuromorphic systems, demonstrating efficient event encoding.",
+"date": "2023-07-03",
+"topics": [
+"analog in-memory compute"
+]
+},
+"2412.20848": {
+"id": "2412.20848",
+"title": "Analog Alchemy: Neural Computation with In-Memory Inference, Learning and Routing",
+"desc": "Memristive devices offer an alternative approach to neural computation by integrating memory and computation through analog physics, addressing energy efficiency limitations of traditional von Neumann architectures while enabling learning\u2026",
+"date": "2024-12-30",
+"topics": [
+"analog in-memory compute"
+]
+},
+"2512.22435": {
+"id": "2512.22435",
+"title": "AnalogSAGE: Self-evolving Analog Design Multi-Agents with Stratified Memory and Grounded Experience",
+"desc": "AnalogSAGE is an open-source self-evolving multi-agent framework for analog circuit design that uses stratified memory and simulation-grounded feedback to improve design reliability and autonomy.",
+"date": "2025-12-27",
+"topics": [
+"analog in-memory compute"
+]
+},
+"2603.08720": {
+"id": "2603.08720",
+"title": "AnalogToBi: Device-Level Analog Circuit Topology Generation via Bipartite Graph and Grammar Guided Decoding",
+"desc": "AnalogToBi is a transformer-based framework for generating valid analog circuit topologies with explicit functional control and grammar-guided decoding.",
+"date": "2026-02-10",
+"topics": [
+"analog in-memory compute"
+]
+},
+"2004.14942": {
+"id": "2004.14942",
+"title": "Memristors -- from In-memory computing, Deep Learning Acceleration, Spiking Neural Networks, to the Future of Neuromorphic and Bio-inspired Computing",
+"desc": "Deep learning advancements have been driven by large datasets, increased computing power, and algorithmic innovations, but hardware limitations may necessitate novel approaches like memristor-based systems for efficient AI implementation.",
+"date": "2020-04-30",
+"topics": [
+"analog in-memory compute"
+]
+},
+"2307.11094": {
+"id": "2307.11094",
+"title": "Modular DFR: Digital Delayed Feedback Reservoir Model for Enhancing Design Flexibility",
+"desc": "A novel modular delayed feedback reservoir model enables fully digital implementation with reduced power consumption and improved throughput while maintaining accuracy.",
+"date": "2023-07-05",
+"topics": [
+"analog in-memory compute"
+]
+},
+"2212.10881": {
+"id": "2212.10881",
+"title": "In-Sensor & Neuromorphic Computing are all you need for Energy Efficient Computer Vision",
+"desc": "An in-sensor computing framework for spiking neural networks reduces bandwidth and energy consumption for image recognition with minimal impact on accuracy.",
+"date": "2022-12-21",
+"topics": [
+"analog in-memory compute"
+]
+},
+"2504.11109": {
+"id": "2504.11109",
+"title": "Fine-Tuning Large Language Models on Quantum Optimization Problems for Circuit Generation",
+"desc": "LLMs fine-tuned with quantum computing knowledge can generate high-quality, parameterized quantum circuits for optimization problems, outperforming existing models.",
+"date": "2025-04-15",
+"topics": [
+"quantum ML"
+]
+},
+"2212.06615": {
+"id": "2212.06615",
+"title": "Category Theory for Quantum Natural Language Processing",
+"desc": "This thesis introduces quantum natural language processing (QNLP) models based on a simple yet powerful analogy between computational linguistics and quantum mechanics: grammar as entanglement. The grammatical structure of text and sentenc\u2026",
+"date": "2022-12-13",
+"topics": [
+"quantum ML"
+]
+},
+"2512.09834": {
+"id": "2512.09834",
+"title": "Transpiling quantum circuits by a transformers-based algorithm",
+"desc": "A transformer model is developed to transpile quantum circuits from QASM format to ion trap hardware-specific gate sets with high accuracy and polynomial scalability.",
+"date": "2026-03-05",
+"topics": [
+"quantum ML"
+]
+},
+"2403.06890": {
+"id": "2403.06890",
+"title": "Application of Quantum Tensor Networks for Protein Classification",
+"desc": "Quantum Tensor Networks (QTN) can effectively classify proteins based on their subcellular locations using fewer parameters compared to classical models, achieving high accuracy.",
+"date": "2024-03-11",
+"topics": [
+"quantum ML"
+]
+},
+"2303.09491": {
+"id": "2303.09491",
+"title": "Challenges and Opportunities in Quantum Machine Learning",
+"desc": "Quantum machine learning combines quantum computing with data analysis, reviewing quantum neural networks, trainability challenges, and potential quantum advantages.",
+"date": "2023-03-16",
+"topics": [
+"quantum ML"
+]
+},
+"2401.11351": {
+"id": "2401.11351",
+"title": "A comprehensive review of Quantum Machine Learning: from NISQ to Fault Tolerance",
+"desc": "The paper reviews quantum machine learning concepts, including NISQ techniques and fault-tolerant algorithms, along with related statistical learning theory.",
+"date": "2024-03-31",
+"topics": [
+"quantum ML"
+]
+},
+"2107.09200": {
+"id": "2107.09200",
+"title": "A quantum algorithm for training wide and deep classical neural networks",
+"desc": "Quantum algorithms can train deep neural networks with exponential speedup over classical methods when data distributions allow efficient state preparation and readout, demonstrated on MNIST dataset with matching accuracy.",
+"date": "2021-07-19",
+"topics": [
+"quantum ML"
+]
+},
+"1611.09347": {
+"id": "1611.09347",
+"title": "Quantum Machine Learning",
+"desc": "The abstract discusses quantum machine learning as a strategy to leverage quantum computers for pattern recognition tasks that may exceed classical capabilities, noting ongoing hardware and software challenges.",
+"date": "2018-05-10",
+"topics": [
+"quantum ML"
+]
+},
+"2310.10910": {
+"id": "2310.10910",
+"title": "Machine Learning in the Quantum Age: Quantum vs. Classical Support Vector Machines",
+"desc": "QSVMs achieve competitive accuracy compared to classical SVMs on the Iris dataset using quantum hardware, highlighting the potential benefits of increased quantum computational capacity.",
+"date": "2023-10-17",
+"topics": [
+"quantum ML"
+]
+},
+"2606.13811": {
+"id": "2606.13811",
+"title": "Aligning Quantum Operators with Large Language Models",
+"desc": "Large language models can be adapted to understand quantum operators by mapping unitary matrices into their latent space, enabling quantum circuit synthesis and language-conditioned gate constraint specification.",
+"date": "2026-06-11",
+"topics": [
+"quantum ML"
+]
+},
+"2011.01938": {
+"id": "2011.01938",
+"title": "Power of data in quantum machine learning",
+"desc": "Classical machine learning can compete with quantum models for certain problems, but quantum advantages exist for specific learning tasks, demonstrated through rigorous bounds and numerical tests up to 30 qubits.",
+"date": "2020-11-03",
+"topics": [
+"quantum ML"
+]
+},
+"2006.14619": {
+"id": "2006.14619",
+"title": "Recurrent Quantum Neural Networks",
+"desc": "A quantum recurrent neural network architecture is developed using parametrized quantum neurons with amplitude amplification for nonlinear activation, demonstrating performance on sequence learning and classification tasks while analyzing\u2026",
+"date": "2020-06-25",
+"topics": [
+"quantum ML"
+]
+},
+"2503.00838": {
+"id": "2503.00838",
+"title": "Foundation Models Secretly Understand Neural Network Weights: Enhancing Hypernetwork Architectures with Foundation Models",
+"desc": "Foundation models enhance hypernetworks with Transformer architectures, improving performance, generalizability, and data efficiency across algorithms and modalities for implicit neural representations.",
+"date": "2025-03-02",
+"topics": [
+"hypernetworks"
+]
+},
+"2605.21309": {
+"id": "2605.21309",
+"title": "Hyper-V2X: Hypernetworks for Estimating Epistemic and Aleatoric Uncertainty in Cooperative Bird's-Eye-View Semantic Segmentation",
+"desc": "Hyper-V2X is a hypernetwork-based framework that estimates both epistemic and aleatoric uncertainties in V2X-enabled cooperative perception systems through Bayesian weight generation and context embedding.",
+"date": "2026-05-20",
+"topics": [
+"hypernetworks"
+]
+},
+"2607.27594": {
+"id": "2607.27594",
+"title": "Compliance2LoRA: Personalizable On-Demand Safety Alignment on Arbitrary Policy Subsets via Hypernetwork-Generated LoRA Adapters",
+"desc": "A hypernetwork-based framework generates policy-specific LoRA weights to adapt large reasoning models to diverse safety policies without retraining.",
+"date": "2026-08-02",
+"topics": [
+"hypernetworks"
+]
+},
+"2306.06955": {
+"id": "2306.06955",
+"title": "A Brief Review of Hypernetworks in Deep Learning",
+"desc": "Hypernetworks generate weights for other neural networks, offering flexibility, adaptability, and performance improvements across various deep learning tasks.",
+"date": "2023-06-12",
+"topics": [
+"hypernetworks"
+]
+},
+"2603.08210": {
+"id": "2603.08210",
+"title": "Video2LoRA: Unified Semantic-Controlled Video Generation via Per-Reference-Video LoRA",
+"desc": "Video2LoRA enables flexible semantic video generation by using lightweight hypernetworks to predict personalized LoRA weights for adaptive control while maintaining reference video semantics and style.",
+"date": "2026-04-01",
+"topics": [
+"hypernetworks"
+]
+},
+"1609.09106": {
+"id": "1609.09106",
+"title": "HyperNetworks",
+"desc": "Hypernetworks generate non-shared weights for deep convolutional and recurrent networks, outperforming weight-sharing paradigms on sequence and image recognition tasks with fewer parameters.",
+"date": "2016-09-27",
+"topics": [
+"hypernetworks"
+]
+},
+"2601.15968": {
+"id": "2601.15968",
+"title": "HyperAlign: Hypernetwork for Efficient Test-Time Alignment of Diffusion Models",
+"desc": "HyperAlign enhances diffusion model output quality by using a hypernetwork to dynamically adjust denoising trajectories based on input conditions and rewards, improving semantic consistency and visual appeal.",
+"date": "2026-01-22",
+"topics": [
+"hypernetworks"
+]
+},
+"2604.20148": {
+"id": "2604.20148",
+"title": "Meta-Tool: Efficient Few-Shot Tool Adaptation for Small Language Models",
+"desc": "Small language models can achieve strong tool-use performance through well-designed prompting and example curation without requiring complex adaptation mechanisms like hypernetwork-based LoRA.",
+"date": "2026-04-22",
+"topics": [
+"hypernetworks"
+]
+},
+"1708.05344": {
+"id": "1708.05344",
+"title": "SMASH: One-Shot Model Architecture Search through HyperNetworks",
+"desc": "A HyperNet is used to generate weights for various network architectures, enabling efficient architecture search with a single training run.",
+"date": "2017-08-17",
+"topics": [
+"hypernetworks"
+]
+},
+"2304.07645": {
+"id": "2304.07645",
+"title": "Magnitude Invariant Parametrizations Improve Hypernetwork Learning",
+"desc": "Magnitude Invariant Parametrizations (MIP) stabilize and accelerate the training of hypernetworks across various tasks by addressing magnitude proportionality issues in hypernetwork inputs and outputs.",
+"date": "2023-04-15",
+"topics": [
+"hypernetworks"
+]
+},
+"2209.07712": {
+"id": "2209.07712",
+"title": "Continual Learning with Dependency Preserving Hypernetworks",
+"desc": "A novel RNN-based hypernetwork approach addresses continual learning by maintaining parameter efficiency while preserving weight dependencies across layers, outperforming existing methods in various image classification CL tasks.",
+"date": "2022-09-16",
+"topics": [
+"hypernetworks"
+]
+},
+"2402.01524": {
+"id": "2402.01524",
+"title": "HyperPlanes: Hypernetwork Approach to Rapid NeRF Adaptation",
+"desc": "A hypernetwork-based few-shot learning approach efficiently generates high-quality 3D object representations from limited images without gradient optimization during inference.",
+"date": "2024-02-02",
+"topics": [
+"hypernetworks"
+]
+},
+"2310.12808": {
+"id": "2310.12808",
+"title": "Model Merging by Uncertainty-Based Gradient Matching",
+"desc": "Mismatched gradients between models trained on different datasets reduce the effectiveness of weighted-averaging and a new uncertainty-based scheme is proposed to enhance model performance and robustness.",
+"date": "2023-10-19",
+"topics": [
+"model merging"
+]
+},
+"2406.14563": {
+"id": "2406.14563",
+"title": "Model Merging and Safety Alignment: One Bad Model Spoils the Bunch",
+"desc": "Proposed method improves model alignment during the merging of large language models by incorporating synthetic safety and domain-specific data.",
+"date": "2024-06-20",
+"topics": [
+"model merging"
+]
+},
+"2408.07666": {
+"id": "2408.07666",
+"title": "Model Merging in LLMs, MLLMs, and Beyond: Methods, Theories, Applications and Opportunities",
+"desc": "This survey reviews model merging techniques, their applications in various machine learning domains, and identifies future research challenges.",
+"date": "2024-08-14",
+"topics": [
+"model merging"
+]
+},
+"2410.03617": {
+"id": "2410.03617",
+"title": "What Matters for Model Merging at Scale?",
+"desc": "The study evaluates various model merging techniques at scale, demonstrating that merging high-quality, large models improves generalization across different tasks.",
+"date": "2024-10-04",
+"topics": [
+"model merging"
+]
+},
+"2410.12613": {
+"id": "2410.12613",
+"title": "Exploring Model Kinship for Merging Large Language Models",
+"desc": "Model kinship guides model merging to improve performance on benchmarks and helps escape local optima in model evolution.",
+"date": "2024-10-16",
+"topics": [
+"model merging"
+]
+},
+"2405.07813": {
+"id": "2405.07813",
+"title": "Localizing Task Information for Improved Model Merging and Compression",
+"desc": "TALL-masks and Consensus Merging enhance multi-task model performance by identifying and eliminating task-specific and detrimental weights, reducing storage while maintaining accuracy.",
+"date": "2024-05-13",
+"topics": [
+"model merging"
+]
+},
+"2411.03055": {
+"id": "2411.03055",
+"title": "ATM: Improving Model Merging by Alternating Tuning and Merging",
+"desc": "Model merging using task vectors and an iterative Alternating Tuning and Merging (ATM) process achieves state-of-the-art results in multi-task learning by linking task vectors to gradients and improving orthogonality between tasks.",
+"date": "2024-11-05",
+"topics": [
+"model merging"
+]
+},
+"2407.03994": {
+"id": "2407.03994",
+"title": "Unlocking the Potential of Model Merging for Low-Resource Languages",
+"desc": "Model merging effectively enhances task-solving abilities in large language models for low-resource languages by combining models without additional supervised fine-tuning, outperforming continual pre-training methods with limited data.",
+"date": "2024-07-04",
+"topics": [
+"model merging"
+]
+},
+"2502.04959": {
+"id": "2502.04959",
+"title": "No Task Left Behind: Isotropic Model Merging with Common and Task-Specific Subspaces",
+"desc": "The paper proposes isotropic merging to improve performance during model merging by aligning singular components and incorporating common and task-specific subspaces.",
+"date": "2025-02-07",
+"topics": [
+"model merging"
+]
+},
+"2502.06876": {
+"id": "2502.06876",
+"title": "Mix Data or Merge Models? Balancing the Helpfulness, Honesty, and Harmlessness of Large Language Model via Model Merging",
+"desc": "Model merging methods outperform data mixture strategies in balancing alignment trade-offs in large language models through collaborative/conflicting relationships analysis and parameter-level conflict resolution.",
+"date": "2025-02-08",
+"topics": [
+"model merging"
+]
+},
+"2410.13910": {
+"id": "2410.13910",
+"title": "Mitigating the Backdoor Effect for Multi-Task Model Merging via Safety-Aware Subspace",
+"desc": "A new defense-aware merging (DAM) approach is proposed to simultaneously address task interference and backdoor vulnerabilities in model merging, improving security while maintaining performance.",
+"date": "2024-10-17",
+"topics": [
+"model merging"
+]
+},
+"2503.12649": {
+"id": "2503.12649",
+"title": "FW-Merging: Scaling Model Merging with Frank-Wolfe Optimization",
+"desc": "A novel Frank-Wolfe Merging approach enhances multi-task learning by efficiently scaling and adapting to diverse sets of fine-tuned foundation models.",
+"date": "2025-03-16",
+"topics": [
+"model merging"
+]
+},
+"2605.09630": {
+"id": "2605.09630",
+"title": "Scratchpad Patching: Decoupling Compute from Patch Size in Byte-Level Language Models",
+"desc": "Tokenizer-free language models using patch-based approaches face a trade-off between compute efficiency and modeling quality due to patch lag, which Scratchpad Patching addresses by dynamically refreshing context within patches based on pr\u2026",
+"date": "2026-05-10",
+"topics": [
+"byte-level models"
+]
+},
+"2209.11035": {
+"id": "2209.11035",
+"title": "MonoByte: A Pool of Monolingual Byte-level Language Models",
+"desc": "Monolingual language models pretrained under consistent configurations achieve competitive performance to multilingual models, advancing the understanding of cross-lingual transferability.",
+"date": "2022-09-22",
+"topics": [
+"byte-level models"
+]
+},
+"2608.03599": {
+"id": "2608.03599",
+"title": "Disentangling Language Modeling and Boundaries",
+"desc": "Byte-level language models enable exact knowledge transfer and independent boundary control, supporting a shared interface standard.",
+"date": "2026-08-04",
+"topics": [
+"byte-level models"
+]
+},
+"2511.11346": {
+"id": "2511.11346",
+"title": "Fast and Expressive Multi-Byte Prediction with Probabilistic Circuits",
+"desc": "MTPC uses probabilistic circuits to balance expressiveness and latency in multi-token prediction for byte-level language models, accelerating generation with speculative decoding while preserving original model performance.",
+"date": "2026-06-02",
+"topics": [
+"byte-level models"
+]
+},
+"2410.09303": {
+"id": "2410.09303",
+"title": "Exact Byte-Level Probabilities from Tokenized Language Models for FIM-Tasks and Model Ensembles",
+"desc": "This work identifies and mitigates \"tokenization bias\" by introducing a method that converts tokenized language models into statistically equivalent token-free models, leading to performance improvements in fill-in-the-middle tasks and mod\u2026",
+"date": "2024-10-11",
+"topics": [
+"byte-level models"
+]
+},
+"2405.14159": {
+"id": "2405.14159",
+"title": "Super Tiny Language Models",
+"desc": "Research efforts on Super Tiny Language Models reduce parameter counts by 90% to 95% using byte-level tokenization, weight tying, and efficient training, while maintaining competitive performance.",
+"date": "2024-05-23",
+"topics": [
+"byte-level models"
+]
+},
+"2603.03583": {
+"id": "2603.03583",
+"title": "ByteFlow: Language Modeling through Adaptive Byte Compression without a Tokenizer",
+"desc": "ByteFlow Net presents a tokenizer-free hierarchical architecture that enables language models to learn adaptive segmentation of raw byte streams through compression-driven methods while maintaining a static computation graph.",
+"date": "2026-03-03",
+"topics": [
+"byte-level models"
+]
+},
+"2105.13626": {
+"id": "2105.13626",
+"title": "ByT5: Towards a token-free future with pre-trained byte-to-byte models",
+"desc": "A standard Transformer architecture can process byte sequences with minimal modifications, showing competitive performance and increased robustness to noise compared to token-level models.",
+"date": "2021-05-28",
+"topics": [
+"byte-level models"
+]
+},
+"2211.12677": {
+"id": "2211.12677",
+"title": "Word-Level Representation From Bytes For Language Modeling",
+"desc": "Byte2Word is a token-free language model using byte-level inputs with cross-attention for word-level predictions, achieving competitive performance with reduced embeddings.",
+"date": "2022-11-23",
+"topics": [
+"byte-level models"
+]
+},
+"2608.27658": {
+"id": "2608.27658",
+"title": "When Tokenizers Fail: Byte-Level Chunking for Zero-Shot Transfer to Low-Resource Languages",
+"desc": "A hierarchical byte-level framework initialized from frozen subword embeddings improves word-level morphological task performance for low-resource languages without extensive training.",
+"date": "2026-08-27",
+"topics": [
+"byte-level models"
+]
+},
+"2205.11490": {
+"id": "2205.11490",
+"title": "Local Byte Fusion for Neural Machine Translation",
+"desc": "A Local Byte Fusion method for byte-based machine translation improves multilingual translation, zero-shot transfer, and domain adaptation compared to traditional byte-based and subword models.",
+"date": "2022-05-23",
+"topics": [
+"byte-level models"
+]
+},
+"2310.11628": {
+"id": "2310.11628",
+"title": "Learn Your Tokens: Word-Pooled Tokenization for Language Modeling",
+"desc": "A new tokenization scheme that learns word boundaries and pools bytes/characters into word representations improves language modeling performance and robustness over subword and byte/character models.",
+"date": "2023-10-17",
+"topics": [
+"byte-level models"
+]
+},
+"2310.15594": {
+"id": "2310.15594",
+"title": "Retrieval-based Knowledge Transfer: An Effective Approach for Extreme Large Language Model Compression",
+"desc": "A novel RetriKT compression paradigm enables small-scale models to perform effectively by leveraging knowledge stored from large pre-trained language models, using soft prompt tuning and PPO.",
+"date": "2023-10-24",
+"topics": [
+"retrieval knowledge transfer"
+]
+},
+"2304.03898": {
+"id": "2304.03898",
+"title": "The Short Text Matching Model Enhanced with Knowledge via Contrastive Learning",
+"desc": "A model combining contrastive learning and external knowledge for short text matching generate semantically meaningful embeddings using a generative model and a knowledge graph.",
+"date": "2023-04-08",
+"topics": [
+"retrieval knowledge transfer"
+]
+},
+"2402.18031": {
+"id": "2402.18031",
+"title": "Corpus-Steered Query Expansion with Large Language Models",
+"desc": "Corpus-Steered Query Expansion (CSQE) enhances information retrieval by integrating relevant sentences from the corpus with expansions from LLMs, improving query relevance without additional training.",
+"date": "2024-02-28",
+"topics": [
+"retrieval knowledge transfer"
+]
+},
+"2311.08329": {
+"id": "2311.08329",
+"title": "KTRL+F: Knowledge-Augmented In-Document Search",
+"desc": "A new task, KTRL+F, enhances in-document search by integrating external knowledge into phrase embeddings, balancing speed and performance, and improving user search experience.",
+"date": "2023-11-14",
+"topics": [
+"retrieval knowledge transfer"
+]
+},
+"2406.11706": {
+"id": "2406.11706",
+"title": "Prompts as Auto-Optimized Training Hyperparameters: Training Best-in-Class IR Models from Scratch with 10 Gold Labels",
+"desc": "A method for training small neural information retrieval models using synthetic queries generated by an optimized language model prompt outperforms larger models trained on extensive datasets.",
+"date": "2024-06-17",
+"topics": [
+"retrieval knowledge transfer"
+]
+},
+"2305.03653": {
+"id": "2305.03653",
+"title": "Query Expansion by Prompting Large Language Models",
+"desc": "Large Language Models enhance query expansion by generating relevant terms through prompts, particularly Chain-of-Thought, surpassing traditional methods.",
+"date": "2023-05-05",
+"topics": [
+"retrieval knowledge transfer"
+]
+},
+"2305.04177": {
+"id": "2305.04177",
+"title": "MIReAD: Simple Method for Learning High-quality Representations from Scientific Documents",
+"desc": "MIReAD, a method for fine-tuning transformer models to predict journal classes, effectively learns high-quality representations of scientific papers for tasks such as document retrieval and topic categorization.",
+"date": "2023-05-07",
+"topics": [
+"retrieval knowledge transfer"
+]
+},
+"2602.12192": {
+"id": "2602.12192",
+"title": "Query-focused and Memory-aware Reranker for Long Context Processing",
+"desc": "A lightweight reranking framework uses attention scores from selected heads to estimate passage-query relevance, achieving strong performance across multiple domains and benchmarks.",
+"date": "2026-02-12",
+"topics": [
+"retrieval knowledge transfer"
+]
+},
+"2310.05002": {
+"id": "2310.05002",
+"title": "Self-Knowledge Guided Retrieval Augmentation for Large Language Models",
+"desc": "Self-Knowledge guided Retrieval augmentation (SKR) enhances LLM performance by enabling adaptive use of both internal and external knowledge, outperforming chain-of-thought and fully retrieval-based methods.",
+"date": "2023-10-08",
+"topics": [
+"retrieval knowledge transfer"
+]
+},
+"2010.03496": {
+"id": "2010.03496",
+"title": "Inductive Entity Representations from Text via Link Prediction",
+"desc": "A holistic evaluation protocol for entity representations learned via link prediction demonstrates strong generalization to other tasks, including entity classification and information retrieval, without fine-tuning.",
+"date": "2020-10-07",
+"topics": [
+"retrieval knowledge transfer"
+]
+},
+"2311.14740": {
+"id": "2311.14740",
+"title": "AutoKG: Efficient Automated Knowledge Graph Generation for Language Models",
+"desc": "AutoKG enables enhanced knowledge retrieval for LLMs through automated knowledge graph construction using keyword extraction and graph Laplace learning, improving output relevance and insight.",
+"date": "2023-11-22",
+"topics": [
+"retrieval knowledge transfer"
+]
+},
+"2607.17043": {
+"id": "2607.17043",
+"title": "Learning from Synthetic Data without Model Collapse in Iterative Instruction Tuning",
+"desc": "KITE improves iterative instruction tuning by identifying polarized skill degradation and curating synthetic data to stabilize successive model gains.",
+"date": "2026-07-19",
+"topics": [
+"synthetic data"
+]
+},
+"2404.01413": {
+"id": "2404.01413",
+"title": "Is Model Collapse Inevitable? Breaking the Curse of Recursion by Accumulating Real and Synthetic Data",
+"desc": "Accumulating synthetic data alongside real data during training prevents model collapse in generative models, a phenomenon observed when synthetic data replaces real data.",
+"date": "2024-04-01",
+"topics": [
+"synthetic data"
+]
+},
+"2412.14689": {
+"id": "2412.14689",
+"title": "How to Synthesize Text Data without Model Collapse?",
+"desc": "The use of synthetic data in language model training leads to model collapse, which is mitigated by token-level editing of human-produced data to create semi-synthetic data.",
+"date": "2024-12-19",
+"topics": [
+"synthetic data"
+]
+},
+"2609.40295": {
+"id": "2609.40295",
+"title": "How Much Is an AI Token Worth? Scaling Laws for Wild AI-Generated Web Text",
+"desc": "Pretraining on wild AI-generated web text initially helps small models but harms larger ones, prompting a revised scaling law and recommendations to filter AI content when targeting human text.",
+"date": "2026-09-30",
+"topics": [
+"synthetic data"
+]
+},
+"2510.16657": {
+"id": "2510.16657",
+"title": "Escaping Model Collapse via Synthetic Data Verification: Near-term Improvements and Long-term Convergence",
+"desc": "Injecting external verification into synthetic data retraining prevents model collapse and guides parameter estimates toward the verifier's knowledge center, with theoretical and experimental validation across linear regression and VAEs.",
+"date": "2026-03-05",
+"topics": [
+"synthetic data"
+]
+},
+"2410.12954": {
+"id": "2410.12954",
+"title": "A Note on Shumailov et al. (2024): `AI Models Collapse When Trained on Recursively Generated Data'",
+"desc": "Investigating model collapse in generative models trained on synthetic data reveals that fitting distributions and repeated sampling may inherently lead to this phenomenon.",
+"date": "2024-10-16",
+"topics": [
+"synthetic data"
+]
+},
+"2610.15617": {
+"id": "2610.15617",
+"title": "Screening Collapse under Recursive Synthetic Data",
+"desc": "Recursive synthetic-data training can cause screening collapse, where variable selection degrades across generations due to target drift, and mitigation requires preserving clean-label data or accumulating pooled targets.",
+"date": "2026-10-11",
+"topics": [
+"synthetic data"
+]
+},
+"2608.04268": {
+"id": "2608.04268",
+"title": "The Fairness Collapse Phenomenon: Bias Amplification in Language Models Trained on Synthetic Data",
+"desc": "Repeated training of language models on synthetic data causes fairness collapse, where demographic biases grow silently before standard performance metrics reveal model degradation.",
+"date": "2026-08-04",
+"topics": [
+"synthetic data"
+]
+},
+"2510.05133": {
+"id": "2510.05133",
+"title": "Characterizing Model Behavior Under Synthetic Data Training: An Empirical Study Across Scales and Mixing Ratios",
+"desc": "Training models with synthetic data shows stable performance up to 20% synthetic data, with larger models demonstrating greater robustness and calibration degradation serving as an early warning signal for accuracy loss.",
+"date": "2025-10-01",
+"topics": [
+"synthetic data"
+]
+},
+"2512.01354": {
+"id": "2512.01354",
+"title": "The Necessity of Imperfection:Reversing Model Collapse via Simulating Cognitive Boundedness",
+"desc": "A framework that simulates human cognitive processes in generating text reduces model collapse and enhances functional performance in synthetic data.",
+"date": "2025-12-01",
+"topics": [
+"synthetic data"
+]
+},
+"2402.07043": {
+"id": "2402.07043",
+"title": "A Tale of Tails: Model Collapse as a Change of Scaling Laws",
+"desc": "Theoretical analysis and experiments explore how the integration of synthetic data into training datasets affects neural scaling laws and model performance.",
+"date": "2024-02-10",
+"topics": [
+"synthetic data"
+]
+},
+"2603.11784": {
+"id": "2603.11784",
+"title": "Language Generation with Replay: A Learning-Theoretic View of Model Collapse",
+"desc": "Learning-theoretic analysis reveals fundamental limitations of generative models when trained on self-generated data, showing that replay adversarial effects create separations between uniform and non-uniform generation frameworks.",
+"date": "2026-03-12",
+"topics": [
+"synthetic data"
+]
+},
+"2305.14625": {
+"id": "2305.14625",
+"title": "KNN-LM Does Not Improve Open-ended Text Generation",
+"desc": "Interpolation-based retrieval-augmented language models, like KNN-LM, reduce perplexity but do not always improve open-ended generation quality, showing increased perplexity for most tokens and faster entropy growth in retrieval distributi\u2026",
+"date": "2023-05-24",
+"topics": [
+"adaptive retrieval"
+]
+},
+"2204.11447": {
+"id": "2204.11447",
+"title": "Evaluating Interpolation and Extrapolation Performance of Neural Retrieval Models",
+"desc": "The study demonstrates the importance of evaluating neural retrieval models separately for interpolation and extrapolation by proposing a novel resampling-based evaluation protocol, revealing that models perform differently on these tasks.",
+"date": "2022-04-25",
+"topics": [
+"adaptive retrieval"
+]
+},
+"2502.05364": {
+"id": "2502.05364",
+"title": "Hypencoder: Hypernetworks for Information Retrieval",
+"desc": "A hypencoder, a hypernetwork-based query encoder, produces a neural network for relevance scoring, outperforming traditional retrieval models across various tasks.",
+"date": "2025-02-07",
+"topics": [
+"adaptive retrieval"
+]
+},
+"2407.12170": {
+"id": "2407.12170",
+"title": "Neural Passage Quality Estimation for Static Pruning",
+"desc": "Neural networks estimate passage quality in search engines, enabling significant pruning of passage corpora without sacrificing effectiveness.",
+"date": "2024-07-16",
+"topics": [
+"adaptive retrieval"
+]
+},
+"2210.10695": {
+"id": "2210.10695",
+"title": "Incorporating Relevance Feedback for Information-Seeking Retrieval using Few-Shot Document Re-Ranking",
+"desc": "Integrating relevance feedback using few-shot and parameter-efficient learning techniques improves neural re-ranking models in information retrieval scenarios, leading to better performance than traditional methods.",
+"date": "2022-10-19",
+"topics": [
+"adaptive retrieval"
+]
+},
+"1811.08008": {
+"id": "1811.08008",
+"title": "End-to-End Retrieval in Continuous Space",
+"desc": "Continuous retrieval improves on discrete systems by replacing inverted indexing with approximate nearest neighbor search using learned embeddings.",
+"date": "2018-11-19",
+"topics": [
+"adaptive retrieval"
+]
+},
+"2506.08479": {
+"id": "2506.08479",
+"title": "Efficient Context Selection for Long-Context QA: No Tuning, No Iteration, Just Adaptive-k",
+"desc": "Adaptive-$k$ retrieval method dynamically selects the number of passages for QA, balancing token usage and accuracy without model fine-tuning.",
+"date": "2025-06-10",
+"topics": [
+"adaptive retrieval"
+]
+},
+"1801.01453": {
+"id": "1801.01453",
+"title": "Adaptive kNN using Expected Accuracy for Classification of Geo-Spatial Data",
+"desc": "An adaptive kNN classifier dynamically adjusts k for each instance to maximize expected accuracy, outperforming traditional and existing adaptive kNN methods.",
+"date": "2017-12-14",
+"topics": [
+"adaptive retrieval"
+]
+},
+"1808.06528": {
+"id": "1808.06528",
+"title": "Adaptive Document Retrieval for Deep Question Answering",
+"desc": "An adaptive document retrieval model in deep question answering optimizes the number of candidate documents, improving performance over static approaches across different dataset sizes.",
+"date": "2018-08-20",
+"topics": [
+"adaptive retrieval"
+]
+},
+"2205.00235": {
+"id": "2205.00235",
+"title": "To Interpolate or not to Interpolate: PRF, Dense and Sparse Retrievers",
+"desc": "Interpolating relevance signals from sparse and dense retrievers before and after Pseudo Relevance Feedback (PRF) enhances retrieval effectiveness across various datasets and metrics.",
+"date": "2022-04-30",
+"topics": [
+"adaptive retrieval"
+]
+},
+"2304.14522": {
+"id": "2304.14522",
+"title": "Multivariate Representation Learning for Information Retrieval",
+"desc": "A new framework for dense retrieval learns multivariate normal distributions for queries and documents using negative multivariate KL divergence and integrates with approximate nearest neighbor algorithms, outperforming competitive models.",
+"date": "2023-04-27",
+"topics": [
+"adaptive retrieval"
+]
+},
+"2409.09913": {
+"id": "2409.09913",
+"title": "Practical and Asymptotically Optimal Quantization of High-Dimensional Vectors in Euclidean Space for Approximate Nearest Neighbor Search",
+"desc": "A new quantization method extends RaBitQ to improve approximate nearest neighbor queries by achieving better space-time trade-offs while maintaining theoretical guarantees.",
+"date": "2024-09-16",
+"topics": [
+"datastore efficiency"
+]
+},
+"2402.00943": {
+"id": "2402.00943",
+"title": "Approximate Nearest Neighbor Search with Window Filters",
+"desc": "A modular tree-based framework transforms c-approximate nearest neighbor indexes into ones that support label-constrained window searches, achieving significant speedups in various applications.",
+"date": "2024-02-01",
+"topics": [
+"datastore efficiency"
+]
+},
+"2507.19715": {
+"id": "2507.19715",
+"title": "Beyond Nearest Neighbors: Semantic Compression and Graph-Augmented Retrieval for Enhanced Vector Search",
+"desc": "A new retrieval paradigm called semantic compression is introduced to enhance vector search by prioritizing coverage and diversity, using graph-augmented vector retrieval to improve semantic coverage in high-dimensional spaces.",
+"date": "2025-07-25",
+"topics": [
+"datastore efficiency"
+]
+},
+"1905.10987": {
+"id": "1905.10987",
+"title": "Learning to Route in Similarity Graphs",
+"desc": "A learnable routing function is introduced to improve nearest neighbor search on similarity graphs by addressing the local minima problem.",
+"date": "2019-05-27",
+"topics": [
+"datastore efficiency"
+]
+},
+"2506.08276": {
+"id": "2506.08276",
+"title": "LEANN: A Low-Storage Vector Index",
+"desc": "LEANN is a storage-efficient ANN index for local devices that reduces index size to under 5% of raw data, achieving 90% top-3 recall in under 2 seconds.",
+"date": "2025-06-09",
+"topics": [
+"datastore efficiency"
+]
+},
+"2210.12579": {
+"id": "2210.12579",
+"title": "Efficient Nearest Neighbor Search for Cross-Encoder Models using Matrix Factorization",
+"desc": "A CUR decomposition method improves efficient k-nearest neighbor search using cross-encoders without a dual-encoder, offering better recall vs. computational cost.",
+"date": "2022-10-23",
+"topics": [
+"datastore efficiency"
+]
+},
+"2510.19340": {
+"id": "2510.19340",
+"title": "CoRECT: A Framework for Evaluating Embedding Compression Techniques at Scale",
+"desc": "CoRECT evaluates embedding compression methods for dense retrieval, demonstrating that non-learned compression can reduce index size significantly with minimal performance loss.",
+"date": "2025-10-22",
+"topics": [
+"datastore efficiency"
+]
+},
+"2310.11703": {
+"id": "2310.11703",
+"title": "A Comprehensive Survey on Vector Database: Storage and Retrieval Technique, Challenge",
+"desc": "Vector databases, focusing on approximate nearest neighbor search, are reviewed and categorized into hash-based, tree-based, graph-based, and quantization-based approaches, with future possibilities involving integration with large languag\u2026",
+"date": "2023-10-18",
+"topics": [
+"datastore efficiency"
+]
+},
+"2105.09613": {
+"id": "2105.09613",
+"title": "FreshDiskANN: A Fast and Accurate Graph-Based ANN Index for Streaming Similarity Search",
+"desc": "FreshDiskANN is a graph-based ANNS system that supports real-time corpus updates without compromising search performance, offering a significant reduction in maintenance costs.",
+"date": "2021-05-20",
+"topics": [
+"datastore efficiency"
+]
+},
+"2509.25487": {
+"id": "2509.25487",
+"title": "Scalable Disk-Based Approximate Nearest Neighbor Search with Page-Aligned Graph",
+"desc": "PageANN is a disk-based approximate nearest neighbor search framework that improves performance and scalability through aligned page-node graph structure and optimized memory management strategies.",
+"date": "2025-09-29",
+"topics": [
+"datastore efficiency"
+]
+},
+"2405.12497": {
+"id": "2405.12497",
+"title": "RaBitQ: Quantizing High-Dimensional Vectors with a Theoretical Error Bound for Approximate Nearest Neighbor Search",
+"desc": "A new randomized quantization method called RaBitQ is proposed that guarantees sharp theoretical error bounds while outperforming Product Quantization and its variants in accuracy-efficiency trade-off through efficient bitwise and SIMD-bas\u2026",
+"date": "2024-05-21",
+"topics": [
+"datastore efficiency"
+]
+},
+"2408.08201": {
+"id": "2408.08201",
+"title": "Heavy Labels Out! Dataset Distillation with Label Space Lightening",
+"desc": "A novel label-lightening framework, HeLlO, reduces storage requirements for dataset distillation by generating labels online, using prior knowledge from foundation models and low-rank matrices.",
+"date": "2024-08-15",
+"topics": [
+"soft-label memory"
+]
+},
+"2111.02331": {
+"id": "2111.02331",
+"title": "LTD: Low Temperature Distillation for Robust Adversarial Training",
+"desc": "Low Temperature Distillation (LTD) uses modified knowledge distillation with different teacher and student temperatures to enhance robustness against adversarial attacks in image recognition models.",
+"date": "2021-11-03",
+"topics": [
+"soft-label memory"
+]
+},
+"2009.08453": {
+"id": "2009.08453",
+"title": "MEAL V2: Boosting Vanilla ResNet-50 to 80%+ Top-1 Accuracy on ImageNet without Tricks",
+"desc": "A distillation framework enhances ResNet-50 to over 80% top-1 accuracy on ImageNet using simple modifications without additional training data or architectural changes.",
+"date": "2020-09-17",
+"topics": [
+"soft-label memory"
+]
+},
+"2210.01213": {
+"id": "2210.01213",
+"title": "Robust Active Distillation",
+"desc": "A parameter-free, game-theoretic method for querying informative and correct soft-labels in knowledge distillation improves performance compared to existing methods.",
+"date": "2022-10-03",
+"topics": [
+"soft-label memory"
+]
+},
+"2410.15919": {
+"id": "2410.15919",
+"title": "Are Large-scale Soft Labels Necessary for Large-scale Dataset Distillation?",
+"desc": "Class-wise supervision reduces within-class similarity and compresses soft labels during dataset distillation, leading to efficient storage and performance gain.",
+"date": "2024-10-21",
+"topics": [
+"soft-label memory"
+]
+},
+"2605.06132": {
+"id": "2605.06132",
+"title": "MemReranker: Reasoning-Aware Reranking for Agent Memory Retrieval",
+"desc": "MemReranker is a reranking model family built on Qwen3-Reranker through multi-stage LLM knowledge distillation, addressing limitations in memory retrieval by improving relevance calibration, handling complex queries, and leveraging dialogu\u2026",
+"date": "2026-05-07",
+"topics": [
+"soft-label memory"
+]
+},
+"2512.04763": {
+"id": "2512.04763",
+"title": "MemLoRA: Distilling Expert Adapters for On-Device Memory Systems",
+"desc": "MemLoRA and MemLoRA-V enhance small language and vision-language models with memory adapters, enabling efficient local deployment, improved performance, and native visual understanding in multimodal contexts.",
+"date": "2025-12-04",
+"topics": [
+"soft-label memory"
+]
+},
+"2601.15394": {
+"id": "2601.15394",
+"title": "Memorization Dynamics in Knowledge Distillation for Language Models",
+"desc": "Knowledge distillation reduces training data memorization compared to standard fine-tuning while maintaining performance, with distinct memorization patterns and predictability based on input characteristics.",
+"date": "2026-01-21",
+"topics": [
+"soft-label memory"
+]
+},
+"1909.11687": {
+"id": "1909.11687",
+"title": "Extremely Small BERT Models from Mixed-Vocabulary Training",
+"desc": "A distillation method for BERT that reduces its memory footprint by aligning teacher and student embeddings through mixed-vocabulary training, achieving better size-accuracy trade-offs.",
+"date": "2019-09-25",
+"topics": [
+"soft-label memory"
+]
+},
+"2010.10090": {
+"id": "2010.10090",
+"title": "Knowledge Distillation in Wide Neural Networks: Risk Bound, Data Efficiency and Imperfect Teacher",
+"desc": "The paper theoretically analyzes knowledge distillation in wide neural networks via neural tangent kernels, deriving transfer risk bounds and explaining the benefits of mixing hard and soft labels.",
+"date": "2020-10-20",
+"topics": [
+"soft-label memory"
+]
+},
+"2602.11374": {
+"id": "2602.11374",
+"title": "Retrieval-Aware Distillation for Transformer-SSM Hybrids",
+"desc": "Retrieval-aware distillation converts Transformers into hybrid models by preserving critical attention heads and distilling remaining components into recurrent structures, achieving near-teacher performance with significantly reduced memor\u2026",
+"date": "2026-02-11",
+"topics": [
+"soft-label memory"
+]
+},
+"2106.02241": {
+"id": "2106.02241",
+"title": "ERNIE-Tiny : A Progressive Distillation Framework for Pretrained Transformer Compression",
+"desc": "A progressive distillation framework reduces the size and enhances performance of pretrained language models while maintaining high accuracy and speed.",
+"date": "2021-06-04",
+"topics": [
+"soft-label memory"
+]
+},
+"2602.22479": {
+"id": "2602.22479",
+"title": "Efficient Continual Learning in Language Models via Thalamically Routed Cortical Columns",
+"desc": "TRC\u00b2 addresses continual learning challenges in language models through a sparse, chunk-parallel architectural design that enables rapid adaptation without catastrophic forgetting.",
+"date": "2026-02-25",
+"topics": [
+"continual learning"
+]
+},
+"2402.01364": {
+"id": "2402.01364",
+"title": "Continual Learning for Large Language Models: A Survey",
+"desc": "The paper surveys continual learning techniques for large language models, categorized into continual pretraining, instruction tuning, and alignment, and contrasts these with simpler adaptation methods, highlighting challenges and future d\u2026",
+"date": "2024-02-02",
+"topics": [
+"continual learning"
+]
+},
+"2502.14802": {
+"id": "2502.14802",
+"title": "From RAG to Memory: Non-Parametric Continual Learning for Large Language Models",
+"desc": "HippoRAG 2 enhances RAG by integrating passage information and leveraging a more effective LLM, improving performances across factual, sense-making, and associative memory tasks.",
+"date": "2025-02-20",
+"topics": [
+"continual learning"
+]
+},
+"2412.07393": {
+"id": "2412.07393",
+"title": "CMT: A Memory Compression Method for Continual Knowledge Learning of Large Language Models",
+"desc": "CMT is a memory-based online adaptation framework for LLMs that enhances adaptability and robustness without retraining by compressing and aggregating new information.",
+"date": "2024-12-10",
+"topics": [
+"continual learning"
+]
+},
+"2404.07470": {
+"id": "2404.07470",
+"title": "Scalable Language Model with Generalized Continual Learning",
+"desc": "Scalable Language Model (SLM) integrates Joint Adaptive Re-Parameterization (JARe) and Dynamic Task-related Knowledge Retrieval (DTKR) to enable effective continual learning across diverse tasks with minimal forgetting.",
+"date": "2024-04-11",
+"topics": [
+"continual learning"
+]
+},
+"2409.13897": {
+"id": "2409.13897",
+"title": "LLM for Everyone: Representing the Underrepresented in Large Language Models",
+"desc": "The thesis evaluates and proposes methods to improve LLM performance in underrepresented languages, focusing on multilingual and cultural generalization.",
+"date": "2024-09-20",
+"topics": [
+"continual learning"
+]
+},
+"2507.03724": {
+"id": "2507.03724",
+"title": "MemOS: A Memory OS for AI System",
+"desc": "MemOS, a memory operating system for Large Language Models, addresses memory management challenges by unifying plaintext, activation-based, and parameter-level memories, enabling efficient storage, retrieval, and continual learning.",
+"date": "2025-07-04",
+"topics": [
+"continual learning"
+]
+},
+"2510.11693": {
+"id": "2510.11693",
+"title": "Scaling Language-Centric Omnimodal Representation Learning",
+"desc": "Recent multimodal embedding approaches leveraging multimodal large language models (MLLMs) fine-tuned with contrastive learning (CL) have shown promising results, yet the underlying reasons behind their superiority remain underexplored. Th\u2026",
+"date": "2025-10-13",
+"topics": [
+"continual learning"
+]
+},
+"2211.14876": {
+"id": "2211.14876",
+"title": "Dense Text Retrieval based on Pretrained Language Models: A Survey",
+"desc": "Recent advances in dense retrieval leverage pretrained language models to enhance text representation and relevance matching, providing a comprehensive review of key techniques and resources in this area.",
+"date": "2022-11-27",
+"topics": [
+"continual learning"
+]
+},
+"2505.02811": {
+"id": "2505.02811",
+"title": "Knowing You Don't Know: Learning When to Continue Search in Multi-round RAG through Self-Practicing",
+"desc": "SIM-RAG framework enhances multi-round retrieval in RAG systems by using synthetic data and a lightweight critic to improve self-awareness and reduce unnecessary retrieval rounds.",
+"date": "2025-05-05",
+"topics": [
+"continual learning"
+]
+},
+"2607.22157": {
+"id": "2607.22157",
+"title": "Learning on the Job: Continual Learning from Deployment Feedback for Frozen-Weights Agents",
+"desc": "Pairing frozen AI agents with external memory that distills episode feedback into retrievable natural-language rules enables continual learning, significantly improving success rates and transferring across models.",
+"date": "2026-07-24",
+"topics": [
+"continual learning"
+]
+},
+"2602.15156": {
+"id": "2602.15156",
+"title": "Panini: Continual Learning in Token Space via Structured Memory",
+"desc": "Panini enables efficient and accurate language model reasoning through a non-parametric continual learning framework that uses generative semantic workspaces to store and retrieve knowledge, achieving superior performance with reduced comp\u2026",
+"date": "2026-02-16",
+"topics": [
+"continual learning"
+]
+},
+"2408.00540": {
+"id": "2408.00540",
+"title": "The Energy Cost of Artificial Intelligence Lifecycle in Communication Networks",
+"desc": "The paper proposes the eCAL metric to quantify end-to-end AI energy consumption across development, deployment, and inference in communication networks, showing amortized costs decrease with usage.",
+"date": "2025-11-18",
+"topics": [
+"energy efficiency"
+]
+},
+"2505.01468": {
+"id": "2505.01468",
+"title": "One Search Fits All: Pareto-Optimal Eco-Friendly Model Selection",
+"desc": "GREEN recommends energy-efficient AI model configurations balancing performance and energy consumption using EcoTaskSet data.",
+"date": "2025-05-02",
+"topics": [
+"energy efficiency"
+]
+},
+"2602.22261": {
+"id": "2602.22261",
+"title": "Sustainable LLM Inference using Context-Aware Model Switching",
+"desc": "A context-aware model switching approach reduces energy consumption in large language models by dynamically selecting appropriate models based on query complexity while maintaining response quality and improving latency.",
+"date": "2026-02-25",
+"topics": [
+"energy efficiency"
+]
+},
+"2505.06371": {
+"id": "2505.06371",
+"title": "The ML.ENERGY Benchmark: Toward Automated Inference Energy Measurement and Optimization",
+"desc": "The ML.ENERGY Benchmark suite and leaderboard provide energy consumption measurements and optimization recommendations for generative AI models across various tasks and model architectures.",
+"date": "2025-05-09",
+"topics": [
+"energy efficiency"
+]
+},
+"2412.01039": {
+"id": "2412.01039",
+"title": "Reducing Inference Energy Consumption Using Dual Complementary CNNs",
+"desc": "A dual-CNN system with a memory component reduces inference energy consumption in CNNs by up to 85.8% while maintaining accuracy.",
+"date": "2024-12-02",
+"topics": [
+"energy efficiency"
+]
+},
+"2311.16863": {
+"id": "2311.16863",
+"title": "Power Hungry Processing: Watts Driving the Cost of AI Deployment?",
+"desc": "A systematic comparison reveals that multi-purpose generative ML models are significantly more energy-intensive and carbon-emitting than task-specific models during inference.",
+"date": "2023-11-28",
+"topics": [
+"energy efficiency"
+]
+},
+"1811.06669": {
+"id": "1811.06669",
+"title": "AclNet: efficient end-to-end audio classification CNN",
+"desc": "AclNet, an efficient convolutional neural network for audio classification, achieves state-of-the-art performance on the ESC-50 dataset with reduced memory and computational requirements.",
+"date": "2018-11-16",
+"topics": [
+"energy efficiency"
+]
+},
+"2406.07553": {
+"id": "2406.07553",
+"title": "Inference Acceleration for Large Language Models on CPUs",
+"desc": "Utilizing CPUs with parallel processing and batching improves inference throughput and reduces power consumption for large language models.",
+"date": "2024-03-04",
+"topics": [
+"energy efficiency"
+]
+},
+"2601.22076": {
+"id": "2601.22076",
+"title": "Where Do the Joules Go? Diagnosing Inference Energy Consumption",
+"desc": "Large-scale measurement study reveals significant variations in energy consumption across generative AI models and tasks, identifying key factors affecting time and energy efficiency.",
+"date": "2026-01-29",
+"topics": [
+"energy efficiency"
+]
+},
+"2506.04301": {
+"id": "2506.04301",
+"title": "The Cost of Dynamic Reasoning: Demystifying AI Agents and Test-Time Scaling from an AI Infrastructure Perspective",
+"desc": "AI agents demonstrate improved accuracy with increased compute but face diminishing returns, latency variance, and unsustainable infrastructure costs, necessitating a shift toward compute-efficient reasoning designs.",
+"date": "2025-06-04",
+"topics": [
+"energy efficiency"
+]
+},
+"2208.06102": {
+"id": "2208.06102",
+"title": "Zeus: Understanding and Optimizing GPU Energy Consumption of DNN Training",
+"desc": "Zeus optimizes energy efficiency for DNN training by dynamically adjusting configurations using online profiling, achieving significant energy savings across various workloads.",
+"date": "2022-08-12",
+"topics": [
+"energy efficiency"
+]
+},
+"2410.00215": {
+"id": "2410.00215",
+"title": "Characterizing and Efficiently Accelerating Multimodal Generation Model Inference",
+"desc": "Emerging multi-modal generative AI models face latency challenges due to GPU idle time and feed forward network operations, but system-wide optimizations improve performance significantly.",
+"date": "2024-09-30",
+"topics": [
+"energy efficiency"
+]
+}
+}
