@@ -42,7 +42,9 @@ def evaluate(qname, fracs=(1.0,), values_list=("gold", "teacher", "mix")):
             print(f"{qname:>5} + mem[{values:>7}] store {frac:4.0%} | test ppl {tppl:7.2f} (lam {lam}, tau {tau}, alpha {al}) [{time.time()-t:.0f}s]", flush=True)
 
 
-evaluate("T", values_list=("gold",))
-evaluate("S", fracs=(0.1, 0.3, 1.0))
-evaluate("Skd", fracs=(1.0,))
-json.dump(rows, open(f"{R}/memory_results.json", "w"), indent=1)
+import os
+Q = os.environ.get("QUERIES", "T,S,Skd").split(",")
+if "T" in Q: evaluate("T", values_list=("gold",))
+if "S" in Q: evaluate("S", fracs=(0.1, 0.3, 1.0))
+if "Skd" in Q: evaluate("Skd", fracs=(1.0,))
+json.dump(rows, open(f"{R}/" + os.environ.get("OUTNAME", "memory_results.json"), "w"), indent=1)
