@@ -75,3 +75,18 @@ místo pro vyšší rank. Při 50 %: čistá ASVD 0,86 → hybrid 0,17–0,22.
 - **ASVD + kvantizace + krátký healing.** Zatím nejsilnější klasická cesta.
 - Ověřit totéž na dekodérových modelech (GPT-2, Qwen, Llama), až bude přístup
   k Hugging Face. RoBERTa je enkodér a může se chovat jinak.
+
+## Exp. 6: dynamické routování neuronů (`roberta_routing.py`)
+Každý token použije jen část neuronů FFN. Výběr je „oracle“, tedy podle
+skutečných aktivací, takže jde o horní mez toho, čeho by dosáhl naučený router.
+
+| aktivní neurony | top-k neuronů | experti (náhodné skupiny) | experti (skupiny Q-Gauge) |
+|---|---|---|---|
+| 10 % | 0,41 | 0,29 | 0,30 |
+| 30 % | 0,76 | 0,44 | 0,43 |
+| 50 % | 0,96 | 0,67 | 0,60 |
+
+RoBERTa používá GELU a není moc řídká. Modely s ReLU (OPT, „Deja Vu“) jsou
+řídké mnohem víc. Shlukování neuronů pomocí Q-Gauge do expertů nepomáhá.
+**Routování samo o sobě vždy něco ztrácí.** Bez ztráty je jen tehdy, když
+výstup ověří plný model (spekulativní dekódování, viz `docs/lossless-routing.md`).

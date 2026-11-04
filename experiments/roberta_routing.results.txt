@@ -1,0 +1,6 @@
+fraction of FFN neurons active per token -> cosine with full model
+  5% | top-k neurons 0.3369 | experts random 0.2373 | experts Q-Gauge 0.2510
+ 10% | top-k neurons 0.4052 | experts random 0.2921 | experts Q-Gauge 0.3005
+ 20% | top-k neurons 0.5834 | experts random 0.3670 | experts Q-Gauge 0.3733
+ 30% | top-k neurons 0.7645 | experts random 0.4412 | experts Q-Gauge 0.4343
+ 50% | top-k neurons 0.9563 | experts random 0.6658 | experts Q-Gauge 0.6027
