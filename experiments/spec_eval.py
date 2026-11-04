@@ -71,10 +71,18 @@ def alpha(Pd):
 def flops(m):
     p = m["params"]; d = p["emb"].shape[1]
     return n_params(p) - p["emb"].size - p["pos"].size + V * d
-c = flops(S) / flops(T)
-print(f"draft/target cost ratio c = {c:.3f}", flush=True)
+c0 = flops(S) / flops(T)
+print(f"student/teacher cost ratio c = {c0:.3f}", flush=True)
 
 drafts = {"student": PS}
+# self-speculation: the teacher's own first k layers (+ final LN + tied head) as draft
+selfc = {}
+for k in range(1, len(T["params"]["layers"])):
+    pk = dict(pT); pk["layers"] = pT["layers"][:k]
+    _, Pk = dist(pk, T["cfg"]["heads"])(X)
+    drafts[f"teacher first {k} layers (self-draft)"] = np.asarray(Pk[:, lo:]).reshape(-1, V)
+    pt = T["params"]; dd = pt["emb"].shape[1]; per_layer = (n_params(pt) - pt["emb"].size - pt["pos"].size) / len(pt["layers"])
+    selfc[f"teacher first {k} layers (self-draft)"] = (k * per_layer + V * dd) / flops(T)
 for lam in (0.1, 0.2, 0.3):
     for tau in (10, 30):
         Mg = mem_dist(tau, "gold"); drafts[f"student+mem[gold] lam{lam} tau{tau}"] = (1 - lam) * PS + lam * Mg
@@ -82,7 +90,8 @@ Mt = mem_dist(30, "teacher"); drafts["student+mem[teacher] lam0.3 tau30"] = 0.7 
 print(f"{'draft':>36} | alpha | greedy-match | best g | tokens/round | speed-up")
 greedy_T = PT.argmax(1)
 for name, Pd in drafts.items():
+    c = selfc.get(name, c0)
     a = alpha(Pd); am = float(a.mean())
     best = max(((1 - am ** (g + 1)) / (1 - am) / (g * c + 1), g) for g in range(1, 9))
     E = (1 - am ** (best[1] + 1)) / (1 - am)
-    print(f"{name:>36} | {am:.3f} | {float((Pd.argmax(1) == greedy_T).mean()):.3f}        | {best[1]}      | {E:.2f}         | {best[0]:.2f}x", flush=True)
+    print(f"{name:>36} | {am:.3f} | {float((Pd.argmax(1) == greedy_T).mean()):.3f}        | {best[1]}      | {E:.2f}         | {best[0]:.2f}x  (c={c:.2f})", flush=True)
