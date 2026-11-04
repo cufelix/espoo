@@ -1,0 +1,6 @@
+49 MatMul weights get GPTQ
+fp32 ppl 81.60
+4-bit  rtn: ppl    84.63 | alpha vs fp32 0.830 | greedy agree 0.766 | 3.20x fewer bytes than fp16
+4-bit gptq: ppl    85.40 | alpha vs fp32 0.889 | greedy agree 0.833 | 3.20x fewer bytes than fp16
+3-bit  rtn: ppl   216.43 | alpha vs fp32 0.487 | greedy agree 0.423 | 4.00x fewer bytes than fp16
+3-bit gptq: ppl   112.65 | alpha vs fp32 0.718 | greedy agree 0.626 | 4.00x fewer bytes than fp16

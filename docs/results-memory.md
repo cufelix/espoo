@@ -150,3 +150,22 @@ Nested self-drafts (prefix of the 8-bit codes), scale/zero overhead counted
 - Prefixes ≤4 bits collapse (α ≤ 0.58), far worse than an independent 4-bit
   RTN copy (α 0.83). Truncating codes moves the extreme values, and GPT-2's
   outlier weights matter. The tiny models overstated the gain.
+
+## GPTQ on real GPT-2 (`experiments/gpt2_gptq.py`, calibration Austen, eval Moby Dick)
+| storage | ppl (fp32 81.60) | α vs fp32 | greedy agreement | bytes vs fp16 |
+|---|---|---|---|---|
+| 4-bit RTN g32 | 84.63 | 0.830 | 76.6 % | 3.2x fewer |
+| 4-bit GPTQ g32 | 85.40 | **0.889** | **83.3 %** | 3.2x fewer |
+| 3-bit RTN g32 | 216.43 | 0.487 | 42.3 % | 4.0x fewer |
+| 3-bit GPTQ g32 | **112.65** | 0.718 | 62.6 % | 4.0x fewer |
+
+GPTQ rescues 3 bits (216 → 113) but 3 bits stays clearly lossy. GPTQ-4 is the
+best *draft* (closest distribution to fp32).
+
+Exact-output combinations (bandwidth model):
+- fp16 target + GPTQ-4 draft (α 0.889, measured): **1.78x**, output identical to
+  fp16, memory 1.31x of fp16.
+- 8-bit target + GPTQ-4 draft: **≈2.2x vs fp16** with *less* memory than fp16
+  (14 vs 16 bits/weight). Output identical to the 8-bit model, which matches
+  fp32 on 98.3 % of greedy tokens. Here α vs the 8-bit target is *estimated*
+  from the two measured α's, not measured directly.

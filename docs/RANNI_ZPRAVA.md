@@ -43,7 +43,8 @@ Výsledky jsou střízlivější než na mých malých modelech:
 | 16 bitů + navrhovatel z 6bitové kopie | výstup **přesně** jako originál | 1,7× |
 | uložení ve 4 bitech | 84,6 (o 3,7 % horší) | 3,2× |
 
-- **Bez ztráty kvality: ~2× rychleji a skoro 2× méně paměti.**
+- **Bez ztráty kvality: ~2× rychleji a skoro 2× méně paměti.** S lepší kvantizací navrhovatele (GPTQ) ~2,2× a pořád méně paměti než standard.
+- GPTQ zachrání i 3 bity (perplexita 216 → 113), pořád je to ale znatelná ztráta.
 - **S malou ztrátou (−3,7 %): ~3,2×.**
 - Vnořené návrhy pod 6 bitů na skutečném modelu nefungují. Oříznutí bitů
   poškodí extrémní hodnoty vah, na kterých GPT-2 hodně závisí. Na
