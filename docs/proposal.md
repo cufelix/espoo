@@ -1,5 +1,9 @@
 # Q-Gauge: návrh metody
 
+> **Aktualizace (listopad 2026):** experimenty na skutečném modelu RoBERTa-base
+> hypotézu nepotvrdily. Viz [results.md](results.md). Návrh nechávám beze změn
+> jako záznam původní myšlenky.
+
 ## Hypotéza
 
 Natrénované váhy LLM mají nízký „entanglement“ (= jsou dobře stlačitelné do

@@ -1,0 +1,12 @@
+MPO sites=5, row dims [8, 6, 4, 4, 4], col dims [4, 4, 4, 4, 3]
+
+=== layer 0  (FFN params 4718592, gauge search 181s) ===
+ chi  %params | trained  random  gauged | low-rank
+   8    0.17% |   0.987   0.987   0.975 |    0.977
+  16    0.59% |   0.982   0.982   0.960 |    0.960
+  32    2.05% |   0.972   0.972   0.944 |    0.917
+  64    5.43% |   0.943   0.944   0.908 |    0.861
+ 128   16.37% |   0.859   0.859   0.814 |    0.753
+  entropy W_up  trained:  4.98  9.29  7.51  3.58
+  entropy W_up   random:  4.98  9.29  7.51  3.58
+  entropy W_up   gauged:  4.86  9.04  7.43  3.55

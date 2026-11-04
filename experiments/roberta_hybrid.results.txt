@@ -1,0 +1,6 @@
+budget 0.5
+k x1.00 gauge=False | real 0.495 | rel err  0.526 | cos  0.862 |   35s
+k x1.25 gauge=False | real 0.500 | rel err  1.282 | cos  0.216 |   72s
+k x1.25 gauge=True  | real 0.500 | rel err  1.289 | cos  0.198 |  152s
+k x1.50 gauge=False | real 0.492 | rel err  1.338 | cos  0.178 |   89s
+k x1.50 gauge=True  | real 0.492 | rel err  1.346 | cos  0.172 |  163s

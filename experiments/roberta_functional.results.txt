@@ -1,0 +1,12 @@
+budget 0.50 |        svd | real 0.500 | rel err  1.107 | cos  0.170 |    22s
+budget 0.50 |       asvd | real 0.500 | rel err  0.523 | cos  0.863 |    35s
+budget 0.50 |        mpo | real 0.491 | rel err  1.199 | cos  0.189 |   124s
+budget 0.50 |       dmpo | real 0.492 | rel err  1.024 | cos  0.316 |   123s
+budget 0.50 |  mpo+gauge | real 0.491 | rel err  1.129 | cos  0.160 |   406s
+budget 0.50 | dmpo+gauge | real 0.492 | rel err  1.033 | cos  0.174 |   125s
+budget 0.75 |        svd | real 0.749 | rel err  1.150 | cos  0.217 |    19s
+budget 0.75 |       asvd | real 0.749 | rel err  0.399 | cos  0.921 |    30s
+budget 0.75 |        mpo | real 0.750 | rel err  1.013 | cos  0.379 |   128s
+budget 0.75 |       dmpo | real 0.745 | rel err  0.886 | cos  0.563 |   131s
+budget 0.75 |  mpo+gauge | real 0.750 | rel err  1.289 | cos  0.124 |   130s
+budget 0.75 | dmpo+gauge | real 0.745 | rel err  0.933 | cos  0.480 |   132s

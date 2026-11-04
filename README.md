@@ -36,32 +36,26 @@ podproblémem: hledáním optimálního pořadí neuronů. Podrobnosti najdeš v
 | `qgauge/gauge.py` | Gauge fixing: spektrální řazení neuronů a zjemnění s žíháním bond dimension |
 | `experiments/synthetic_gauge.py` | Experiment 1 na syntetických vahách |
 
-## První výsledek (syntetická data)
+## Výsledky (stručně)
 
-Matice FFN 1024×256 se skrytou strukturou MPO (χ=6) a zamíchaným pořadím
-neuronů, jako po tréninku. Hodnota je relativní chyba rekonstrukce při stejném
-počtu parametrů (nižší je lepší):
+Podrobně v [docs/results.md](docs/results.md).
 
-| χ | parametrů | zamíchané | spektrální gauge | + žíhání χ | oracle pořadí | low-rank SVD |
-|---|---|---|---|---|---|---|
-| 6 | 1 584 (0,6 %) | 0,989 | 0,976 | **0,824** | 0,020 | 0,987 |
-| 16 | 9 536 (3,6 %) | 0,939 | 0,894 | **0,619** | 0,020 | 0,920 |
-| 32 | 26 944 (10 %) | 0,848 | 0,760 | **0,493** | 0,019 | 0,807 |
-
-Co z toho plyne:
-1. **Na pořadí neuronů záleží obrovsky.** Se správným pořadím stačí 0,6 %
-   parametrů s chybou 2 %, se zamíchaným pořadím je i 10 % parametrů skoro
-   k ničemu. Naivní MPO komprese tuhle možnost úplně nevyužívá.
-2. Naše heuristika zatím obnoví jen část zisku (0,99 → 0,82 při χ=6).
-   Hledání pořadí je těžký kombinatorický problém a je to hlavní otevřená
-   otázka projektu.
-3. **Zatím neověřeno na skutečných modelech.** Syntetická data mají strukturu
-   uměle vloženou. Jestli ji mají i natrénované váhy (GPT-2, Llama, Qwen), je
-   první věc, kterou je potřeba změřit (viz plán v `docs/proposal.md`).
+- **Syntetická data:** na pořadí neuronů může záležet obrovsky a Q-Gauge
+  velkou část zisku najde.
+- **Skutečný model (RoBERTa-base):** hypotéza se **nepotvrdila**. Natrénované
+  váhy skrytou strukturu nemají. MPO (i s Q-Gauge) prohrává se SVD
+  a hlavně s ASVD, která bere ohled na aktivace.
+  Při zmenšení FFN na 50 % bez dotrénování: ASVD cos 0,86, nejlepší MPO 0,32,
+  MPO + Q-Gauge 0,17.
+- **Poučení:** u komprese rozhodují data (aktivace) a dotrénování, ne
+  „kvantová“ struktura vah. Další směr: trénovat přímo v MPO formě.
 
 Spuštění:
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.txt msgpack regex
 python experiments/synthetic_gauge.py
 ```
+
+Experimenty s RoBERTa potřebují váhy: `tools/torchzip_to_npz.py` je vytáhne
+z wheelu spaCy `en_core_web_trf` (GitHub releases).
