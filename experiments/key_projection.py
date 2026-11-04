@@ -28,7 +28,8 @@ mx, my = Xs.mean(0), Yt.mean(0)
 A = (Xs - mx).T @ (Xs - mx) + 1.0 * np.eye(Xs.shape[1])
 W = np.linalg.solve(A, (Xs - mx).T @ (Yt - my))
 proj = lambda K: ((K.astype(np.float64) - mx) @ W + my).astype(np.float32)
-P_va = proj(Sva["keys"]); r2 = 1 - ((P_va - Tva["keys"]) ** 2).sum() / ((Tva["keys"] - Tva["keys"].mean(0)) ** 2).sum()
+P_va = proj(Sva["keys"]); Tv64 = Tva["keys"].astype(np.float64)
+r2 = 1 - ((P_va - Tv64) ** 2).sum() / ((Tv64 - Tv64.mean(0)) ** 2).sum()  # float64: float16 sums overflow
 print(f"linear S->T key map: R^2 on valid = {r2:.3f}", flush=True)
 
 t = time.time(); idx = build_index(Ttr["keys"]); print(f"index {time.time()-t:.0f}s", flush=True)
