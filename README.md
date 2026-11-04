@@ -1,5 +1,7 @@
 # espoo — Q-Gauge
 
+> **Ranní zpráva (shrnutí všech nočních pokusů): [docs/RANNI_ZPRAVA.md](docs/RANNI_ZPRAVA.md)**
+
 **Kvantově inspirovaná komprese velkých jazykových modelů pomocí „gauge fixingu“.**
 
 > Hlavní myšlenka: dnešní komprese LLM pomocí tensor networks (MPO / tensor-train,
