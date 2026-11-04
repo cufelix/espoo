@@ -41,8 +41,9 @@ W_down = (W_up @ rng.standard_normal((D, D)) / np.sqrt(D)).T.copy()
 
 P = rng.permutation(H)
 up_s, down_s = W_up[P], W_down[:, P]
-up_g, down_g, _, Pg = gauge_fix_ffn(up_s, down_s)        # spectral gauge
-Pa = anneal_order(up_g, SITES)                             # + chi-annealed refinement
+Pg = gauge_fix_ffn(up_s, down_s, sites=SITES)                     # spectral gauge
+up_g, down_g = up_s[Pg], down_s[:, Pg]
+Pa = anneal_order([up_g], SITES, P=np.arange(H), row_dims=None)    # + chi-annealed refinement
 up_a, down_a = up_g[Pa], down_g[:, Pa]
 
 # exactness check of the gauge: FFN(x) identical

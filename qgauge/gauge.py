@@ -1,29 +1,23 @@
 """Gauge fixing: use EXACT symmetries of a transformer to rewrite its weights
 into a basis where they are least 'entangled', before MPO compression.
 
-Symmetries used (function-preserving, zero accuracy cost):
-  * FFN hidden-neuron permutation: W_up[P], W_down[:, P] (also for gated MLPs,
-    applying P to gate and up together).
-  * Attention head permutation (permute whole heads in Q,K,V and O).
-  * Residual-stream orthogonal rotation Q (computational invariance, as used by
-    SliceGPT / QuaRot) - needs RMSNorm scale folded into adjacent weights.
+Symmetries (function-preserving):
+  * FFN hidden-neuron permutation P: W_up[P], b_up[P], W_down[:, P]
+    (gated MLPs: also W_gate[P]). Works for any elementwise activation.
+  * Attention head permutation (whole heads in Q,K,V and O).
+  * Residual-stream orthogonal rotation (needs norm folding; SliceGPT/QuaRot).
 
-This file implements the permutation gauge. The core idea is borrowed from
-DMRG in quantum chemistry, where *orbital ordering* (choosing which physical
-degree of freedom sits on which MPS site) changes the required bond dimension
-by orders of magnitude. Here, a neuron's position defines its bit string, so
-ordering neurons hierarchically by similarity puts correlated neurons on
-nearby leaves of the binary tree -> low entanglement across MPO cuts.
+The idea is borrowed from DMRG in quantum chemistry, where *orbital ordering*
+(which degree of freedom sits on which MPS site) changes the required bond
+dimension by orders of magnitude. A neuron's position fixes its mixed-radix
+digit string, i.e. which 'qudit' states encode it.
 """
 import numpy as np
+from .tt import to_mpo, from_mpo, factorize
 
 
-def _fiedler_split(X):
-    """Split rows of X in two equal halves by the Fiedler vector of the
-    cosine-similarity graph (spectral bisection)."""
+def _fiedler(X):
     n = X.shape[0]
-    if n <= 2:
-        return np.arange(n)
     Xn = X / (np.linalg.norm(X, axis=1, keepdims=True) + 1e-12)
     A = np.abs(Xn @ Xn.T)
     np.fill_diagonal(A, 0.0)
@@ -31,79 +25,98 @@ def _fiedler_split(X):
     Dm = 1.0 / np.sqrt(d + 1e-12)
     L = np.eye(n) - Dm[:, None] * A * Dm[None, :]
     w, V = np.linalg.eigh(L)
-    f = V[:, 1] * Dm
-    return np.argsort(f, kind="stable")
+    return V[:, 1] * Dm
 
 
-def hierarchical_order(X, min_block=2):
-    """Recursive spectral bisection -> permutation of rows of X (len power of 2).
-
-    The top-level split decides the most significant bit, the next split the
-    next bit, etc. Neurons sharing long bit prefixes end up similar.
-    """
-    idx = np.arange(X.shape[0])
-
-    def rec(ids):
-        if len(ids) <= min_block:
+def hierarchical_order(X, dims):
+    """Recursive spectral partition following the mixed-radix digit tree:
+    first split into dims[0] equal groups (most significant digit), each of
+    those into dims[1] groups, etc."""
+    def rec(ids, level):
+        if level >= len(dims) - 1 or len(ids) <= dims[-1]:
             return list(ids)
-        order = _fiedler_split(X[ids])
-        h = len(ids) // 2
-        a, b = ids[order[:h]], ids[order[h:]]
-        return rec(a) + rec(b)
-
-    return np.array(rec(idx))
-
-
-def gauge_fix_ffn(W_up, W_down, W_gate=None):
-    """Return permuted (W_up, W_down, W_gate, perm) computing the same function.
-
-    W_up: (hidden, d_model), W_down: (d_model, hidden), W_gate like W_up.
-    Neuron feature = concatenation of its input and output weights.
-    """
-    feats = [W_up, W_down.T] + ([W_gate] if W_gate is not None else [])
-    P = hierarchical_order(np.concatenate(feats, axis=1))
-    out_gate = W_gate[P] if W_gate is not None else None
-    return W_up[P], W_down[:, P], out_gate, P
+        f = dims[level]
+        order = ids[np.argsort(_fiedler(X[ids]), kind="stable")]
+        out = []
+        for part in np.array_split(order, f):
+            out += rec(part, level + 1)
+        return out
+    return np.array(rec(np.arange(X.shape[0]), 0))
 
 
-def refine_order(W, sites, chi, iters=10, init=None, verbose=False):
-    """Alternating 'assign-and-fit' refinement of the neuron permutation.
-
-    Repeat: fit an MPO with bond dim `chi` to the currently ordered rows, then
-    re-assign every neuron (row) to the slot whose reconstructed row it matches
-    best, via an optimal linear assignment (Hungarian). This is EM / k-means
-    over permutations; each step can only keep or lower the fit error of the
-    assignment step. Returns permutation P such that W[P] is MPO-friendly.
-    """
+def _assign(cost):
     from scipy.optimize import linear_sum_assignment
-    from .tt import to_mpo, from_mpo
-
-    P = np.arange(W.shape[0]) if init is None else np.asarray(init)
-    best_P, best_err = P, np.inf
-    for t in range(iters):
-        M = W[P]
-        A = from_mpo(to_mpo(M, sites, chi=chi)[0])
-        err = np.linalg.norm(M - A) / np.linalg.norm(M)
-        if verbose:
-            print(f"  refine iter {t}: rel err {err:.4f}")
-        if err < best_err - 1e-6:
-            best_P, best_err = P, err
-        elif t > 0:
-            break
-        # cost[n, s] = ||W[n] - A[s]||^2 (neuron n into slot s)
-        cost = (W ** 2).sum(1)[:, None] - 2 * W @ A.T + (A ** 2).sum(1)[None, :]
-        rows, cols = linear_sum_assignment(cost)
-        newP = np.empty_like(P)
-        newP[cols] = rows
-        P = newP
-    return best_P
-
-
-def anneal_order(W, sites, chis=(2, 3, 4, 6), iters=40, init=None):
-    """Bond-dimension annealing: refine the permutation at small chi first
-    (coarse structure), then increase chi. Mirrors how DMRG grows bond
-    dimension gradually to avoid local minima."""
-    P = np.arange(W.shape[0]) if init is None else np.asarray(init)
-    for chi in chis:
-        P = refine_order(W, sites, chi, iters=iters, init=P)
+    rows, cols = linear_sum_assignment(cost)
+    P = np.empty(cost.shape[0], dtype=int)
+    P[cols] = rows  # slot s gets neuron P[s]
     return P
+
+
+def refine_order(mats, sites, chi, P=None, iters=40, row_dims=None, tol=1e-5):
+    """Assign-and-fit refinement of a shared row permutation for one or more
+    matrices (e.g. [W_up, W_down.T]). Fit MPOs at bond dim chi to the
+    currently ordered rows, then re-assign neurons to slots by an optimal
+    linear assignment on the summed squared reconstruction cost (EM over
+    permutations). Returns the best permutation found and its error."""
+    mats = [np.asarray(m, dtype=np.float64) for m in mats]
+    n = mats[0].shape[0]
+    P = np.arange(n) if P is None else np.asarray(P)
+    tot = sum(float((m ** 2).sum()) for m in mats)
+    best_P, best = P, np.inf
+    for _ in range(iters):
+        cost = np.zeros((n, n))
+        err2 = 0.0
+        for m in mats:
+            M = m[P]
+            A = from_mpo(to_mpo(M, sites, chi=chi, row_dims=row_dims)[0])
+            err2 += float(((M - A) ** 2).sum())
+            cost += (m ** 2).sum(1)[:, None] - 2 * m @ A.T + (A ** 2).sum(1)[None, :]
+        err = np.sqrt(err2 / tot)
+        if err < best - tol:
+            best_P, best = P, err
+        else:
+            break
+        P = _assign(cost)
+    return best_P, best
+
+
+def anneal_order(mats, sites, chis=(2, 3, 4, 6), P=None, iters=40, row_dims=None):
+    """Bond-dimension annealing (coarse-to-fine), like growing chi in DMRG."""
+    for chi in chis:
+        P, _ = refine_order(mats, sites, chi, P=P, iters=iters, row_dims=row_dims)
+    return P
+
+
+def gauge_fix_ffn(W_up, W_down, W_gate=None, sites=None, anneal=None):
+    """Permute FFN neurons into a low-entanglement order.
+    W_up/W_gate: (hidden, d_model); W_down: (d_model, hidden).
+    Returns (perm) — apply as W_up[P], b_up[P], W_gate[P], W_down[:, P]."""
+    mats = [W_up, W_down.T] + ([W_gate] if W_gate is not None else [])
+    dims = factorize(W_up.shape[0], sites or 4)
+    P = hierarchical_order(np.concatenate(mats, axis=1), dims)
+    if anneal:
+        P = anneal_order(mats, sites, chis=anneal, P=P, row_dims=dims)
+    return P
+
+
+def pca_tree_order(X, dims):
+    """Scalable hierarchical ordering (no n x n matrices): at each level sort
+    the group by its top principal component and cut into dims[level] equal
+    chunks. Used for huge index sets such as vocabularies (50k+ tokens)."""
+    def top_pc(Y):
+        Y = Y - Y.mean(0)
+        v = np.random.default_rng(0).standard_normal(Y.shape[1])
+        for _ in range(30):
+            v = Y.T @ (Y @ v); v /= np.linalg.norm(v) + 1e-12
+        return Y @ v
+
+    def rec(ids, level):
+        if level >= len(dims) - 1 or len(ids) <= dims[-1]:
+            return list(ids)
+        f = dims[level]
+        order = ids[np.argsort(top_pc(X[ids]), kind="stable")]
+        out = []
+        for part in np.array_split(order, f):
+            out += rec(part, level + 1)
+        return out
+    return np.array(rec(np.arange(X.shape[0]), 0))
