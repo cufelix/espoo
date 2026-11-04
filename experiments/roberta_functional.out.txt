@@ -1,1 +1,0 @@
-budget 0.50 |        svd | real 0.500 | rel err  1.107 | cos  0.170 |    22s

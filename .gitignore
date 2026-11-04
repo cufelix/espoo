@@ -1,2 +1,4 @@
 __pycache__/
 *.pyc
+experiments/roberta_functional.out.txt
+experiments/roberta_functional.json
