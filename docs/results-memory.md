@@ -69,3 +69,17 @@ teacher-forced on 9,600 test positions. Cost c in teacher-forward units (FLOPs).
 - Self-drafts lose here because the 10k-word output layer is >40 % of the
   cost at this tiny width. In large LLMs the output layer is a few % of the
   cost, so this is a small-scale artefact. H8 tests removing it.
+
+## H8: cheap drafts with a frequency-restricted output layer (cf. FR-Spec): CONFIRMED
+The draft only scores the N most frequent words. The target keeps the full
+vocabulary, so the output is still exactly the teacher's.
+
+| draft | N = 10k (full) | 4k | 2k | **1k** | 500 |
+|---|---|---|---|---|---|
+| student: α / cost / speed-up | 0.725 / 0.29 / 1.42x | 0.704 / 0.16 / 1.73x | 0.679 / 0.11 / 1.83x | 0.648 / 0.09 / **1.84x** | 0.613 / 0.08 / 1.79x |
+| teacher first 1 layer | 0.96x | 1.15x | 1.22x | 1.27x | 1.28x |
+| teacher first 2 layers | 0.94x | 1.11x | 1.17x | 1.19x | 1.19x |
+| teacher first 3 layers | 0.97x | 1.11x | 1.15x | 1.16x | 1.15x |
+
+Restricting the draft head to 10 % of the vocabulary costs only 0.08 in
+acceptance but cuts draft cost 3x. **Lossless speed-up 1.42x → 1.84x.**

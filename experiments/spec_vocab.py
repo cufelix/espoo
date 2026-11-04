@@ -15,6 +15,8 @@ R, D = sys.argv[1], sys.argv[2]
 tr, va, te, vocab = load_wt2(D); V = len(vocab)
 ld = lambda n: pickle.load(open(f"{R}/{n}.pkl", "rb"))
 T, S = ld("teacher"), ld("student")
+import os
+SKD = ld("student_kd") if os.path.exists(f"{R}/student_kd.pkl") and os.environ.get("KD") else None
 pT = jax.tree_util.tree_map(jnp.asarray, T["params"]); pS = jax.tree_util.tree_map(jnp.asarray, S["params"])
 C = T["cfg"]["ctx"]; lo = C // 2
 freq_order = np.array([w for w, _ in Counter(tr.tolist()).most_common()])
@@ -36,12 +38,17 @@ def flops_layers(p, k=None):
 
 
 dT = T["params"]["emb"].shape[1]; full_T = flops_layers(T["params"]) + V * dT
-drafts = [("student", pS, S["params"], None)] + [(f"teacher first {k} layers", dict(pT, layers=pT["layers"][:k]), T["params"], k) for k in (1, 2, 3)]
+drafts = [("student", pS, S["params"], None)]
+if SKD is not None:
+    drafts = [("student_kd (distilled)", jax.tree_util.tree_map(jnp.asarray, SKD["params"]), SKD["params"], None)] + drafts
+if os.environ.get("KD"):
+    drafts = drafts[:2]
+drafts += [(f"teacher first {k} layers", dict(pT, layers=pT["layers"][:k]), T["params"], k) for k in (1, 2, 3)]
 print(f"{'draft':>24} | {'vocab N':>7} | alpha | cost c | best g | speed-up")
 for name, p, raw, k in drafts:
     Ld = np.asarray(logits_fn(p, 4)(X)[:, lo:]).reshape(-1, V)
     d = raw["emb"].shape[1]
-    for N in (V, 4000, 2000, 1000, 500):
+    for N in ((V, 1000) if os.environ.get("KD") else (V, 4000, 2000, 1000, 500)):
         keep = freq_order[:N]
         Lk = np.full_like(Ld, -np.inf); Lk[:, keep] = Ld[:, keep]
         Pd = np.exp(Lk - Lk.max(1, keepdims=True)); Pd /= Pd.sum(1, keepdims=True)
