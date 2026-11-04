@@ -115,3 +115,19 @@ bytes read (bandwidth-bound decoding).
 - **Prior art:** BitNest (arXiv 2610.02800, Oct 2026), BS-Spec (2610.22877) and
   SPEQ already propose bit-nested self-drafts. Our numbers are an independent,
   small-scale confirmation, not a new method.
+
+## Distillation into weights vs. into memory (final)
+| model | test ppl | share of student→teacher gap closed |
+|---|---|---|
+| student | 68.68 | 0 % |
+| student + teacher-valued memory (DiM) | 68.68 | 0 % |
+| student + gold memory (kNN-LM) | 65.15 | 40 % |
+| student distilled from teacher (KD, into weights) | 67.31 | 16 % |
+| KD student + teacher-valued memory | 67.31 | 16 % |
+| KD student + mix memory | 64.60 | 47 % |
+| **KD student + gold memory** | **63.81** | **56 %** |
+| teacher (3.4x more params) | 59.93 | 100 % |
+
+**Best combination: distil the teacher's judgement into the student's weights
+and put memorised specifics into the memory.** Each part does what it is good
+at. A 3.4x smaller model then closes 56 % of the quality gap.

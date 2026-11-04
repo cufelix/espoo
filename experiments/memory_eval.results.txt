@@ -1,12 +1,17 @@
     T alone: test ppl 59.93
-    T + mem[   gold] store 100% | test ppl   57.44 (lam 0.1, tau 30, alpha 1.0) [428s]
+    T + mem[   gold] store 100% | test ppl   57.44 (lam 0.1, tau 30, alpha 1.0) [310s]
     S alone: test ppl 68.68
-    S + mem[   gold] store  10% | test ppl   68.00 (lam 0.05, tau 30, alpha 1.0) [48s]
-    S + mem[teacher] store  10% | test ppl   68.68 (lam 0.0, tau 1.0, alpha 1.0) [87s]
-    S + mem[    mix] store  10% | test ppl   68.22 (lam 0.05, tau 30, alpha 0.7) [167s]
-    S + mem[   gold] store  30% | test ppl   67.11 (lam 0.1, tau 30, alpha 1.0) [82s]
-    S + mem[teacher] store  30% | test ppl   68.68 (lam 0.0, tau 1.0, alpha 1.0) [125s]
-    S + mem[    mix] store  30% | test ppl   67.53 (lam 0.1, tau 30, alpha 0.7) [218s]
-    S + mem[   gold] store 100% | test ppl   65.15 (lam 0.2, tau 30, alpha 1.0) [230s]
-    S + mem[teacher] store 100% | test ppl   68.68 (lam 0.0, tau 1.0, alpha 1.0) [280s]
-    S + mem[    mix] store 100% | test ppl   65.92 (lam 0.2, tau 30, alpha 0.7) [399s]
+    S + mem[   gold] store  10% | test ppl   68.00 (lam 0.05, tau 30, alpha 1.0) [22s]
+    S + mem[teacher] store  10% | test ppl   68.68 (lam 0.0, tau 1.0, alpha 1.0) [59s]
+    S + mem[    mix] store  10% | test ppl   68.22 (lam 0.05, tau 30, alpha 0.7) [130s]
+    S + mem[   gold] store  30% | test ppl   67.11 (lam 0.1, tau 30, alpha 1.0) [39s]
+    S + mem[teacher] store  30% | test ppl   68.68 (lam 0.0, tau 1.0, alpha 1.0) [83s]
+    S + mem[    mix] store  30% | test ppl   67.53 (lam 0.1, tau 30, alpha 0.7) [179s]
+    S + mem[   gold] store 100% | test ppl   65.15 (lam 0.2, tau 30, alpha 1.0) [121s]
+    S + mem[teacher] store 100% | test ppl   68.68 (lam 0.0, tau 1.0, alpha 1.0) [169s]
+    S + mem[    mix] store 100% | test ppl   65.92 (lam 0.2, tau 30, alpha 0.7) [274s]
+  Skd alone: test ppl 67.31
+  Skd + mem[   gold] store 100% | test ppl   63.81 (lam 0.1, tau 30, alpha 1.0) [119s]
+  Skd + mem[teacher] store 100% | test ppl   67.31 (lam 0.0, tau 1.0, alpha 1.0) [166s]
+  Skd + mem[    mix] store 100% | test ppl   64.60 (lam 0.1, tau 30, alpha 0.7) [274s]
+PIPELINE_DONE

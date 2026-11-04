@@ -1,0 +1,150 @@
+[
+ {
+  "query": "T",
+  "values": "-",
+  "frac": 0,
+  "test_ppl": 59.927635192871094
+ },
+ {
+  "query": "T",
+  "values": "gold",
+  "frac": 1.0,
+  "lam": 0.1,
+  "tau": 30,
+  "alpha": 1.0,
+  "val_ppl": 60.366153717041016,
+  "test_ppl": 57.442203521728516
+ },
+ {
+  "query": "S",
+  "values": "-",
+  "frac": 0,
+  "test_ppl": 68.67635345458984
+ },
+ {
+  "query": "S",
+  "values": "gold",
+  "frac": 0.1,
+  "lam": 0.05,
+  "tau": 30,
+  "alpha": 1.0,
+  "val_ppl": 72.48468017578125,
+  "test_ppl": 67.99854278564453
+ },
+ {
+  "query": "S",
+  "values": "teacher",
+  "frac": 0.1,
+  "lam": 0.0,
+  "tau": 1.0,
+  "alpha": 1.0,
+  "val_ppl": 73.20491027832031,
+  "test_ppl": 68.67635345458984
+ },
+ {
+  "query": "S",
+  "values": "mix",
+  "frac": 0.1,
+  "lam": 0.05,
+  "tau": 30,
+  "alpha": 0.7,
+  "val_ppl": 72.7186050415039,
+  "test_ppl": 68.21817779541016
+ },
+ {
+  "query": "S",
+  "values": "gold",
+  "frac": 0.3,
+  "lam": 0.1,
+  "tau": 30,
+  "alpha": 1.0,
+  "val_ppl": 70.93909454345703,
+  "test_ppl": 67.11298370361328
+ },
+ {
+  "query": "S",
+  "values": "teacher",
+  "frac": 0.3,
+  "lam": 0.0,
+  "tau": 1.0,
+  "alpha": 1.0,
+  "val_ppl": 73.20491027832031,
+  "test_ppl": 68.67635345458984
+ },
+ {
+  "query": "S",
+  "values": "mix",
+  "frac": 0.3,
+  "lam": 0.1,
+  "tau": 30,
+  "alpha": 0.7,
+  "val_ppl": 71.46405792236328,
+  "test_ppl": 67.5334243774414
+ },
+ {
+  "query": "S",
+  "values": "gold",
+  "frac": 1.0,
+  "lam": 0.2,
+  "tau": 30,
+  "alpha": 1.0,
+  "val_ppl": 68.69849395751953,
+  "test_ppl": 65.1528091430664
+ },
+ {
+  "query": "S",
+  "values": "teacher",
+  "frac": 1.0,
+  "lam": 0.0,
+  "tau": 1.0,
+  "alpha": 1.0,
+  "val_ppl": 73.20491027832031,
+  "test_ppl": 68.67635345458984
+ },
+ {
+  "query": "S",
+  "values": "mix",
+  "frac": 1.0,
+  "lam": 0.2,
+  "tau": 30,
+  "alpha": 0.7,
+  "val_ppl": 69.61174011230469,
+  "test_ppl": 65.91895294189453
+ },
+ {
+  "query": "Skd",
+  "values": "-",
+  "frac": 0,
+  "test_ppl": 67.31268310546875
+ },
+ {
+  "query": "Skd",
+  "values": "gold",
+  "frac": 1.0,
+  "lam": 0.1,
+  "tau": 30,
+  "alpha": 1.0,
+  "val_ppl": 67.27806091308594,
+  "test_ppl": 63.814083099365234
+ },
+ {
+  "query": "Skd",
+  "values": "teacher",
+  "frac": 1.0,
+  "lam": 0.0,
+  "tau": 1.0,
+  "alpha": 1.0,
+  "val_ppl": 71.55465698242188,
+  "test_ppl": 67.31268310546875
+ },
+ {
+  "query": "Skd",
+  "values": "mix",
+  "frac": 1.0,
+  "lam": 0.1,
+  "tau": 30,
+  "alpha": 0.7,
+  "val_ppl": 68.19011688232422,
+  "test_ppl": 64.59983825683594
+ }
+]

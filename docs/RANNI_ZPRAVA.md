@@ -27,6 +27,7 @@ výstupem, a pár **nových poznatků**, proč některé slibné cesty nefunguj�
 | H8 | Návrh počítá jen 1000 nejčastějších slov | ✅ 1,42× → 1,84× |
 | H9 | Návrh zkopírovaný z databáze (zdarma) | ➖ jen 1,16× |
 | H10 | Destilovaný malý model navrhuje lépe | ✅ 1,92× |
+| H11 | Úsudek do vah (destilace) + fakta do paměti | ✅ 3,4× menší model dožene 56 % rozdílu kvality (68,7 → 63,8, učitel 59,9) |
 | H12 | Velký model navrhuje sám sobě ze svých „horních bitů“ | ✅ **2,34× bez druhého modelu a bez paměti navíc** |
 | dřív | Kvantové přeskládání vah (Q-Gauge), JIT zmenšení, hybridy | ❌ |
 
@@ -55,7 +56,7 @@ s úsudkem.** Když malý model nahlíží do databáze toho, „co by si myslel
 model“, nepomůže mu to vůbec. Nepomůže to ani při dokonalém vyhledávání
 pomocí reprezentace velkého modelu. Mechanismus jsem ověřil, je přesný.
 Podobné situace v databázi prostě nejsou dost podobné a zprůměrovaný úsudek
-je rozmazaný. Úsudek se musí spočítat, nedá se vyhledat. Tím se vyvrací
+je rozmazaný. Úsudek se musí spočítat, nedá se vyhledat. Nejlépe proto funguje rozdělení práce: **úsudek patří do vah (destilace), fakta do paměti**. Malý model tak dožene 56 % rozdílu proti 3,4× většímu. Tím se vyvrací
 jeden z intuitivních směrů „zmenšování AI pomocí paměti“. Tohle jsem
 v literatuře nenašel.
 
