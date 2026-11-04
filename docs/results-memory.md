@@ -131,3 +131,22 @@ bytes read (bandwidth-bound decoding).
 **Best combination: distil the teacher's judgement into the student's weights
 and put memorised specifics into the memory.** Each part does what it is good
 at. A 3.4x smaller model then closes 56 % of the quality gap.
+
+## Real-model check: GPT-2 124M (ONNX zoo weights), Moby Dick text, 32×128 tokens
+`experiments/gpt2_recipe.py`, results in `experiments/gpt2_recipe.results.txt`
+(group 32 along the output axis; grouping along the input axis or groups of 64
+were much worse, see `gpt2_recipe.out64.results.txt`).
+
+| stored model | ppl (fp32 = 81.60) | α vs fp32 | greedy agreement |
+|---|---|---|---|
+| 8-bit | 81.56 | 0.990 | 98.3 % |
+| 4-bit | 84.63 | 0.830 | 76.6 % |
+| 3-bit | 216.4 | 0.487 | 42.3 % |
+
+Nested self-drafts (prefix of the 8-bit codes), scale/zero overhead counted
+(+1 bit/weight). Best results:
+- target fp16, draft 6 bits: α 0.949, **1.66x, exact**.
+- target 8-bit, draft 6 bits: α 0.947, 1.11x on top of 8-bit, **≈2.0x vs fp16**.
+- Prefixes ≤4 bits collapse (α ≤ 0.58), far worse than an independent 4-bit
+  RTN copy (α 0.83). Truncating codes moves the extreme values, and GPT-2's
+  outlier weights matter. The tiny models overstated the gain.

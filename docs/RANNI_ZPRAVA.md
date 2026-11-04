@@ -31,24 +31,33 @@ výstupem, a pár **nových poznatků**, proč některé slibné cesty nefunguj�
 | H12 | Velký model navrhuje sám sobě ze svých „horních bitů“ | ✅ **2,34× bez druhého modelu a bez paměti navíc** |
 | dřív | Kvantové přeskládání vah (Q-Gauge), JIT zmenšení, hybridy | ❌ |
 
-## Nejlepší ověřený recept: velký model lokálně levněji
-1. **Ulož model v 8 bitech** místo 16: 2× méně paměti. Výstup se shoduje
-   s originálem na 99,6 % slov.
-2. **Ať model navrhuje sám sobě z horních 3–4 bitů svých vah** a pak se
-   ověří celými 8 bity. Výstup je přesně stejný jako u 8bitového modelu a
-   generování je 1,5× rychlejší. Nepotřebuješ druhý model ani paměť navíc.
-3. **Dohromady: ~3× rychleji a 2× méně paměti než standard, prakticky stejný
-   výstup.**
-4. Pokud chceš výstup **bit po bitu stejný** jako u plného modelu:
-   ~2,3× rychleji za +25 % paměti (4bitová kopie jako navrhovatel).
+## Nejlepší ověřený recept, změřený na SKUTEČNÉM modelu (GPT-2, 124M)
+Ráno jsem recept ještě ověřil na skutečném předtrénovaném GPT-2 (váhy
+z ONNX Model Zoo na GitHubu, text Moby Dick, `experiments/gpt2_recipe.py`).
+Výsledky jsou střízlivější než na mých malých modelech:
+
+| varianta | kvalita (perplexita, originál 81,6) | méně bajtů / rychleji než 16 bitů |
+|---|---|---|
+| uložení v 8 bitech (skupiny po 32) | **81,6**, 98,3 % slov stejných | 1,8× |
+| 8 bitů + model si navrhuje z horních 6 bitů | výstup **přesně** jako 8bitový model | **~2,0×** |
+| 16 bitů + navrhovatel z 6bitové kopie | výstup **přesně** jako originál | 1,7× |
+| uložení ve 4 bitech | 84,6 (o 3,7 % horší) | 3,2× |
+
+- **Bez ztráty kvality: ~2× rychleji a skoro 2× méně paměti.**
+- **S malou ztrátou (−3,7 %): ~3,2×.**
+- Vnořené návrhy pod 6 bitů na skutečném modelu nefungují. Oříznutí bitů
+  poškodí extrémní hodnoty vah, na kterých GPT-2 hodně závisí. Na
+  miniaturních modelech to vypadalo líp (2,3×), takže skutečný model byl
+  důležitá kontrola.
 
 **Proč ne 10×:** bez přetrénování se dá bezztrátově ušetřit jen ~30 % paměti
-a ověřování dá 2–3×. 10× vyžaduje přetrénování (např. 2bitové modely
-trénované od začátku jako BitNet) nebo modely, které jsou přirozeně „řídké“.
+a ověřování dá 1,5–2×. Změřeno na GPT-2 to dohromady dává ~2× bez ztráty.
+10× vyžaduje přetrénování (např. 2bitové modely trénované od začátku jako
+BitNet) nebo modely, které jsou přirozeně „řídké“.
 
 **Pozor, není to nové:** podobné metody už existují (BitNest a BS-Spec
-z října 2026, QSpec, SPEQ, FR-Spec, DistillSpec). Já je nezávisle ověřil
-a spojil.
+z října 2026, QSpec, SPEQ, FR-Spec, DistillSpec). Já je nezávisle ověřil,
+změřil na skutečném modelu a spojil.
 
 ## Co je opravdu nový poznatek
 **Paměť (databáze) pomáhá AI jen se zapamatovanými konkrétními fakty, ne
@@ -61,11 +70,12 @@ jeden z intuitivních směrů „zmenšování AI pomocí paměti“. Tohle jsem
 v literatuře nenašel.
 
 ## Omezení (ať se nespálíš)
-- Modely jsou malé (miliony parametrů, ne miliardy) a běžely na CPU.
+- Většina pokusů běžela na malých modelech na CPU. Recept je ověřený
+  i na skutečném GPT-2 (124M), ale ne na modelech s miliardami parametrů.
 - Zrychlení je spočítané z míry přijetí a z počtu přečtených bajtů, ne
   změřené stopkami na grafické kartě.
-- Hugging Face byl v této session zablokovaný, takže jsem nemohl vzít
-  skutečný velký open model.
+- Hugging Face byl v této session zablokovaný. GPT-2 jsem sehnal přes
+  ONNX Model Zoo, větší modely (Qwen, Llama) tudy nejdou.
 
 ## Co dál (konkrétně)
 1. Spusť **novou session** s povoleným `huggingface.co`. Pak změřím recept na

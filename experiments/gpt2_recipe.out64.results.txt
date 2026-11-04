@@ -1,0 +1,19 @@
+24 windows x 128 tokens
+51 matrices quantised = 162.9M of 175.6M weights
+fp32 GPT-2: ppl 85.23
+stored 8-bit: ppl 85.10 | vs fp32: alpha 0.9825, greedy agreement 0.9734
+stored 4-bit: ppl 140.84 | vs fp32: alpha 0.6029, greedy agreement 0.5112
+stored 3-bit: ppl 1196.40 | vs fp32: alpha 0.2552, greedy agreement 0.1745
+
+nested bit-plane self-drafts (prefix of the 8-bit codes)
+draft bits |       target | alpha | draft cost | speed-up vs target | speed-up vs fp16 baseline
+         6 |    fp16/fp32 | 0.934 | 0.375      | 1.77x (draft len 6)      | 1.77x
+         6 | stored 8-bit | 0.935 | 0.750      | 1.12x (draft len 2)      | 2.25x
+         5 |    fp16/fp32 | 0.828 | 0.312      | 1.59x (draft len 3)      | 1.59x
+         5 | stored 8-bit | 0.820 | 0.625      | 1.12x (draft len 1)      | 2.24x
+         4 |    fp16/fp32 | 0.672 | 0.250      | 1.42x (draft len 2)      | 1.42x
+         4 | stored 8-bit | 0.667 | 0.500      | 1.11x (draft len 1)      | 2.22x
+         3 |    fp16/fp32 | 0.225 | 0.188      | 1.03x (draft len 1)      | 1.03x
+         3 | stored 8-bit | 0.224 | 0.375      | 0.89x (draft len 1)      | 1.78x
+         2 |    fp16/fp32 | 0.061 | 0.125      | 0.94x (draft len 1)      | 0.94x
+         2 | stored 8-bit | 0.059 | 0.250      | 0.85x (draft len 1)      | 1.69x
